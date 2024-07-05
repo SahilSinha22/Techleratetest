@@ -1,4 +1,8 @@
+import Image from 'next/image'
 import React from 'react'
+import Grap1 from "@/public/lapii1.jpg";
+import Grap2 from "@/public/pencil.jpg";
+
 
 const Graphic = () => {
   return (
@@ -14,8 +18,8 @@ const Graphic = () => {
                     </a>
                   </div>
                   <div className="md:w-1/2 flex flex-col md:flex-row gap-4">
-                    <img className="w-full md:w-1/2 object-cover" src="https://placehold.co/300x400" alt="Person working on a laptop with design sketches"/>
-                    <img className="w-full md:w-1/2 object-cover" src="https://placehold.co/300x400" alt="Person using a drawing tablet"/>
+                    <Image className="w-full mt-20 md:w-1/2 object-cover" src={Grap1} alt="Person working on a laptop with design sketches" width={500} height={8}/>
+                    <Image className="w-full mb-20 md:w-1/2 object-cover" src={Grap2} alt="Person using a drawing tablet" width={500} height={8}/>
                   </div>
                 </div>
 

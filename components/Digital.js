@@ -1,12 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
+import Digi1 from "@/public/Team1.jpg";
+import Digi2 from "@/public/discussion1.jpg";
 
 const Digital = () => {
   return (
-    <div className="bg-black text-gray-400 p-8">
-    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="bg-black text-gray-400 h-[800px] pb-20 p-8">
+    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-auto items-center">
       <div className="grid grid-cols-2 gap-4">
-        <img src="https://placehold.co/300x450" alt="Team collaborating" className="w-full h-full object-cover rounded-lg"/>
-        <img src="https://placehold.co/300x450" alt="Team discussion" className="w-full h-full object-cover rounded-lg"/>
+        <Image src={Digi1} alt="Team collaborating" className="w-full h-full object-cover mb-20 " width={500} height={8}/>
+        <Image src={Digi2} alt="Team discussion" className="w-full h-full object-cover mt-20 " width={500} height={8}/>
       </div>
       <div>
         <h3 className="text-secondary text-sm font-semibold uppercase mb-2">Digital Marketing</h3>

@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.Bebas_Neue{
+  font-family: var(--font-Bebas_Neue);
+}
+
+    .text-black {
+        color:black; 
+        -webkit-text-stroke: 1px white; 
+      }
+      
+      .text-black::after {
+        content: attr(data-shadow-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        color: black; 
+      }
