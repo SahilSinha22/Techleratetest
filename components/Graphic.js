@@ -6,7 +6,7 @@ import Grap2 from "@/public/pencil.jpg";
 
 const Graphic = () => {
   return (
-    <div className="bg-black text-foreground p-8 flex flex-col md:flex-row items-center">
+    <div className="bg-black text-foreground p-8  xl:px-20 flex flex-col md:flex-row items-center">
                   <div className="md:w-1/2 p-4">
                     <div className="text-sm text-gray-400 mb-2">GRAPHIC DESIGN</div>
                     <h2 className="text-4xl   text-white mb-4">Creating beautiful design <br/>based Client Needs</h2>

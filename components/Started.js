@@ -3,7 +3,7 @@ import React from 'react'
 const Started = () => {
   return (
    
-    <div class="flex items-center  justify-center min-h-screen bg-black ">
+    <div class="flex items-center  justify-center max-h-screen py-20 bg-black ">
     <div class="bg-violet-800  text-primary-foreground mx-40 px-20 py-10 shadow-lg w-full text-center">
       <p class="text-lg text-white  mb-5">MAKING THE RIGHT CHOICES</p>
       <h1 class="text-6xl font-bold mb-4">LET’S <span class="text-white">START YOUR</span></h1>

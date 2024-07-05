@@ -12,7 +12,7 @@ const Services = () => {
                     <h1 className="text-6xl text-black font-bold">HOW WE</h1>
                     <h1 className="text-6xl font-bold text-white">APPROACH CLIENTS</h1>
                   </div>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                     <div className="flex flex-row space-y-4 space-x-4">
                       <Image src={Serv1} alt="Person sketching UI design on paper" className="mb-40" width={500} height={10}/>
                       <Image src={Serv2} alt="Person presenting UI design on whiteboard" className="mt-40" width={500} height={10}/>
