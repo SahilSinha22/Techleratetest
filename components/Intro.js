@@ -4,7 +4,7 @@ import videoSrc from '@/public/earth.mp4'
 
 const Intro = () => {
   return (
-    <div className="relative h-screen overflow-hidden  text-white">
+    <div className="relative h-screen overflow-hidden  bg-slate-600 text-white">
       <video
         autoPlay
         muted
