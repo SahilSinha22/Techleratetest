@@ -5,16 +5,16 @@ import Serv2 from "@/public/phn.png";
 const Portfolio = () => {
   return (
     
-    <div className="bg-card   bg-black text-card-foreground p-20">
+    <div className="bg-card   bg-black text-card-foreground p-6 md:p-20">
                   <div className="flex justify-between items-center mb-4">
                     <h2 className="text-violet-800 text-xl font-semibold mx-8 my-2">PORTFOLIO</h2>
                     <div className='relative'>
                     <span className="text-6xl font-bold absolute top-2 right-10 text-white Josefin_Sans ">01</span>
                     </div>
                   </div>
-                  <div className="flex flex-col  bg-red-400 md:flex-row items-center justify-around bg-primary p-8 ">
+                  <div className="flex flex-col  bg-red-400 md:flex-row items-center justify-around bg-primary md:p-8 ">
                     <div className="flex-1 mb-4 md:mb-0">
-                      <h2 className="text-6xl font-bold text-white mb-4">OKOMO360 <br/>IS A UNIQUE <br/>PLATFORM</h2>
+                      <h2 className="text-xl md:text-6xl font-bold text-white mb-4">OKOMO360 <br/>IS A UNIQUE <br/>PLATFORM</h2>
                       <a href="#" className="text-white text-lg hover:underline">See The Work &gt;</a>
                     </div>
                     <div className="flex-1 flex justify-center ">

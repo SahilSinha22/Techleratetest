@@ -17,9 +17,9 @@ const Graphic = () => {
                       More Detail <span className="ml-2">→</span>
                     </a>
                   </div>
-                  <div className="md:w-1/2 flex flex-col md:flex-row gap-4">
+                  <div className="md:w-1/2 flex flex-row md:flex-row gap-4">
                     <Image className="w-full mt-20 md:w-1/2 object-cover" src={Grap1} alt="Person working on a laptop with design sketches" width={500} height={8}/>
-                    <Image className="w-full mb-20 md:w-1/2 object-cover" src={Grap2} alt="Person using a drawing tablet" width={500} height={8}/>
+                    <Image className="w-1/2 mb-20 md:w-1/2 object-cover" src={Grap2} alt="Person using a drawing tablet" width={500} height={8}/>
                   </div>
                 </div>
 

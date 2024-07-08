@@ -93,14 +93,14 @@ const Testimonials = () => {
 
 
   return (
-    <div className="bg-gray-950  py-12">
+    <div className="bg-gray-950 pt-60 md:py-12">
       <div className="text-center mb-8">
       <h2 className="text-violet-800 text-xl font-semibold uppercase tracking-widest mb-2">TESTIMONIALS</h2>
                     <h2 className="text-6xl text-black font-bold">FROM OUR </h2>
                     <h2 className="text-6xl font-bold text-white">BELOVED CLIENT</h2>
       </div>
       <div className="  ">
-<div className='flex  ml-20 space-x-4'>
+<div className='flex  md:ml-20 space-x-4'>
         <div className="bg-black hover:bg-blue-500 hover:mx-10 hover:mt-4  hover:scale-110 text-primary-foreground p-6 text-2xl  shadow-lg w-full md:w-1/2 lg:w-1/3">
           <div className='flex items-center mb-4'>
             <div className="space-x-1 text-yellow-600 text-2xl">

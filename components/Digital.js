@@ -11,7 +11,7 @@ const Digital = () => {
         <Image src={Digi1} alt="Team collaborating" className="w-full h-full object-cover mb-20 " width={500} height={8}/>
         <Image src={Digi2} alt="Team discussion" className="w-full h-full object-cover mt-20 " width={500} height={8}/>
       </div>
-      <div>
+      <div  className="mt-20">
         <h1 className="text-secondary text-lg font-semibold uppercase mb-2">Digital Marketing</h1>
         <h2 className="text-4xl  text-white  mb-4">Provide Digital Marketing <br/> Strategy for Our Clients</h2>
         <p className="text-muted-foreground mb-6">
