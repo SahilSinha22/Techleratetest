@@ -8,10 +8,13 @@
 .Josefin_Sans{
   font-family: var(--font-Josefin_Sans);
 }
+.Open_Sans{
+  font-family: var(--font-Open_Sans);
+}
 
     .text-black {
         color:  black; 
-        -webkit-text-stroke: 0.5px white; 
+        -webkit-text-stroke: 1px white; 
       }
       
       .text-black::after {

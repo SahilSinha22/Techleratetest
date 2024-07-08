@@ -21,8 +21,8 @@ const Intro = () => {
       <div className="relative z-10 flex flex-col items-center justify-center md:h-full xl:space-y-8">
         <div className="text-center mt-40 lg:m-auto xl:mt-20 lg:mb-10 mb-20 xl:mb-20">
           <h2 className="md:text-6xl text-2xl  2xl:text-7xl font-bold">
-            HELP <span className=" text-black">YOUR WORK </span> WITH <br />
-            <span className="text-black"> OUR </span> STRATEGY
+            HELP <span className=" text-black font-serif">YOUR WORK </span> WITH <br />
+            <span className="text-black font-serif"> OUR </span> STRATEGY
           </h2>
         </div>
         <div className="flex  md:space-x-8 lg:mb-20 xl:mt-60 bg-blue-400 bg-opacity-20 pt-4 ">

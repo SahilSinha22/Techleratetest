@@ -96,7 +96,7 @@ const Testimonials = () => {
     <div className="bg-gray-950 pt-60 md:py-12">
       <div className="text-center mb-8">
       <h2 className="text-violet-800 text-xl font-semibold uppercase tracking-widest mb-2">TESTIMONIALS</h2>
-                    <h2 className="text-6xl text-black font-bold">FROM OUR </h2>
+                    <h2 className="text-6xl text-black  font-serif font-bold">FROM OUR </h2>
                     <h2 className="text-6xl font-bold text-white">BELOVED CLIENT</h2>
       </div>
       <div className="  ">

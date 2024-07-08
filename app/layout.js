@@ -1,4 +1,4 @@
-import { Inter, Bebas_Neue, Josefin_Sans } from "next/font/google";
+import { Inter, Bebas_Neue, Josefin_Sans, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/component/Footer"
 import Navbar from "@/app/component/Navbar"
@@ -9,6 +9,12 @@ const Bebas_Neue_init=Bebas_Neue({
   subsets: ['latin'],
   weight: '400' ,
   variable: '--font-Bebas_Neue',
+});
+
+const Open_Sans_init=Open_Sans({
+  subsets: ['latin'],
+  weight: '500' ,
+  variable: '--font-Open_Sans',
 });
 const Josefin_Sans_init=Josefin_Sans({
   subsets: ['latin'],
@@ -24,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${Bebas_Neue_init.variable} ${Josefin_Sans_init.variable}`}>
+      <body className={`${inter.className} ${Open_Sans_init.variable} ${Bebas_Neue_init.variable} ${Josefin_Sans_init.variable}`}>
     <div className="lg:hidden"> 
       <Navbar/>
     </div>

@@ -11,7 +11,7 @@ const Blog = () => {
     <div className="bg-gray-900 text-foreground p-16">
               <div className="text-center mb-8 ">
                 <span className="text-violet-800  font-bold text-xl">BLOG</span>
-                <h2 className="text-5xl text-black font-bold">
+                <h2 className="text-5xl text-black font-bold font-serif">
                   LATEST <span className="text-white">ARTICLES</span>
                 </h2>
               </div>
