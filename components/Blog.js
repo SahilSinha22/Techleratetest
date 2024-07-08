@@ -8,12 +8,21 @@ import Blog3 from "@/public/cofee.jpg";
 
 const Blog = () => {
   return (
+<<<<<<< HEAD
     <div className="bg-gray-900 text-foreground p-16">
               <div className="text-center mb-8 ">
                 <span className="text-violet-800  font-bold text-xl">BLOG</span>
                 <h2 className="text-5xl text-black font-bold">
                   LATEST <span className="text-white">ARTICLES</span>
                 </h2>
+=======
+    <div className="bg-gray-900 text-foreground p-8">
+              <div className="text-center mb-8">
+                <span className="text-violet-800  font-bold text-xl">BLOG</span>
+                <h1 className="text-5xl text-black font-bold">
+                  LATEST <span className="text-white">ARTICLES</span>
+                </h1>
+>>>>>>> origin/main
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-card p-4 rounded-lg shadow-lg">
