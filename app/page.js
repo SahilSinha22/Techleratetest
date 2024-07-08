@@ -8,10 +8,6 @@ import Digital from "@/components/Digital"
 import Testimonial from "@/components/Testimonial";
 import Blog from "@/components/Blog";
 import Started from "@/components/Started";
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
 export default function Home() {
   return (
     <>
@@ -22,10 +18,7 @@ export default function Home() {
    <Graphic/>
    <Digital/>
    <Testimonial/>
-<<<<<<< HEAD
    
-=======
->>>>>>> origin/main
    <Blog/>
    <Started/>
    </>
