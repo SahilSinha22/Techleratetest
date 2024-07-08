@@ -12,7 +12,7 @@ const Intro = () => {
         className="absolute inset-0 w-full h-full object-cover"
         
       >
-        <source src={videoSrc}   type="video/mp4" />
+        <source src="/earth.mp4"  type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="relative z-10 flex flex-col items-center justify-center h-full xl:space-y-8">
