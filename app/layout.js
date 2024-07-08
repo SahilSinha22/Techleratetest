@@ -1,6 +1,7 @@
 import { Inter, Bebas_Neue, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/component/Footer"
+import Navbar from "@/app/component/Navbar"
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -24,6 +25,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} ${Bebas_Neue_init.variable} ${Josefin_Sans_init.variable}`}>
+   <div className="lg:hidden "><Navbar/>
+   </div> 
         {children}
         <Footer/>
         </body>

@@ -1,8 +1,11 @@
+
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import videoSrc from '@/public/earth.mp4'
 
 const Intro = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="relative h-screen overflow-hidden  bg-slate-600 text-white">
       <video
@@ -10,9 +13,9 @@ const Intro = () => {
         muted
         loop
         className="absolute inset-0 w-full h-full object-cover"
-        
+
       >
-        <source src="/earth.mp4"  type="video/mp4" />
+        <source src="/earth.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="relative z-10 flex flex-col items-center justify-center h-full xl:space-y-8">
@@ -41,7 +44,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className=" pt-8 xl:px-28 absolute top-0 left-0 w-full flex justify-between p-4">
+      <div className=" pt-8 xl:px-28 absolute top-0 left-0 w-full hidden lg:flex justify-between p-4">
         <div className="flex items-center space-x-4">
           <Image
             src=""
@@ -72,7 +75,8 @@ const Intro = () => {
           Contact Us
         </a>
       </div>
-    </div>
+      </div>
+    
   );
 };
 
