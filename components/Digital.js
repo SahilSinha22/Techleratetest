@@ -12,11 +12,7 @@ const Digital = () => {
         <Image src={Digi2} alt="Team discussion" className="w-full h-full object-cover mt-20 " width={500} height={8}/>
       </div>
       <div>
-<<<<<<< HEAD
         <h1 className="text-secondary text-lg font-semibold uppercase mb-2">Digital Marketing</h1>
-=======
-        <h3 className="text-secondary text-sm font-semibold uppercase mb-2">Digital Marketing</h3>
->>>>>>> origin/main
         <h2 className="text-4xl  text-white  mb-4">Provide Digital Marketing <br/> Strategy for Our Clients</h2>
         <p className="text-muted-foreground mb-6">
           As a Digital Agency, every service we provide will be prepared with a proven strategy and also in accordance with the rules to achieve the goals of your business. There are various kinds of marketing strategies, which can be applied to your business, ranging from Search Engine Optimization, Search Engine Marketing, Social Media Marketing such as Facebook and Instagram ads, and many more.

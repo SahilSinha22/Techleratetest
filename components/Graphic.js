@@ -8,11 +8,7 @@ const Graphic = () => {
   return (
     <div className="bg-black text-foreground p-8  xl:px-20 flex flex-col md:flex-row items-center">
                   <div className="md:w-1/2 p-4">
-<<<<<<< HEAD
                     <h1 className="text-lg text-gray-400 mb-2">GRAPHIC DESIGN</h1>
-=======
-                    <div className="text-sm text-gray-400 mb-2">GRAPHIC DESIGN</div>
->>>>>>> origin/main
                     <h2 className="text-4xl   text-white mb-4">Creating beautiful design <br/>based Client Needs</h2>
                     <p className="text-gray-400 text-lg  mb-6">
                       Design not only needs to be good, but also sells. Brand Strategy is applied in every process to provide maximum results in the business. We are ready to help you in this matter, every design made will take into account various factors that are expected to help develop your business. Professionally designed and done for you.
