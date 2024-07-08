@@ -6,11 +6,7 @@ const Intro = () => {
   return (
     <div className="relative h-screen overflow-hidden  text-white">
       <video
-<<<<<<< HEAD
         autoPlay
-=======
-        autoplay
->>>>>>> origin/main
         muted
         loop
         className="absolute inset-0 w-full h-full object-cover"
@@ -20,7 +16,6 @@ const Intro = () => {
         Your browser does not support the video tag.
       </video>
       <div className="relative z-10 flex flex-col items-center justify-center h-full xl:space-y-8">
-<<<<<<< HEAD
         <div className="text-center mt-72 xl:mt-20 xl:mb-20">
           <h2 className="md:text-6xl text-2xl  2xl:text-7xl font-bold">
             HELP <span className=" text-black">YOUR WORK </span> WITH <br />
@@ -43,30 +38,6 @@ const Intro = () => {
           <div className="text-center mx-2 2xl:px-12 mb-8 px-8">
             <p className="md:text-6xl text-2xl Bebas_Neue 2xl:text-7xl">324</p>
             <p className="text-base">CAMPAIGNS</p>
-=======
-        <div className="text-center xl:mt-20 xl:mb-20">
-          <h1 className="md:text-6xl font-bold">
-            HELP <span className=" text-black">YOUR WORK </span> WITH <br />
-            <span className="text-black"> OUR </span> STRATEGY
-          </h1>
-        </div>
-        <div className="flex  md:space-x-8 mt-60 bg-blue-400 bg-opacity-20 pt-4 ">
-          <div className="text-center h-20 border-gray-400  border-r-2 mx-2 mb-8 md:px-8">
-            <p className="md:text-6xl Bebas_Neue ">32</p>
-            <p className="text-base">EXPERT</p>
-          </div>
-          <div className="text-center border-gray-400  border-r-2 mx-2 mb-8 px-8">
-            <p className="md:text-6xl Bebas_Neue ">164</p>
-            <p className="text-muted-foreground">CLIENTS</p>
-          </div>
-          <div className="text-center border-gray-400 border-r-2 mx-2 mb-8 px-8">
-            <p className="md:text-6xl Bebas_Neue  ">186</p>
-            <p className="text-muted-foreground">PROJECTS</p>
-          </div>
-          <div className="text-center mx-2 mb-8 px-8">
-            <p className="md:text-6xl Bebas_Neue ">324</p>
-            <p className="text-muted-foreground">CAMPAIGNS</p>
->>>>>>> origin/main
           </div>
         </div>
       </div>

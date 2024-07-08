@@ -10,7 +10,6 @@ import Image from 'next/image';
 const banner = () => {
   return (
     <>
-<<<<<<< HEAD
     <div className='bg-blue-500 '>
     <div className=" logos py-4 text-white text-primary-foreground  text-center">
     <div className=" logos-slide ">
@@ -18,15 +17,10 @@ const banner = () => {
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
-=======
-    <div className="bg-blue-500 py-4 text-white text-primary-foreground  text-center">
-    <div className="animate-marquee whitespace-nowrap">
->>>>>>> origin/main
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
-<<<<<<< HEAD
     </div>
 
     <div className=" logos-slide ">
@@ -42,12 +36,6 @@ const banner = () => {
   </div>
   
   
-=======
-      
-    </div>
-  </div>
-  
->>>>>>> origin/main
   <div className="bg-gray-700 px-20  py-16 text-muted-foreground flex justify-center space-x-4 lg:space-x-8">
     <Image src={Ban1} alt="afterpay logo" className="h-10 w-10  md:w-28 md:h-16 lg:w-36 lg:h-12 xl:w-48" width={300} height={5}/>
     <Image src={Ban2}  alt="plaid logo" className="h-10 w-10 md:w-28 md:h-16 lg:w-36 lg:h-12 xl:w-48" width={300} height={5}/>
@@ -56,13 +44,7 @@ const banner = () => {
     <Image src={Ban5}  alt="basecamp logo" className="h-10 w-10 md:w-28 md:h-16  lg:w-36 lg:h-12 xl:w-48" width={300} height={5}/>
   </div>
 
-<<<<<<< HEAD
   </>
-=======
-
-  </>
-
->>>>>>> origin/main
   )
 }
 

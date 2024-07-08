@@ -5,7 +5,6 @@
 .Bebas_Neue{
   font-family: var(--font-Bebas_Neue);
 }
-<<<<<<< HEAD
 .Josefin_Sans{
   font-family: var(--font-Josefin_Sans);
 }
@@ -13,12 +12,6 @@
     .text-black {
         color:  black; 
         -webkit-text-stroke: 0.5px white; 
-=======
-
-    .text-black {
-        color:black; 
-        -webkit-text-stroke: 1px white; 
->>>>>>> origin/main
       }
       
       .text-black::after {
@@ -29,7 +22,6 @@
         z-index: -1;
         color: black; 
       }
-<<<<<<< HEAD
 h1{
 position:relative;
 left:40px;
@@ -312,5 +304,3 @@ display: block;
 #slide4:checked ~ #bullets label:nth-child(4) {
 background: #444;
 }
-=======
->>>>>>> origin/main
