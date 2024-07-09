@@ -5,7 +5,7 @@ import Digi2 from "@/public/Digital2.png";
 
 const Digital = () => {
   return (
-    <div className="bg-[#18191f] xl:px-20 text-gray-400 h-auto pb-20 p-8">
+    <div className="bg-[#18191f] xl:px-40 text-gray-400 h-auto pb-20 p-8">
     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-auto items-center">
       <div className="grid grid-cols-2 gap-4">
         <Image src={Digi1} alt="Team collaborating" className="w-40 h-60 md:h-[600px] lg:w-[400px] lg:h-[600px] object-cover mb-20 " width={500} height={8}/>
