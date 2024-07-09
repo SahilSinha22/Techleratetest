@@ -7,7 +7,7 @@ import Logo from "@/public/logo.svg"
 const Intro = () => {
 
   return (
-    <div className="relative h-screen overflow-hidden w-full bg-slate-600 text-white">
+    <div className="relative md:h-[700px] lg:h-[900px] xl:h-screen overflow-hidden w-full bg-slate-600 text-white">
       <video
         autoPlay
         muted
@@ -19,13 +19,15 @@ const Intro = () => {
         Your browser does not support the video tag.
       </video>
       <div className="relative z-10 flex flex-col items-center justify-center md:h-full xl:space-y-8">
-        <div className="text-center mt-40   lg:mt-20 xl:mt-20 lg:mb-10 mb-20 xl:mb-20">
-          <h2 className="md:text-6xl lg:text-7xl xl:text-7xl text-2xl  2xl:text-7xl font-bold">
+        <div className="text-center mt-32   lg:mt-20 xl:mt-28 lg:mb-10 mb-10 xl:mb-20">
+          <h2 className="md:text-6xl lg:text-7xl xl:text-7xl mx-2 text-3xl  2xl:text-7xl font-bold">
             HELP <span className=" text-black   font-bold Poppins">YOUR WORK </span> WITH <br />
+          </h2>
+          <h2 className="md:text-6xl mt-6 lg:text-7xl xl:text-7xl mx-2 text-3xl  2xl:text-7xl font-bold">
             <span className="text-black Poppins "> OUR </span> STRATEGY
           </h2>
         </div>
-        <div className="flex  md:space-x-8 lg:mb-20 xl:mt-60 bg-blue-400 bg-opacity-20 pt-4 ">
+        <div className="flex  md:space-x-8 mb-8 lg:mb-20 xl:mt-60 bg-blue-400 bg-opacity-20 pt-4 ">
           <div className="text-center md:h-20 border-gray-400  2xl:px-12 border-r-2 md:mx-2 mx-1 mb-4 px-2 md:mb-8 md:px-8">
             <p className="md:text-6xl lg:text-7xl xl:text-6xl text-2xl  2xl:text-7xl Bebas_Neue ">32</p>
             <p className="text-xs md:text-base xl:text-sm lg:text-lg">EXPERT</p>
@@ -44,18 +46,18 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className=" pt-8 xl:px-28 absolute top-0 left-0 w-full hidden lg:flex justify-between p-4">
+      <div className=" pt-8 xl:px-28 absolute top-2 left-0 w-full hidden lg:flex justify-between p-4">
         <div className="flex items-center space-x-4">
           <Image
             src={Logo}
             alt="Techlerate Logo"
-            className="h-12 w-48"
+            className="h-12 w-60"
             width={400} height={5}
           />
          
         </div>
-        <nav className="flex space-x-8 text-lg">
-          <a href="#" className="hover:text-primary">
+        <nav className="flex  space-x-8 text-lg">
+          <a href="#" className=" hover:text-primary">
             Work
           </a>
           <a href="#" className="hover:text-primary">
@@ -71,7 +73,7 @@ const Intro = () => {
             Careers
           </a>
         </nav>
-        <a href="#" className="hover:text-primary">
+        <a href="#" className=" text-lg hover:text-primary">
           Contact Us
         </a>
       </div>

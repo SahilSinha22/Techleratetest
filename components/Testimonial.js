@@ -79,20 +79,21 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-gray-950  py-12 md:py-20 lg:py-24">
+    <div className="bg-[#252730]  py-12 md:py-20 lg:py-24">
       <div className="text-center mb-8">
-        <span className="text-violet-800 text-xl xl:text-lg PORTFOLIO  mb-2">TESTIMONIALS</span>
-        <h2 className="text-4xl md:text-6xl pt-10 lg:pt-0 pb-2 text-black Poppins font-bold">FROM OUR</h2>
+        <span className="text-[#7b61ff] text-xl xl:text-lg PORTFOLIO  mb-2">TESTIMONIALS</span>
+        <h2 className="text-4xl md:text-6xl pt-2 lg:pt-0 pb-2 text-black Poppins font-bold">FROM OUR</h2>
         <h2 className="text-4xl md:text-6xl font-bold text-white">BELOVED CLIENT</h2>
       </div>
       <div className="flex flex-col  lg:mx-20 lg:space-x-8 items-center space-y-6" {...swipeHandlers}>
         <div className="flex space-x-4  w-auto overflow-hidden">
           {getVisibleTestimonials().map((testimonial, index) => (
-            <div key={index} className="bg-black hover:bg-blue-500 hover:scale-105 transition-all text-primary-foreground p-6 text-2xl shadow-lg w-full md:w-1/2 lg:w-1/3">
+            <div key={index} className="bg-[#252730] border-slate-400 border hover:bg-[#7b61ff]  hover:scale-105 transition-all text-primary-foreground p-6 text-2xl shadow-lg w-full md:w-1/2 lg:w-1/3">
               <div className="flex items-center mb-4">
-                <div className="space-x-1 text-yellow-600 text-2xl">
+                <div className="space-x-1 text-[#ffab2e] text-2xl">
                   {'★'.repeat(testimonial.rating)}
                 </div>
+                
               </div>
               <p className="mb-4 text-lg text-white">{testimonial.text}</p>
               <div className="flex pt-8 items-center">
@@ -110,15 +111,15 @@ const Testimonials = () => {
         
         <div className="flex justify-center space-x-2 lg:mr-72 mt-4">
           {testimonials.map((_, index) => (
-            <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-blue-800' : 'bg-gray-600'}`}></span>
+            <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
           ))}
         </div>
 
         <div className="flex  lg:ml-72 space-x-4">
-          <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-blue-600 text-blue-600 rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
+          <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
             &lt;
           </button>
-          <button onClick={handleNextClick} className="bg-transparent border text-2xl border-blue-600 text-blue-600 rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
+          <button onClick={handleNextClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
             &gt;
           </button>
         </div>

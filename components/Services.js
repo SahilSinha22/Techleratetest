@@ -6,18 +6,18 @@ import Serv2 from "@/public/Service2.png";
 
 const Services = () => {
   return (
-    <div className="bg-black text-foreground py-12 px-6 xl:px-24">
+    <div className="bg-[#18191f] text-foreground py-12 px-6 xl:px-24">
                   <div className="text-center mb-12">
-                    <span className="text-violet-800 text-xl xl:text-lg  PORTFOLIO  ">SERVICES</span>
-                    <h2 className="text-6xl text-black pt-10 lg:pt-0 pb-4 Poppins font-bold">HOW WE</h2>
+                    <span className="text-[#7b61ff] text-xl xl:text-lg  PORTFOLIO  ">SERVICES</span>
+                    <h2 className="text-6xl text-black pt-2 lg:pt-0 pb-4 Poppins font-bold">HOW WE</h2>
                     <h2 className="text-5xl font-bold text-white">APPROACH CLIENTS</h2>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2  gap-12">
                     <div className="flex flex-row space-y-4 space-x-10">
-                      <Image src={Serv1} alt="Person sketching UI design on paper" className="mb-10 md:mb-20 w-40 h-60 md:h-[450px] lg:w-52 lg:h-[500px] xl:w-[250px] xl:h-[600px]" width={400} height={10}/>
-                      <Image src={Serv2} alt="Person presenting UI design on whiteboard" className="pt-10 md:pt-20  w-40 h-72 md:h-[500px] lg:h-[550px] lg:w-52 xl:w-[250px] xl:h-[650px]" width={400} height={10}/>
+                      <Image src={Serv1} alt="Person sketching UI design on paper" className="mb-10 md:mb-20 w-40 h-60 md:h-[600px] lg:w-52 lg:h-[500px] xl:w-[250px] xl:h-[600px]" width={400} height={10}/>
+                      <Image src={Serv2} alt="Person presenting UI design on whiteboard" className="pt-10 md:pt-20  w-40 h-72 md:h-[650px] lg:h-[550px] lg:w-52 xl:w-[250px] xl:h-[650px]" width={400} height={10}/>
                     </div>
-                    <div className="flex flex-col justify-center">
+                    <div className="flex flex-col md:pt-20 xl:ml-12 justify-center">
                       <div className="mb-4 flex">
                         
                         <h1 className=" space-x-2 text-gray-400 text-lg uppercase tracking-widest">UI/UX Design</h1>

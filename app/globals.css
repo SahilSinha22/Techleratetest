@@ -157,7 +157,7 @@ left:40px;
 }
 .logos {
   overflow: hidden;
-  
+  width:auto;
 
   white-space: nowrap;
 
@@ -165,13 +165,16 @@ left:40px;
 
 .logos:hover  .logos-slide{
   animation-play-state: paused;
+  width:auto;
 }
 .logos-slide {
   display: inline-block;
+  width:auto;
   animation: 35s slide infinite linear;
 }
 
 .logos-slide span {
+  width:auto;
   height:50px;
   margin: 0 40px;
 }
