@@ -27,8 +27,8 @@ const Navbar = () => {
           <Image
             src={Logo}
             alt="Techlerate Logo"
-            className="h-10"
-            width={100} height={5}
+            className="h-10 w-48 md:w-96 md:h-20"
+            width={400} height={5}
           />
          
         </div>

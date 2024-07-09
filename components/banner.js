@@ -33,7 +33,7 @@ const banner = () => {
   </div>
   
   
-  <div className="bg-gray-700 md:px-20 px-2 py-10 md:py-16 text-muted-foreground flex justify-center space-x-4 lg:space-x-8">
+  <div className="bg-gray-700 md:px-10 xl:px-20 px-2 py-10 md:py-16 text-muted-foreground flex justify-center space-x-4 lg:space-x-8">
     <Image src={Ban1} alt="afterpay logo" className="w-full" width={300} height={5}/>
     
   </div>

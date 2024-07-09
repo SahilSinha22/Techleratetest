@@ -6,23 +6,24 @@ import Serv2 from "@/public/Service2.png";
 
 const Services = () => {
   return (
-    <div className="bg-black text-foreground py-12 px-6 lg:px-24">
+    <div className="bg-black text-foreground py-12 px-6 xl:px-24">
                   <div className="text-center mb-12">
-                    <span className="text-violet-800 text-xl  PORTFOLIO  mb-2">SERVICES</span>
-                    <h2 className="text-6xl text-black Poppins font-bold">HOW WE</h2>
-                    <h2 className="text-6xl font-bold text-white">APPROACH CLIENTS</h2>
+                    <span className="text-violet-800 text-xl xl:text-lg  PORTFOLIO  ">SERVICES</span>
+                    <h2 className="text-6xl text-black pt-10 lg:pt-0 pb-4 Poppins font-bold">HOW WE</h2>
+                    <h2 className="text-5xl font-bold text-white">APPROACH CLIENTS</h2>
                   </div>
-                  <div className="grid grid-cols-1 xl:grid-cols-2  gap-12">
+                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2  gap-12">
                     <div className="flex flex-row space-y-4 space-x-10">
-                      <Image src={Serv1} alt="Person sketching UI design on paper" className="mb-20 w-[400px] h-[800px]" width={400} height={10}/>
-                      <Image src={Serv2} alt="Person presenting UI design on whiteboard" className="pt-20 w-[400px] h-[900px]" width={400} height={10}/>
+                      <Image src={Serv1} alt="Person sketching UI design on paper" className="mb-10 md:mb-20 w-40 h-60 md:h-[450px] lg:w-52 lg:h-[500px] xl:w-[250px] xl:h-[600px]" width={400} height={10}/>
+                      <Image src={Serv2} alt="Person presenting UI design on whiteboard" className="pt-10 md:pt-20  w-40 h-72 md:h-[500px] lg:h-[550px] lg:w-52 xl:w-[250px] xl:h-[650px]" width={400} height={10}/>
                     </div>
                     <div className="flex flex-col justify-center">
                       <div className="mb-4 flex">
                         
                         <h1 className=" space-x-2 text-gray-400 text-lg uppercase tracking-widest">UI/UX Design</h1>
                       </div>
-                      <h2 className="text-4xl text-white  mb-4">Effective Mobile and Web <br/>Design for Our Clients</h2>
+                      <h2 className="text-4xl text-white xl:my-3 mb-4">Effective Mobile and Web</h2>
+                      <h2 className="text-4xl text-white xl:mb-6 mb-4">Design for Our Clients</h2>
                       <p className="text-gray-400 text-lg">
                         As a Digital Agency, we not only provide attractive mobile and web designs, we also ensure that the mobile/website is also effective in supporting your business activities in the digital world as it is today. Starting from getting leads to growing conversions that can be an investment for your business in the future.
                       </p>

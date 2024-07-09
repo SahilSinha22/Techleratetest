@@ -1,21 +1,21 @@
 import Image from 'next/image';
 import React from 'react';
 import Blog1 from "@/public/Blog1.png";
-import Blog2 from "@/public/Blog2.png";
+import Blog2 from "@/public/Blog3.png";
 
-import Blog3 from "@/public/Blog3.png";
+import Blog3 from "@/public/Blog2.png";
 
 
 const Blog = () => {
   return (
-    <div className="bg-gray-900 text-foreground p-16">
+    <div className="bg-gray-900 text-foreground p-8 md:p-16">
               <div className="text-center mb-8 ">
-                <span className="text-violet-800 PORTFOLIO font-bold text-xl">BLOG</span>
-                <h2 className="text-7xl text-black Poppins font-bold ">
-                  LATEST <span className="text-white">ARTICLES</span>
+                <span className="text-violet-800 xl:text-lg  PORTFOLIO font-bold text-xl">BLOG</span>
+                <h2 className="text-6xl py-10 lg:py-0 xl:text-6xl md:text-7xl text-black Poppins font-bold ">
+                  LATEST <span className="text-white  py-10 lg:py-0">ARTICLES</span>
                 </h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8">
                 <div className="bg-card p-4 rounded-lg shadow-lg">
                   <Image className="h-[500px] w-[400px]  object-cover  mb-4" src={Blog1} alt="Laptop, coffee cup, and notebook on a wooden table" width={500} height={8} />
                   <div className="flex items-center space-x-2 mb-2">

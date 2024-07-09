@@ -5,15 +5,17 @@ import Digi2 from "@/public/Digital2.png";
 
 const Digital = () => {
   return (
-    <div className="bg-black xl:px-20 text-gray-400 h-[800px] pb-20 p-8">
+    <div className="bg-black xl:px-20 text-gray-400 h-auto pb-20 p-8">
     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-auto items-center">
       <div className="grid grid-cols-2 gap-4">
-        <Image src={Digi1} alt="Team collaborating" className="w-[400px] h-[600px] object-cover mb-20 " width={500} height={8}/>
-        <Image src={Digi2} alt="Team discussion" className="w-[400px] h-[600px] object-cover mt-20 " width={500} height={8}/>
+        <Image src={Digi1} alt="Team collaborating" className="w-40 h-60 md:h-[450px] lg:w-[400px] lg:h-[600px] object-cover mb-20 " width={500} height={8}/>
+        <Image src={Digi2} alt="Team discussion" className="w-40 h-60 md:h-[450px] lg:w-[400px] lg:h-[600px] object-cover mt-20 " width={500} height={8}/>
       </div>
       <div  className="">
         <h1 className="text-secondary text-lg font-semibold uppercase mb-2">Digital Marketing</h1>
-        <h2 className="text-4xl  text-white  mb-4">Provide Digital Marketing <br/> Strategy for Our Clients</h2>
+        <h2 className="text-4xl  text-white  xl:my-3 mb-4">Provide Digital Marketing</h2>
+        <h2 className="text-4xl  text-white  xl:mb-6 mb-4"> Strategy for Our Clients</h2>
+
         <p className="text-muted-foreground mb-6">
           As a Digital Agency, every service we provide will be prepared with a proven strategy and also in accordance with the rules to achieve the goals of your business. There are various kinds of marketing strategies, which can be applied to your business, ranging from Search Engine Optimization, Search Engine Marketing, Social Media Marketing such as Facebook and Instagram ads, and many more.
         </p>
