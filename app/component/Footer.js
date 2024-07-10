@@ -32,7 +32,7 @@ const Footer = () => {
               <Image src={Twitter} alt="Twitter Icon" className='rounded-full ' width={40}  height={2}/>
             </a>
             <a href="#" aria-label="YouTube">
-              <Image src={Youtube} alt="YouTube Icon" className='rounded-full bg-slate-400 px-1 py-2' width={40}  height={2}/>
+              <Image src={Youtube} alt="YouTube Icon" className='rounded-full bg-[#9a9898] px-1 py-2' width={40}  height={2}/>
             </a>
           </div>
         </div>
