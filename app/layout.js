@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       <Navbar/>
     </div>
         {children}
-       
+        <Footer/>
         </body>
     </html>
   );
