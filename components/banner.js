@@ -7,9 +7,9 @@ import Image from 'next/image';
 const banner = () => {
   return (
     <>
-    <div className='bg-[#4862e3] '>
-    <div className=" logos py-4 text-white text-primary-foreground  text-center">
-    <div className=" logos-slide px-4 ">
+    <div className='bg-[#4862e3] w-full'>
+    <div className=" logos  py-4 w-full text-white text-primary-foreground  text-center">
+    <div className=" logos-slide     px-4">
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
@@ -20,7 +20,7 @@ const banner = () => {
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
     </div>
 
-    <div className=" logos-slide px-4 ">
+    <div className="  logos-slide px-4 ">
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>

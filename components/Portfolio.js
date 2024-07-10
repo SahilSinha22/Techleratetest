@@ -59,7 +59,7 @@ const Portfolio = () => {
     
     <div className="bg-card   bg-[#18191f] text-card-foreground p-4 md:p-20 xl:px-40 xl:py-0 ">
                   <div className="flex justify-between pl-10 items-center mb-3  lg:mb-4">
-                    <h2 className="text-[#7b61ff] text-xl  2xl:text-2xl PORTFOLIO font-semibold mx-8 my-2">PORTFOLIO</h2>
+                    <span className="text-[#7b61ff] text-xl  2xl:text-2xl PORTFOLIO font-semibold mx-8 my-2">PORTFOLIO</span>
                     <div className='relative'>
                     <span className="text-6xl top-24  right-4 md:text-8xl font-bold absolute md:top-20 2xl:-top-2 2xl:right-14 md:right-10 text-white Poppins ">01</span>
                     </div>

@@ -157,7 +157,7 @@ left:40px;
 }
 .logos {
   overflow: hidden;
- 
+ padding:0 10px;
 
   white-space: nowrap;
 
