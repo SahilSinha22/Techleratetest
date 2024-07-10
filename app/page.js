@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Intro from "@/components/Intro"
 import Banner from "@/components/banner"
 import Portfolio from "@/components/Portfolio"
@@ -8,6 +7,7 @@ import Digital from "@/components/Digital"
 import Testimonial from "@/components/Testimonial";
 import Blog from "@/components/Blog";
 import Started from "@/components/Started";
+import Kolo from "@/components/kolo";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
    <Services/>
    <Graphic/>
    <Digital/>
+  
    <Testimonial/>
    
    <Blog/>

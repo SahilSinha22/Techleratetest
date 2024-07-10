@@ -117,22 +117,32 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <div className='grid grid-cols-2 w-full'>
-          <div className="flex justify-center space-x-2 lg:mr-72 mt-4">
-            {testimonials.map((_, index) => (
-              <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
-            ))}
+        <div className="flex px-4 md:px-5 lg:px-12 xl:px-14 justify-between mt-10  w-full">
+            <div className="flex  justify-between  space-x-2  mt-4">
+              {testimonials.map((_, index) => (
+                <span
+                  key={index}
+                  className={`w-3 h-3 rounded-full ${
+                    currentIndex === index ? "bg-[#7b61ff]" : "bg-[#535353]"
+                  }`}
+                ></span>
+              ))}
+            </div>
+            <div className="flex  space-x-4">
+              <button
+                onClick={handlePrevClick}
+                className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all"
+              >
+                &lt;
+              </button>
+              <button
+                onClick={handleNextClick}
+                className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all"
+              >
+                &gt;
+              </button>
+            </div>
           </div>
-
-          <div className="flex lg:ml-72 space-x-4">
-            <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
-              &lt;
-            </button>
-            <button onClick={handleNextClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
-              &gt;
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
