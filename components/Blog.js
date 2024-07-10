@@ -1,5 +1,5 @@
 
-"use client" 
+"use client"
 import Image from 'next/image';
 import React, { useState } from 'react';
 import Blog1 from "@/public/Blog1.png";
@@ -52,7 +52,10 @@ const Blog = () => {
   const handleLoadMore = () => {
     setVisibleBlogs((prevVisibleBlogs) => prevVisibleBlogs + 3);
   };
-  
+
+  const handleShowLess = () => {
+    setVisibleBlogs((prevVisibleBlogs) => Math.max(prevVisibleBlogs - 3, 3));
+  };
 
   return (
     <div className="bg-[#18191f] text-foreground p-8 md:p-16">
@@ -80,16 +83,24 @@ const Blog = () => {
           </div>
         ))}
       </div>
-      {visibleBlogs < blogs.length && (
-        <div className="text-center mt-8">
+      <div className="text-center mt-8">
+        {visibleBlogs < blogs.length && (
           <button
-            className="bg-primary text-white hover:bg-gray-600 py-2 px-6 rounded-full"
+            className="bg-primary text-white hover:bg-gray-600 py-2 px-6 rounded-full mr-4"
             onClick={handleLoadMore}
           >
             See Another Blogs
           </button>
-        </div>
-      )}
+        )}
+        {visibleBlogs > 3 && (
+          <button
+            className="bg-secondary text-white hover:bg-gray-600 py-2 px-6 rounded-full"
+            onClick={handleShowLess}
+          >
+            See Less Blogs
+          </button>
+        )}
+      </div>
     </div>
   );
 };
