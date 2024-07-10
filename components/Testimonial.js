@@ -102,7 +102,7 @@ const Testimonials = () => {
         <div ref={carouselRef} className="relative  w-full overflow-hidden">
           <div className="flex transition-transform  duration-500 ease-in-out" style={{ transform: `translateX(-${(100 / visibleCount) * currentIndex}%)`, width: `${(testimonials.length / visibleCount) * 100}%` }}>
             {testimonials.map((testimonial, index) => (
-              <div key={index} className={` border-slate-400 border h-full text-primary-foreground p-4 ml-4  shadow-lg w-full md:w-1/2 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 h-[320px] bg-[#7b61ff]' : 'text-xl'} transition-transform duration-500`}>
+              <div key={index} className={` border-slate-400 border h-full text-primary-foreground p-4 ml-4  shadow-lg w-[350px] md:w-1/3 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 h-[320px] bg-[#7b61ff]' : 'text-xl'} transition-transform duration-500`}>
                 <div className="flex items-center mb-4">
                 <StarRating rating={testimonial.rating} />
               </div>
@@ -124,7 +124,7 @@ const Testimonials = () => {
               <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
             ))}
           </div>
-          <div className="flex lg:ml-72 space-x-4">
+          <div className="flex  space-x-4">
             <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
               &lt;
             </button>
