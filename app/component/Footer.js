@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Insta from "@/public/Instagram.svg";
-import Linkedin from "@/public/Linkdin.svg";
+import Insta from "@/public/instagram.svg";
+import Linkedin from "@/public/linkedin.svg";
 import Twitter from "@/public/twitter.svg";
-import Youtube from "@/public/Youtube.svg";
+import Youtube from "@/public/Youtube.png";
 import Image from 'next/image';
 import Logo from "@/public/Logo2.svg"
 
@@ -32,7 +32,7 @@ const Footer = () => {
               <Image src={Twitter} alt="Twitter Icon" className='rounded-full ' width={40}  height={2}/>
             </a>
             <a href="#" aria-label="YouTube">
-              <Image src={Youtube} alt="YouTube Icon" className='rounded-full ' width={40}  height={2}/>
+              <Image src={Youtube} alt="YouTube Icon" className='rounded-full bg-[#9a9898] px-1 py-2' width={40}  height={2}/>
             </a>
           </div>
         </div>
