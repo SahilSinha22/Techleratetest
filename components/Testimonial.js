@@ -11,7 +11,6 @@ const testimonials = [
     role: "Entrepreneur",
     img: "/Testinomial1.png",
   },
-  
   {
     rating: 4,
     text: "Very happy work with agency, so professional to take work and I feel amazing with this work, so cool keep going and success!",
@@ -35,6 +34,7 @@ const testimonials = [
   },
 ];
 
+
 const StarRating = ({ rating }) => {
   const totalStars = 5;
   return (
@@ -47,7 +47,6 @@ const StarRating = ({ rating }) => {
     </div>
   );
 };
-
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(1);
@@ -70,19 +69,12 @@ const Testimonials = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    const endIndex = currentIndex + visibleCount;
-    if (endIndex > testimonials.length) {
-      setCurrentIndex(0);
-    }
-  }, [currentIndex, visibleCount]);
-
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - visibleCount : prevIndex - 1));
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
   };
 
   const handleNextClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + visibleCount >= testimonials.length ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => (prevIndex + 1 === testimonials.length ? 0 : prevIndex + 1));
   };
 
   const swipeHandlers = useSwipeable({
@@ -90,7 +82,14 @@ const Testimonials = () => {
     onSwipedRight: handlePrevClick,
   });
 
-  
+  const getVisibleTestimonials = () => {
+    const endIndex = currentIndex + visibleCount;
+    if (endIndex <= testimonials.length) {
+      return testimonials.slice(currentIndex, endIndex);
+    }
+    return [...testimonials.slice(currentIndex), ...testimonials.slice(0, endIndex - testimonials.length)];
+  };
+
   return (
     <div className="bg-[#252730] py-12 md:py-20 lg:py-24">
       <div className="text-center mb-8">
@@ -99,14 +98,14 @@ const Testimonials = () => {
         <h2 className="text-4xl md:text-6xl font-bold text-white">BELOVED CLIENT</h2>
       </div>
       <div className="flex flex-col lg:mx-20 lg:space-x-8 items-center space-y-6" {...swipeHandlers}>
-        <div ref={carouselRef} className="relative  w-full overflow-hidden">
-          <div className="flex transition-transform  duration-500 ease-in-out" style={{ transform: `translateX(-${(100 / visibleCount) * currentIndex}%)`, width: `${(testimonials.length / visibleCount) * 100}%` }}>
+        <div ref={carouselRef} className="relative w-full overflow-hidden">
+          <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${(100 / visibleCount) * currentIndex}%)`, width: `${(testimonials.length / visibleCount) * 100}%` }}>
             {testimonials.map((testimonial, index) => (
               <div key={index} className={` border-slate-400 border h-full text-primary-foreground p-4 ml-4  shadow-lg w-[350px] md:w-1/3 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 h-[320px] bg-[#7b61ff]' : 'text-xl'} transition-transform duration-500`}>
-                <div className="flex items-center mb-4">
+               <div className="flex items-center mb-4">
                 <StarRating rating={testimonial.rating} />
               </div>
-                <p className="mb-4  text-white">{testimonial.text}</p>
+                <p className="mb-4 text-lg text-white">{testimonial.text}</p>
                 <div className="flex pt-8 items-center">
                   <Image src={testimonial.img} className="w-10 h-10 rounded-full mr-4" alt={`${testimonial.name} avatar`} width={50} height={50} />
                   <div>
@@ -124,7 +123,7 @@ const Testimonials = () => {
               <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
             ))}
           </div>
-          <div className="flex  space-x-4">
+          <div className="flex lg:ml-72 space-x-4">
             <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
               &lt;
             </button>

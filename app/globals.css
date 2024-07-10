@@ -167,9 +167,10 @@ left:40px;
   animation-play-state: paused;
   width:auto;
 }
+
 .logos-slide {
   display: inline-block;
-  width:auto;
+  
   animation: 35s slide infinite linear;
 }
 
@@ -188,6 +189,7 @@ left:40px;
   .toggle-button {
     display: block;
   }
+  
 }
 
 
