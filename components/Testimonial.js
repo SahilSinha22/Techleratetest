@@ -95,7 +95,7 @@ const Testimonials = () => {
         <div ref={carouselRef} className="relative w-full overflow-hidden">
           <div className="flex transition-transform md:mx-5 lg:mx-10 duration-500 ease-in-out" style={{ transform: `translateX(-${(100 / visibleCount) * currentIndex}%)`, width: `${(testimonials.length / visibleCount) * 100}%` }}>
             {testimonials.map((testimonial, index) => (
-               <div key={index} className={`  h-full text-primary-foreground p-4  lg:ml-4  shadow-lg w-1/2 md:w-1/2 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 border-slate-400 border h-[320px] bg-[#7b61ff]' : 'text-xl'} transition-transform duration-500`}>
+               <div key={index} className={`  h-full text-primary-foreground p-4  lg:ml-4  shadow-lg w-1/2 md:w-1/2 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 border-slate-400 border h-1/2 bg-[#7b61ff]' : 'text-xl'} transition-transform duration-500`}>
                <div className="flex items-center mb-4">
                 <StarRating rating={testimonial.rating} />
               </div>
