@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-card-foreground py-8 p-12">
     <div className=" border-t  border-[#535353] ">
-      <div className="flex   px-10 pt-20   pb-12 justify-between">
+      <div className="flex-1 md:flex  px-10 pt-20   pb-12 justify-between">
         <div className="w-full md:w-2/4 mb-6 Poppins md:mb-0 ">
           <div className="flex items-center mb-4">
             <Image src={Logo} alt="Techlerate Logo" className="mr-2" width={200} height={5}/>

@@ -117,7 +117,7 @@ const Testimonials = () => {
               <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
             ))}
           </div>
-          <div className="flex lg:ml-72 space-x-4">
+          <div className="flex md:ml-52 lg:ml-72 space-x-4">
             <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
               &lt;
             </button>
