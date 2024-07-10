@@ -18,7 +18,7 @@ export default function Home() {
    <Graphic/>
    <Digital/>
   
-   <Testimonial/>
+  
    
    <Blog/>
    <Started/>
