@@ -77,6 +77,7 @@ const Intro = () => {
           Contact Us
         </a>
       </div>
+
       </div>
     
   );
