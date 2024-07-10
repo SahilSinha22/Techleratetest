@@ -110,22 +110,20 @@ const Testimonials = () => {
               </div>
             ))}
           </div>
-          <div className="flex px-4 md:px-5 lg:px-12 xl:px-14 justify-between mt-10  w-full">
-          <div  className="flex  justify-between overflow-hidden space-x-2  mt-4" >
+          <div className="grid grid-cols-2  mx-14 mt-10 justify-between w-full">
+          <div className="flex  space-x-2  mt-4">
             {testimonials.map((_, index) => (
               <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
             ))}
-            </div>
-            <div className="flex  space-x-4">
+          </div>
+          <div className="flex  space-x-4">
             <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
               &lt;
             </button>
             <button onClick={handleNextClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
               &gt;
             </button>
-          
           </div>
-          
         </div>
         
         </div>
