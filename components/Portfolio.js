@@ -1,11 +1,8 @@
 
-
-
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import { useEffect, useState } from 'react';
-import Serv1 from "@/public/Portfolio.png";
+import { useState } from 'react';
 
 
 const Services = [
