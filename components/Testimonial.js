@@ -111,7 +111,7 @@ const Testimonials = () => {
             ))}
           </div>
           <div className="flex px-4 md:px-5 lg:px-12 xl:px-14 justify-between mt-10  w-full">
-          <div  className="flex  justify-between overflow-hidden space-x-2  mt-4" >
+          <div className="flex  justify-between  space-x-2  mt-4">
             {testimonials.map((_, index) => (
               <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
             ))}
