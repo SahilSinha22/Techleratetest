@@ -8,30 +8,28 @@ const banner = () => {
   return (
     <>
     <div className='bg-[#4862e3] '>
-    <div className="logos py-4 text-white text-primary-foreground text-center overflow-hidden">
-  <div className="logos-slide ">
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">•</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">•</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">•</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">•</span>
-  </div>
+    <div className=" logos py-4 text-white text-primary-foreground  text-center">
+    <div className=" logos-slide px-4 ">
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
+    </div>
 
-  <div className="logos-slide inline-block whitespace-nowrap">
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">•</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">•</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">•</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
-    <span className="inline-block  lg:mx-4 text-lg md:text-4xl font-bold">•</span>
-  </div>
-</div>
-
+    <div className=" logos-slide px-4 ">
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>
+      <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">•</span>
+    </div>  </div>
   </div>
   
   
