@@ -88,4 +88,8 @@ const Cop = () => {
     )
 }
 
+<<<<<<< HEAD
 export default Cop;
+=======
+export default Cop
+>>>>>>> bff7deacdaa08318f3978fd9a652c90cca1ffd83
