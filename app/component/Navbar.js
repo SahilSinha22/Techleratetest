@@ -4,10 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/logo.svg"
-<<<<<<< HEAD
 import Star from "@/public/Star.svg"
-=======
->>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
 
 
 const logos = {
@@ -24,7 +21,6 @@ const Navbar = () => {
  
     
   return (
-<<<<<<< HEAD
     <nav className="items-center px-4 p-4 bg-black lg:p-8  2xl:px-40" >
       <div className=" xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white ">
@@ -33,16 +29,6 @@ const Navbar = () => {
             src={Logo}
             alt="Techlerate Logo"
             className="h-10 w-48 md:w-96 xl:w-72 md:h-16"
-=======
-    <nav className="items-center p-4 bg-black " >
-      <div className=" xl:px-10 flex items-center justify-between flex-wrap">
-        <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
-        <div className="flex items-center space-x-4">
-          <Image
-            src={Logo}
-            alt="Techlerate Logo"
-            className="h-10 w-48 md:w-96 md:h-16"
->>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
             width={400} height={5}
           />
          
@@ -69,21 +55,12 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-<<<<<<< HEAD
         <div className={`w-full block flex-grow justify-center text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-lg justify-around text-center    lg:flex-grow">
             <Link href="/" className="nav-link  block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ">
               Work
             </Link>
             <Link href="/Media" className="nav-link  block text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
-=======
-        <div className={`w-full block flex-grow lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
-          <div className="text-lg lg:mr-8 xl:ml-52 xl:mr-0 justify-left lg:flex-grow">
-            <Link href="/" className="nav-link  block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ">
-              Work
-            </Link>
-            <Link href="/" className="nav-link  block text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
->>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
               Media
             </Link>
             <Link href="/" className="block  nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
@@ -96,18 +73,11 @@ const Navbar = () => {
               Careers
             </Link>
           </div>
-<<<<<<< HEAD
           <div className="flex">
             <button className="block nav-link text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-2 xl:mr-4  ">
               Contact Us
             </button>
             <Image src={Star} alt="" width={20} height={20}/>
-=======
-          <div>
-            <button className="block nav-link text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8  ">
-              Contact Us
-            </button>
->>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
           </div>
         </div>
       </div>
@@ -115,8 +85,4 @@ const Navbar = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Navbar;
-=======
-export default Navbar;
->>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
