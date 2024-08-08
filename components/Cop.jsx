@@ -6,7 +6,7 @@ import Image from 'next/image'
 import React from 'react'
 import Stone from "@/public/stonebg.png";
 
-const cop = () => {
+const Cop = () => {
     const [hoveredCard, setHoveredCard] = useState(null);
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
     const router = useRouter();
@@ -88,4 +88,4 @@ const cop = () => {
     )
 }
 
-export default cop
+export default Cop;

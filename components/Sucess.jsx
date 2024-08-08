@@ -61,7 +61,7 @@ const Sucess = () => {
 
   return (
     <div className="Poppins w-full relative">
-      <section className="bg-background text-white p-6 gap-6 md:gap-6 lg:gap-8 2xl:px-40 pt-24 xl:pt-32 flex justify-center 2xl:space-x-5 xl:gap-8">
+      <section className="bg-background text-white p-6 gap-6 md:gap-6 lg:gap-10 2xl:px-40 pt-24 xl:pt-32 flex justify-center 2xl:space-x-5 xl:gap-12">
         <div className="w-1/2">
           <div className='flex flex-col lg:mb-20 2xl:mb-10'>
             <span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl text-white mb-2">Success stories </span>

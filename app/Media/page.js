@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Phone from "@/public/phone.png";
 import Sucess from '@/components/Sucess';
 import Cop from "@/components/Cop"
+import Navbar from '../component/Navbar';
 const Page = () => {
   const textRef = useRef(null);
 
@@ -34,17 +35,19 @@ const Page = () => {
   }, []);
 
   return (
+    <>
+    <Navbar/>
     <div className='bg-black Poppins lg:p-8'>
     
-      <div className="justify-center  flex flex-col text-center py-20 p-2 2xl:py-32 2xl:p-24">
+      <div className="justify-center  flex flex-col text-center py-20  p-2 2xl:py-32 2xl:p-24">
         <div>
-        <h2 className="text-2xl Poppins md:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-primary">
+        <h2 className="text-2xl Poppins md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-primary">
           <span className='text-black'>SUCCESSFUL</span>
           <span className="text-accent text-[#7b61ff]"> APPLICATIONS</span>
         </h2>
         </div>
         <div className=''>
-        <p className="mt-4 text-base  md:text-2xl xl:text-4xl Poppin 2xl:text-5xl 2xl:px-72 text-center text-white">
+        <p className="mt-4 text-base  md:text-2xl lg:text-3xl  xl:text-4xl Poppin 2xl:text-5xl 2xl:px-72 text-center text-white">
           Solving diverse business needs through <br/> great  design and UX.
         </p>
         </div>
@@ -62,6 +65,7 @@ const Page = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

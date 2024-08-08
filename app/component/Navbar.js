@@ -55,15 +55,15 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className={`w-full block flex-grow justify-center text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
-          <div className="text-lg justify-around text-center    lg:flex-grow">
+        <div className={`w-full block flex-grow justify-between text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
+          <div className="text-lg 2xl:text-xl justify-around text-center    lg:flex-grow">
             <Link href="/" className="nav-link  block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ">
               Work
             </Link>
             <Link href="/Media" className="nav-link  block text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Media
             </Link>
-            <Link href="/" className="block  nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="#" className="block  nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Blog
             </Link>
             <Link href="#" className="block text-white nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ">
@@ -73,17 +73,17 @@ const Navbar = () => {
               Careers
             </Link>
           </div>
-          <div className="flex justify-center items-center mt-4 lg:mt-0 text-center">
+          <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
             <button className="block nav-link text-white   lg:inline-block  text-white-200 mr-2 xl:mr-4  ">
               Contact Us
             </button>
             <Image src={Star} alt=""  className="h-6 w-6" width={20} height={20}/>
           </div>
         </div>
+       
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-

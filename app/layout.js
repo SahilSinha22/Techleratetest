@@ -46,10 +46,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} ${Open_Sans_init.variable} ${Bebas_Neue_init.variable} ${Poppins_init.variable} ${Poppins_inits.variable} ${Poppins_initd.variable} ${Josefin_Sans_init.variable}`}>
     <div className=""> 
-      <Navbar/>
-    </div>
+     
+   
         {children}
         <Footer/>
+        </div>
         </body>
     </html>
   );
