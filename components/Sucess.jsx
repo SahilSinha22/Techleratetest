@@ -20,7 +20,11 @@ const Sucess = () => {
     <div className='Poppins w-full'>
        <section class="bg-background text-white p-6 gap-6 md:gap-6 2xl:px-40 pt-24 xl:pt-32 flex justify-center 2xl:space-x-5 2xl:gap-8">
         <div className='w-1/2'>
-          <h2 class="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold lg:text-5xl text-white mb-4">Success stories <br />that demonstrate <br />our expertise</h2>
+<div className='flex flex-col'>
+<span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl text-white mb-2">Success stories </span>
+<span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl text-white mb-2">that demonstrate </span>
+<span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl text-white ">our expertise</span>
+</div>
           <div className=' lg:mt-20 2xl:mt-10'>
             <div class="bg-card mt-10 2xl:mt-10 2xl:p-4 rounded-lg shadow-lg">
               <Image src={Train} alt="Train passing through a bridge" class="rounded-lg mb-2 " width={1000} height={1000} />
@@ -90,8 +94,8 @@ const Sucess = () => {
 
 
 
-        <div className='2xl:mt-10 w-1/2'>
-          <div class="bg-card mt-10 2xl:mt-10  2xl:p-4 rounded-lg shadow-lg">
+        <div className='2xl:mt-10 mt-8 xl:mt-20 w-1/2'>
+          <div class="bg-card mt-10   2xl:mt-10  2xl:p-4 rounded-lg shadow-lg">
             <Image src={Tablet} alt="Train passing through a bridge" class=" h-auto rounded-lg mb-2" width={1000} height={1000} />
             <div className='mt-6 2xl:mt-10'>
               <h3 class="2xl:text-5xl  sm:text-2xl lg:text-3xl  font-medium   text-foreground">Water Purifier App</h3>
