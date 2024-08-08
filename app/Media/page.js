@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Phone from "@/public/phone.png";
 import Sucess from '@/components/Sucess';
-import Cop from "@/components/cop"
+import Cop from "@/components/Cop"
 const Page = () => {
   const textRef = useRef(null);
 
