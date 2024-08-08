@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import Stone from "@/public/stonebg.png";
 import Phone from "@/public/phone.png";
 import Sucess from '@/components/Sucess';
 import Cop from "@/components/cop"
@@ -51,27 +50,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='px-4 Poppind  items-center justify-center 2xl:px-40'>
-        <div>
-          <div className='relative'>
-            <Image src={Stone} alt='' className="lg:w-full h-96 object-cover md:h-full" width={1000} height={1000} />
-            <div className='absolute top-10 md:top-24  lg:left-10 xl:top-40 lg:top-28 left-4 xl:left-16 2xl:top-32 2xl:left-0 text-white'>
-              <div className='flex justify-start items-start 2xl:p-20'>
-                <div className='text-2xl md:text-4xl lg:text-5xl'>
-                  <h2 className="2xl:text-6xl font-bold leading-tight 2xl:leading-snug text-foreground mb-4">
-                    Making Virtual <br /> Reality Accessible
-                  </h2>
-                  <p className="2xl:text-2xl pr-48 xl:text-lg font-light leading-normal lg:text-base text-[#FFFFFF] text-xs mb-6">
-                    Welcome to Okomo360, the world’s first <br /> dedicated 360-degree VR platform. We’re <br /> redefining video technology, making immersive <br /> VR experiences not just a luxury.
-                  </p>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
+      
+    <Cop/>
       <Sucess />
       <div  className=" bg-black text-white  py-14 text-center">
         <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
