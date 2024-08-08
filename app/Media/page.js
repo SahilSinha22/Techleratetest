@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Stone from "@/public/stonebg.png";
 import Phone from "@/public/phone.png";
 import Sucess from '@/components/Sucess';
-
+import Cop from "@/components/cop"
 const Page = () => {
   const textRef = useRef(null);
 
@@ -71,6 +71,7 @@ const Page = () => {
           </div>
         </div>
       </div>
+    
       <Sucess />
       <div  className=" bg-black text-white  py-14 text-center">
         <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >

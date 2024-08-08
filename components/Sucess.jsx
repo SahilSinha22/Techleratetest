@@ -26,7 +26,7 @@ const Sucess = () => {
 <span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl text-white ">our expertise</span>
 </div>
           <div className=' lg:mt-20 2xl:mt-10'>
-            <div class="bg-card mt-10 2xl:mt-10 2xl:p-4 rounded-lg shadow-lg">
+            <div  class="bg-card mt-10 2xl:mt-10 2xl:p-4 rounded-lg shadow-lg">
               <Image src={Train} alt="Train passing through a bridge" class="rounded-lg mb-2 " width={1000} height={1000} />
              <div className='mt-6 2xl:mt-10 '>
               <h3 class="2xl:text-5xl sm:text-2xl lg:text-3xl  poppins text-foreground">Cris - Indian Railway</h3>
