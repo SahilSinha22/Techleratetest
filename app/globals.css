@@ -14,12 +14,16 @@
 .Poppins{
   font-family: var(--font-Poppins);
 }
+<<<<<<< HEAD
 .Poppind{
   font-family: var(--font-Poppind);
 }
 .Poppin{
   font-family: var(--font-Poppin);
 }
+=======
+
+>>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
     .text-black {
         color:  black; 
         -webkit-text-stroke: 1px white; 
@@ -344,6 +348,7 @@ display: block;
 #slide4:checked ~ #bullets label:nth-child(4) {
 background: #444;
 }
+<<<<<<< HEAD
 
 
 
@@ -423,3 +428,5 @@ background: #444;
   opacity: 1;
   transform: translateY(0);
 }
+=======
+>>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f

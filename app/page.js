@@ -7,6 +7,7 @@ import Digital from "@/components/Digital"
 import Testimonial from "@/components/Testimonial";
 import Blog from "@/components/Blog";
 import Started from "@/components/Started";
+<<<<<<< HEAD
 import Navbar from "./component/Navbar"
 
 export default function Home() {
@@ -15,6 +16,13 @@ export default function Home() {
     
    <Intro/>
 
+=======
+
+export default function Home() {
+  return (
+    <>
+   <Intro/>
+>>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
    <Banner/>
    <Portfolio/>
    <Services/>
@@ -25,6 +33,10 @@ export default function Home() {
    
    <Blog/>
    <Started/>
+<<<<<<< HEAD
    </main>
+=======
+   </>
+>>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
   );
 }

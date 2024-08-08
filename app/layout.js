@@ -15,6 +15,7 @@ const Poppins_init=Poppins({
   weight: '600' ,
   variable: '--font-Poppins',
 });
+<<<<<<< HEAD
 const Poppins_initd=Poppins({
   subsets: ['latin'],
   weight: '200' ,
@@ -25,6 +26,9 @@ const Poppins_inits=Poppins({
   weight: '400' ,
   variable: '--font-Poppin',
 });
+=======
+
+>>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
 const Open_Sans_init=Open_Sans({
   subsets: ['latin'],
   weight: '500' ,
@@ -44,8 +48,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+<<<<<<< HEAD
       <body className={`${inter.className} ${Open_Sans_init.variable} ${Bebas_Neue_init.variable} ${Poppins_init.variable} ${Poppins_inits.variable} ${Poppins_initd.variable} ${Josefin_Sans_init.variable}`}>
     <div className=""> 
+=======
+      <body className={`${inter.className} ${Open_Sans_init.variable} ${Bebas_Neue_init.variable} ${Poppins_init.variable} ${Josefin_Sans_init.variable}`}>
+    <div className="lg:hidden"> 
+>>>>>>> 7849ebebd366e47c6453d6670c4a48e02b016b6f
       <Navbar/>
     </div>
         {children}
