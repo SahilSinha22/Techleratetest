@@ -56,7 +56,7 @@ const Page = () => {
       
     <Cop/>
       <Sucess />
-      <div  className=" bg-black text-white  py-14 text-center">
+      <div  className=" bg-black text-white  py-14 xl:py-20 text-center">
         <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
         <span className="  text-lg text-white md:text-3xl  xl:text-4xl Poppins">READY FOR YOUR NEXT PROJECT?</span>
         <span  className=" text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
