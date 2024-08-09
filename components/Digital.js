@@ -7,9 +7,9 @@ const Digital = () => {
   return (
     <div className="bg-[#18191f] xl:px-40 text-gray-400 h-auto pb-20 p-8">
     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-auto items-center">
-      <div className="grid grid-cols-2 gap-4">
-        <Image src={Digi1} alt="Team collaborating" className="w-40 h-60 md:h-[600px] lg:w-[400px] lg:h-[600px] 2xl:w-[700px] object-cover mb-20 " width={1000} height={1000}/>
-        <Image src={Digi2} alt="Team discussion" className="w-40 h-60 md:h-[600px] lg:w-[400px] lg:h-[600px] 2xl:w-[500px] object-cover mt-20 " width={500} height={1000}/>
+      <div className="grid grid-cols-2 2xl:flex gap-4 2xl:gap-8">
+        <Image src={Digi1} alt="Team collaborating" className="w-40 h-60 md:h-[600px] lg:w-[400px] lg:h-[600px] 2xl:w-[800px] sm:ml-36 md:ml-0 object-cover mb-20 " width={500} height={8}/>
+        <Image src={Digi2} alt="Team discussion" className="w-40 h-60 md:h-[600px] lg:w-[400px] lg:h-[600px]  2xl:w-[800px] object-cover mt-20 " width={500} height={8}/>
       </div>
       <div  className="md:pt-20">
       <div className=" flex">
