@@ -61,7 +61,7 @@ const Navbar = () => {
               Work
             </Link>
             <Link href="/Media" className="nav-link  block text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
-              Media
+              Portfolio
             </Link>
             <Link href="#" className="block  nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Blog
