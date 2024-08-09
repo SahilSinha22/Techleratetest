@@ -63,8 +63,8 @@ const Intro = () => {
                 <Link href="/" className="nav-link  block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ">
                   Home
                 </Link>
-                <Link href="/Media" className="nav-link  block text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
-                  Portfolio
+                <Link href="/Work" className="nav-link  block text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+                  Work
                 </Link>
                 <Link href="/Blog" className="block  nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
                   Blog
