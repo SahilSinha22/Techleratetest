@@ -61,12 +61,12 @@ const Intro = () => {
             <div className={`w-full block flex-grow justify-between text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
               <div className="text-lg xl:text-xl  justify-around text-center    lg:flex-grow">
                 <Link href="/" className="nav-link  block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ">
-                  Work
+                  Home
                 </Link>
                 <Link href="/Media" className="nav-link  block text-white  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
                   Portfolio
                 </Link>
-                <Link href="#" className="block  nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+                <Link href="/Blog" className="block  nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
                   Blog
                 </Link>
                 <Link href="#" className="block text-white nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ">
