@@ -61,9 +61,9 @@ const Sucess = () => {
 
   return (
     <div className="Poppins w-full relative">
-      <section className="bg-background text-white p-6 gap-6 md:gap-6 lg:gap-10 2xl:px-40 pt-24 xl:pt-32 flex justify-center 2xl:space-x-5 xl:gap-16">
+      <section className="bg-background text-white p-6 gap-8 md:gap-10 lg:gap-12 2xl:px-40 pt-24 xl:pt-32 flex justify-center 2xl:space-x-5 xl:gap-16">
         <div className="w-1/2">
-          <div className='flex flex-col lg:mb-20 xl:mb-32 2xl:mb-36'>
+          <div className='flex flex-col lg:mb-32 xl:mb-28 2xl:mb-36'>
             <span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl  text-white mb-2">Success stories </span>
             <span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold    lg:text-5xl xl:text-6xl text-white mb-2">that demonstrate </span>
             <span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl text-white ">our expertise</span>
@@ -100,7 +100,7 @@ const Sucess = () => {
           ))}
         </div>
 
-        <div className="2xl:mt-10 mt-8 lg:mt-20 xl:mt-10 w-1/2">
+        <div className="2xl:mt-10 mt-8 lg:mt-2 xl:mt-10 w-1/2">
           {cards.slice(5).map((card, index) => (
             <div
               key={index + 5}
