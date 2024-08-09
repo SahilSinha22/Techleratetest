@@ -53,9 +53,9 @@ const Cop = () => {
             onMouseLeave={handleMouseLeave} >
                         <div className='relative' >
                             <Image src={card.image} alt='' className="lg:w-full h-96 object-cover md:h-full" width={1000} height={1000} />
-                            <div className='absolute top-10 md:top-24  lg:left-10 xl:top-40 lg:top-28 left-4 xl:left-16 2xl:top-32 2xl:left-0 text-white' >
+                            <div className='absolute top-10 md:top-24 sm:top-24 lg:left-10 xl:top-40 lg:top-28 left-4 xl:left-16 2xl:top-32 2xl:left-0 text-white' >
                                 <div className='flex justify-start items-start 2xl:p-20'>
-                                    <div className='text-2xl md:text-4xl lg:text-5xl'>
+                                    <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>
                                         <h2 className="2xl:text-6xl font-bold leading-tight 2xl:leading-snug text-foreground mb-4">
                                             Making Virtual <br /> Reality Accessible
                                         </h2>

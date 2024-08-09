@@ -87,7 +87,7 @@ const Testimonials = () => {
   return (
     <div className="bg-[#252730] py-12 md:py-20 lg:py-24">
       <div className="text-center mb-8">
-        <span className="text-[#7b61ff] text-xl xl:text-lg PORTFOLIO mb-2">TESTIMONIALS</span>
+        <span className="text-[#7b61ff] text-xl xl:text-lg 2xl:text-2xl PORTFOLIO mb-2">TESTIMONIALS</span>
         <h2 className="text-4xl md:text-6xl pt-2 lg:pt-0 pb-2 text-black Poppins font-bold">FROM OUR</h2>
         <h2 className="text-4xl md:text-6xl font-bold text-white">BELOVED CLIENT</h2>
       </div>

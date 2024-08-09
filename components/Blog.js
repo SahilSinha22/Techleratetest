@@ -60,14 +60,14 @@ const Blog = () => {
   return (
     <div className="bg-[#18191f] text-foreground p-8 md:p-16">
       <div className="text-center mb-8">
-        <span className="text-[#7b61ff] xl:text-lg PORTFOLIO font-bold text-xl">BLOG</span>
+        <span className="text-[#7b61ff] xl:text-lg 2xl:text-4xl PORTFOLIO font-bold text-xl">BLOG</span>
         <h2 className="text-6xl py-2 lg:py-0 xl:text-6xl md:text-7xl text-black Poppins font-bold">
           LATEST <span className="text-white py-10 lg:py-0">ARTICLES</span>
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8">
+      <div className="grid grid-cols-1 justify-center items-center md:grid-cols-3 lg:gap-8">
         {blogs.slice(0, visibleBlogs).map((blog, index) => (
-          <div key={index} className="bg-card p-4 rounded-lg">
+          <div key={index} className="bg-card items-center justify-center p-4 rounded-lg">
             <Image
               className="h-[500px] w-[400px] object-cover mb-4"
               src={blog.image}

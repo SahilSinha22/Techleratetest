@@ -6,7 +6,7 @@ import Grap2 from "@/public/Graphic2.png";
 
 const Graphic = () => {
   return (
-    <div className="bg-[#18191f] text-foreground p-8  xl:px-40 flex flex-col md:flex-row items-center">
+    <div className="bg-[#18191f] text-foreground px-4 md:p-8 xl:px-40 flex flex-col md:flex-row items-center">
                   <div className="md:w-1/2   p-4">
                     <h1 className="text-lg text-gray-400 mb-2">GRAPHIC DESIGN</h1>
                     <h2 className="text-4xl   text-white xl:my-3 mb-4">Creating beautiful design</h2>

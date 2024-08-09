@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className="bg-[#18191f] text-foreground py-12 px-6 xl:px-40">
                   <div className="text-center mb-12">
-                    <span className="text-[#7b61ff] text-xl xl:text-lg  PORTFOLIO  ">SERVICES</span>
+                    <span className="text-[#7b61ff] text-xl xl:text-lg 2xl:text-2xl PORTFOLIO  ">SERVICES</span>
                     <h2 className="text-6xl text-black pt-2 lg:pt-0 pb-4 Poppins font-bold">HOW WE</h2>
                     <h2 className="text-5xl font-bold text-white">APPROACH CLIENTS</h2>
                   </div>

@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Train from "@/public/train.png";
@@ -46,6 +46,33 @@ const Sucess = () => {
     };
   }, [hoveredCard]);
 
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show'); // Use the global CSS class
+          } else {
+            entry.target.classList.remove('show');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (textRef.current) {
+      observer.observe(textRef.current);
+    }
+
+    return () => {
+      if (textRef.current) {
+        observer.unobserve(textRef.current);
+      }
+    };
+  }, []);
+
   const cards = [
     { image: Train, title: "Cris - Indian Railway" },
     { image: Building, title: "Siidcul UI Design" },
@@ -64,13 +91,14 @@ const Sucess = () => {
       <section className="bg-background text-white p-6 gap-8 md:gap-10 lg:gap-12 2xl:px-40 pt-24 xl:pt-32 flex justify-center 2xl:space-x-5 xl:gap-16">
         <div className="w-1/2">
           <div className='flex flex-col lg:mb-32 xl:mb-28 2xl:mb-36'>
-            <span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl  text-white mb-2">Success stories </span>
-            <span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold    lg:text-5xl xl:text-6xl text-white mb-2">that demonstrate </span>
-            <span className="2xl:text-6xl  text-xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl text-white ">our expertise</span>
+            <span className="2xl:text-6xl  text-xl sm:text-3xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl  text-white mb-2">Success stories </span>
+            <span className="2xl:text-6xl  text-xl sm:text-3xl md:text-4xl Poppin font-bold    lg:text-5xl xl:text-6xl text-white mb-2">that demonstrate </span>
+            <span className="2xl:text-6xl  text-xl sm:text-3xl md:text-4xl Poppin font-bold  tracking-wide  lg:text-5xl xl:text-6xl text-white ">our expertise</span>
           </div>
           {cards.slice(0, 5).map((card, index) => (
             <div
               key={index}
+              ref={textRef}
               className="bg-card  mt-10 lg:mt-16  2xl:p-4 rounded-lg shadow-lg relative"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
