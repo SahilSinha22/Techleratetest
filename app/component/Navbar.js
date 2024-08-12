@@ -6,6 +6,8 @@ import Link from "next/link";
 import Logo from "@/public/logo.svg";
 import Star from "@/public/Star.svg";
 import Starx from "@/public/Starx.svg"
+import Arrow from "@/public/Arrow.png"
+
 import ServicesPic from "@/public/ServicesPic.png";
 const services = [
 
@@ -52,7 +54,7 @@ const Navbar = () => {
           <Image
             src={Logo}
             alt="Techlerate Logo"
-            className="h-10 w-48 md:w-96 xl:w-72 md:h-16"
+            className="h-10 w-48 md:w-96 lg:w-72 md:h-16"
             width={400}
             height={5}
           />
@@ -96,7 +98,7 @@ const Navbar = () => {
             >
               Work
             </Link>
-            <div className=" inline-block group">
+            <div className="  group">
               <Link
                 href="/Services"
                 className="nav-link block text-white mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
@@ -104,9 +106,11 @@ const Navbar = () => {
                 aria-expanded={isOpen ? true : false}
               >
                 Services
+                <Image src={Arrow} alt="" className="inline-flex" width={32} height={32}/>
+
               </Link>
               <div
-                className={`absolute left-0 p-6 mt-10 w-auto h-full md:h-auto 2xl:w-full lg:w-[1200px] Glassy backdrop-blur-3xl text-white rounded-md shadow-lg z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                className={`absolute left-0 p-6 mt-10 w-auto h-full md:h-auto   Glassy backdrop-blur-3xl text-white rounded-md shadow-lg z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
               >
                 <section className="grid grid-rows-2  md:flex Poppinx ">
                   <div className="p-6 xl:p-10">
@@ -130,7 +134,7 @@ const Navbar = () => {
                   </div>
                   <ul className="py-1 text-sm xl:text-lg text-left  grid grid-cols-3">
                     {services.map((service, index) => (
-                    <li key={index} className="flex items-center mr-5 hover: xl:mr-10 hover:text-[#7b61ff] custom-filter">
+                    <li key={index} className="flex items-center mr-5 lg:mr-2 xl:mr-10 hover:text-[#7b61ff] custom-filter">
                     <Image
                       src={service.logo}
                       alt={`${service.name} logo`}
@@ -152,12 +156,16 @@ const Navbar = () => {
                 </section>
               </div>
             </div>
+            <div className="  group">
             <Link
               href="/Technology"
               className="block text-white nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
             >
               Technology
+              <Image src={Arrow} alt="" className="inline-flex" width={32} height={32}/>
+
             </Link>
+            </div>
             <Link
               href="/Blog"
               className="block nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
