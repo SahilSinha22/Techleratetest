@@ -109,7 +109,7 @@ const Intro = () => {
                 >
                   Work
                 </Link>
-                <div className=" inline-block  group">
+                <div className=" lg:inline-block  group">
                   <Link
                     href="/Services"
                     className="nav-link block text-white mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
@@ -164,7 +164,7 @@ const Intro = () => {
                     </section>
                   </div>
                 </div>
-                <div className=" inline-block  group">
+                <div className=" lg:inline-block  group">
                 <Link
                   href="/Technology"
                   className="block text-white nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
