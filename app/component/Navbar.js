@@ -24,7 +24,7 @@ const services = [
   { name: "Travel", logo: "/Travel.svg" },
   { name: "Finance", logo: "/Finance.svg" },
   { name: "Aviation", logo: "/Travel.svg" },
-  { name: "E-Scooter", logo: "/EScooter.svg" },
+  { name: "E-Scooter", logo: "/Escooter.svg" },
   { name: "Politics", logo: "/Politics.svg" },
   { name: "Agriculture", logo: "/Agriculture.svg" },
   { name: "Events", logo: "/Events.svg" },
