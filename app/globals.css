@@ -347,8 +347,10 @@ background: #444;
 }
 
 .card.visible {
-  transform: translateY(0); /* Bring the card to its original position */
+  transform: translateY(0); 
+  /* Bring the card to its original position */
   opacity: 1;
+  
 }
 
 .card.fixed {
@@ -517,10 +519,19 @@ background: #444;
 
 
 
+.Glassy{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
 
 
-
-
+.custom-filter:hover img {
+  filter: invert(34%) sepia(91%) saturate(5169%) hue-rotate(236deg) brightness(96%) contrast(100%);
+}
 
 
 
