@@ -53,25 +53,30 @@ const Sucess = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('show'); // Use the global CSS class
-          } else {
-            entry.target.classList.remove('show');
+            entry.target.classList.add('visible');
+            // After the first animation, make the card fixed
+            setTimeout(() => {
+              entry.target.classList.remove('visible');
+              entry.target.classList.add('fixed');
+            }, 600); // Match this duration to your CSS transition time
           }
         });
       },
       { threshold: 0.2 }
     );
-
-    if (textRef.current) {
-      observer.observe(textRef.current);
-    }
-
+  
+    const elementsToObserve = document.querySelectorAll('.card');
+    elementsToObserve.forEach((element) => {
+      observer.observe(element);
+    });
+  
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
-      }
+      elementsToObserve.forEach((element) => {
+        observer.unobserve(element);
+      });
     };
   }, []);
+  
 
   const cards = [
     { image: Train, title: "Cris - Indian Railway" },
@@ -98,12 +103,14 @@ const Sucess = () => {
           {cards.slice(0, 5).map((card, index) => (
             <div
               key={index}
-              ref={textRef}
+            
               className="bg-card  mt-10 lg:mt-16  2xl:p-4 rounded-lg shadow-lg relative"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
+              
               <Image src={card.image} alt={card.title} className=" card rounded-lg mb-2" width={1000} height={1000} />
+              
               <div className="mt-6 2xl:mt-10">
                 <h3 className="2xl:text-5xl sm:text-2xl lg:text-3xl font-medium text-foreground">{card.title}</h3>
                 <div className="flex space-x-1 sm:space-x-2 Poppin-row 2xl:space-x-4 mt-4">
