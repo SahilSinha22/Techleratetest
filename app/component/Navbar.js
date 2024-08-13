@@ -128,7 +128,7 @@ const Navbar = () => {
                         </div>
                         <div className={`mt-5 text-left block  `}>
                           <Image src={ServicesPic} className=" md:w-60 lg:w-96 2xl:w-[600px]" alt="" width={1000} height={1000} />
-                          <h2 className="mt-5 text-lg md:text-xs lg:text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
+                          <h2 className="mt-5 text-sm md:text-xs lg:text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
                         </div>
                       </div>
                       <ul className="py-1 text-xs  lg:text-base xl:text-lg Poppin grid grid-cols-3">
