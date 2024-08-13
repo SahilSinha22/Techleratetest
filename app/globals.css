@@ -63,6 +63,19 @@ left:40px;
 
 
       }
+
+
+
+      .dropslash:hover::after{
+        content:"";
+        background-color:rgb(116, 9, 255);
+       
+ 
+        height:3px;
+        width:30px;
+
+
+      }
       /* components/Testimonials.module.css */
 .testimonials {
   background-color: #1e1e1e;
@@ -530,8 +543,11 @@ background: #444;
 
 
 .custom-filter:hover img {
-  filter: invert(34%) sepia(91%) saturate(5169%) hue-rotate(236deg) brightness(96%) contrast(100%);
+  filter:  sepia(91%) saturate(5169%) hue-rotate(236deg) brightness(96%) contrast(100%);
+  fill: #7b61ff;
 }
 
 
-
+/*.custom-filter:hover img {
+  filter: invert(34%) sepia(91%) saturate(5169%) hue-rotate(236deg) brightness(96%) contrast(100%);
+}*/

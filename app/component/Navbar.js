@@ -48,13 +48,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="  items-center px-4 p-4 bg-black  lg:p-8 2xl:px-40">
+    <nav className="  items-center px-4 p-4 bg-black  lg:p-6 2xl:px-40">
           <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
             <div className="flex items-center flex-shrink-0 text-white">
               <Image
                 src={Logo}
                 alt="Techlerate Logo"
-                className="h-10 w-48 md:w-96 lg:w-72 md:h-16"
+                className="h-10 w-48 md:w-96  md:h-14 lg:h-10 xl:h-12 lg:w-60 2xl:w-76"
                 width={400}
                 height={5}
               />
@@ -109,13 +109,13 @@ const Navbar = () => {
                     <Image src={Arrow} alt="" className="inline-flex" width={32} height={32}/>
                   </Link>
                   <div
-                    className={`absolute left-0 p-6 mt-10 w-auto h-full md:h-auto Glassy backdrop-blur-3xl text-white rounded-md shadow-lg z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                    className={`absolute left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto  text-white  Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
                   >
                     <section className="grid grid-rows-2  md:flex Poppinx ">
                       <div className="p-6 xl:p-10">
 
 
-                        <div className=" text-2xl lg:text-3xl  text-left xl:text-3xl 2xl:text-5xl ">
+                        <div className=" text-2xl lg:text-3xl  text-left xl:text-3xl 2xl:text-5xl  ">
 
                           <p className="leading-relaxed text-left">
                             60
@@ -126,24 +126,24 @@ const Navbar = () => {
                           </p>
 
                         </div>
-                        <div className="mt-5 text-left">
+                        <div className={`mt-5 text-left block  `}>
                           <Image src={ServicesPic} className=" md:w-60 lg:w-96 xl:w-full" alt="" width={1000} height={1000} />
                           <h2 className="mt-5 text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
                         </div>
                       </div>
-                      <ul className="py-1 text-sm xl:text-lg grid grid-cols-3">
+                      <ul className="py-1 text-sm xl:text-lg Poppin grid grid-cols-3">
                         {services.map((service, index) => (
-                           <li key={index} className="flex items-center mr-5 lg:mr-2 xl:mr-10 hover:text-[#7b61ff] custom-filter">
+                           <li key={index} className="flex items-center mr-2 dropslash lg:mr-2 xl:mr-10  hover:text-[#7b61ff] custom-filter">
                            <Image
                              src={service.logo}
                              alt={`${service.name} logo`}
-                             className="lg:h-10 lg:w-10 h-6 w-6 mr-2"
+                             className="lg:h-8 lg:w-8 h-6 w-6 mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
                              width={100}
                              height={100}
                            />
                            <Link
                              href={`/services/${service.name.toLowerCase().replace(/\s+/g, "")}`}
-                             className="block lg:px-2 md:py-4 lg:py-0"
+                             className="block lg:px-2 py-2 md:py-4 lg:py-0 "
                            >
                              {service.name}
                            </Link>
