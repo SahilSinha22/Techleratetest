@@ -126,7 +126,7 @@ const Intro = () => {
                       <div className="p-6 xl:p-10">
 
 
-                        <div className=" text-2xl lg:text-3xl  text-left xl:text-3xl 2xl:text-5xl  ">
+                        <div className=" text-2xl md:text-xl lg:text-3xl  text-left xl:text-3xl 2xl:text-5xl  ">
 
                           <p className="leading-relaxed text-left">
                             60
@@ -138,17 +138,17 @@ const Intro = () => {
 
                         </div>
                         <div className={`mt-5 text-left block  `}>
-                          <Image src={ServicesPic} className=" md:w-60 lg:w-96 2xl:w-[600px]" alt="" width={1000} height={1000} />
-                          <h2 className="mt-5 text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
+                          <Image src={ServicesPic} className=" md:w-60 lg:w-96 xl:w-60 2xl:w-[600px]" alt="" width={1000} height={1000} />
+                          <h2 className="mt-5 text-lg md:text-xs lg:text-lg   2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
                         </div>
                       </div>
-                      <ul className="py-1 text-sm xl:text-lg grid grid-cols-3">
+                      <ul className="py-1 text-xs  lg:text-base xl:text-lg grid grid-cols-3">
                         {services.map((service, index) => (
                            <li key={index} className="flex items-center mr-2 lg:mr-2 xl:mr-10 2xl:mr-2 hover:text-[#7b61ff] custom-filter">
                            <Image
                              src={service.logo}
                              alt={`${service.name} logo`}
-                             className="lg:h-8 lg:w-8 h-6 w-6 mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
+                             className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
                              width={100}
                              height={100}
                            />
