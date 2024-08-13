@@ -138,7 +138,7 @@ const Intro = () => {
 
                         </div>
                         <div className={`mt-5 text-left block  `}>
-                          <Image src={ServicesPic} className=" md:w-60 lg:w-96 xl:w-full" alt="" width={1000} height={1000} />
+                          <Image src={ServicesPic} className=" md:w-60 lg:w-96 2xl:w-[600px]" alt="" width={1000} height={1000} />
                           <h2 className="mt-5 text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
                         </div>
                       </div>
