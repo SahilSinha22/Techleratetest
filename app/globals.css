@@ -542,9 +542,10 @@ background: #444;
 }
 
 
+
+
 .custom-filter:hover img {
-  filter:  sepia(91%) saturate(5169%) hue-rotate(236deg) brightness(96%) contrast(100%);
-  fill: #7b61ff;
+  filter: sepia(100%) saturate(869%) hue-rotate(236deg) brightness(100%) contrast(800%)
 }
 /*
 .custom-filter>img:hover {

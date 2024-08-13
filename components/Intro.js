@@ -144,11 +144,11 @@ const Intro = () => {
                       </div>
                       <ul className="py-1 text-xs  lg:text-base xl:text-lg grid grid-cols-3">
                         {services.map((service, index) => (
-                           <li key={index} className="flex items-center mr-2 lg:mr-2 xl:mr-10 2xl:mr-2 hover:text-[#7b61ff] custom-filter">
+                           <li key={index} className="flex items-center mr-2 lg:mr-2 xl:mr-10 dropslash 2xl:mr-2 hover:text-[#7b61ff] custom-filter">
                            <Image
                              src={service.logo}
                              alt={`${service.name} logo`}
-                             className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
+                             className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10 "
                              width={100}
                              height={100}
                            />
