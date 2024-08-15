@@ -44,6 +44,26 @@ const services = [
 
 
 ];
+const technology = [
+
+  { name: "React Native", logo: "/OnDemand.svg" },
+  { name: "Android App", logo: "/Ecommerce.svg" },
+  { name: "PHP/Node JS Development", logo: "/Realestate.svg" },
+  { name: "ionic", logo: "/Healthcare.svg" },
+  { name: "IOT", logo: "/Saas.svg" },
+  { name: "Ui/UX Design", logo: "/Education.svg" },
+  { name: "IOS App", logo: "/Restaurant.svg" },
+  { name: "Quality Analyst", logo: "/Games.svg" },
+  { name: "VR Development", logo: "/News.svg" },
+  { name: "AI", logo: "/Entertainment.svg" },
+  { name: "Blockchain", logo: "/Wellness.svg" },
+  { name: "Flutter", logo: "/Logistics.svg" },
+  { name: "wearables", logo: "/Travel.svg" },
+  { name: "Argumented Reality", logo: "/Finance.svg" },
+  { name: "Chatbots", logo: "/Travel.svg" },
+  
+
+];
 const Intro = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -111,7 +131,7 @@ const Intro = () => {
                 </Link>
                 <div className=" lg:inline-block  group">
                   <Link
-                    href="/Services"
+                    href="#"
                     className="nav-link block text-white mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
                     aria-haspopup="true"
                     aria-expanded={isOpen ? true : false}
@@ -166,13 +186,39 @@ const Intro = () => {
                 </div>
                 <div className=" lg:inline-block  group">
                 <Link
-                  href="/Technology"
+                  href="#"
                   className="block text-white nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                 >
                   Technology
                   <Image src={Arrow} alt="" className="inline-flex" width={32} height={32}/>
 
                 </Link>
+                <div
+                    className={`absolute left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto 2xl:px-60 text-white  Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                  >
+                    <div className="grid grid-rows-2 justify-center  md:flex Poppinx ">
+                      
+                      <ul className="py-1 text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-3">
+                        {technology.map((service, index) => (
+                           <li key={index} className="flex items-center mr-2 dropslash lg:mr-2 xl:mr-10 p-2 hover:text-[#7b61ff] custom-filter">
+                           <Image
+                             src={service.logo}
+                             alt={`${service.name} logo`}
+                             className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
+                             width={100}
+                             height={100}
+                           />
+                           <Link
+                             href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}
+                             className="block lg:px-2 py-2 md:py-4 lg:py-0 "
+                           >
+                             {service.name}
+                           </Link>
+                         </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <Link
                   href="/Blog"
@@ -182,10 +228,12 @@ const Intro = () => {
                 </Link>
               </div>
               <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
+              <Link Link href="/contact"  className="inline-flex">
                 <button className="block nav-link text-white lg:inline-block text-white-200 mr-2 xl:mr-4">
                   Contact Us
                 </button>
                 <Image src={Star} alt="" className="h-6 w-6" width={20} height={20} />
+                </Link>
               </div>
             </div>
           </div>
