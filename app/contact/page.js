@@ -128,10 +128,10 @@ const Page = () => {
 
 
 
-      <div className='bg-[#18191F] relative  2xl:h-[1100px] text-white 2xl:px-40 '>
+      <div className='bg-[#18191F] relative   text-white 2xl:px-40 '>
         <div className="">
 
-          <div className="h-[550px] ">
+          <div className="h-[350px] ">
 
 
             <div className='grid grid-rows-2  -top-80 md:-top-16   md:grid-cols-2   absolute lg:-top-20  justify-self-start 2xl:-top-52  md:justify-between px-10 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
@@ -376,13 +376,14 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <Bannerxcontact/>
+        
 
         </div>
 
       </div>
-
-
+<div className="bg-[#18191F] 2xl:px-40">
+      <Bannerxcontact/>
+      </div>
       <div className="bg-[#252730] md:px-10 xl:px-20 px-2 py-10 md:py-16 text-muted-foreground flex justify-center space-x-4 lg:space-x-8">
         <Image src={Ban1} alt="afterpay logo" className="w-full" width={300} height={5} />
 

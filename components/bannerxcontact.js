@@ -24,7 +24,7 @@ const Bannerxcontact = () => {
                   Get your ideas validated.<br /> Let’s give you an honest opinion.
                 </h2>
 
-                <button onClick={handleButtonClick} className="  mt-4 mb-6 lg:mb-8 lg:mt-6  bg-[#7b61ff]  rounded-full  inline-flex items-center md:text-base  py-2 px-4 xl:px-8    lg:mr-10 xl:mr-0">
+                <button onClick={handleButtonClick} className="text-white  mt-4 mb-6 lg:mb-8 lg:mt-6  bg-[#7b61ff]  rounded-full  inline-flex items-center md:text-base  py-2 px-4 xl:px-8    lg:mr-10 xl:mr-0">
                   Let&apos;s Talk
                 </button>
 

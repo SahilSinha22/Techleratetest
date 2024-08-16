@@ -69,7 +69,11 @@ const DumyForm = () => {
         );
         if (res) {
             setSuccessBanner(true);
-
+            setTimeout(() => {
+                setSuccessBanner(false);
+                setVisible(false);
+                document.body.style.overflow = 'auto';
+              }, 2000);
         } else {
             alert("Error Occurred");
         }
@@ -115,18 +119,18 @@ const DumyForm = () => {
         <div className=''>
             <div class="justify-center items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                 <div className='relative'>
-                <div class=" grid md:grid-cols-2  w-[600px] lg:w-[800px] lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-center place-content-center xl:max-w-4xl ">
+                <div class=" grid md:grid-cols-2  w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-left place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
 
-                            <Image src="/FormImage.png" className="-z-20 w-[300px] lg:w-[400px] xl:w-[500px] h-[550px] xl:h-[650px]" alt="" width={1000} height={1000} />
+                            <Image src="/FormImage.png" className="-z-20 w-[300px] lg:w-[450px] xl:w-[500px] h-[500px] xl:h-[600px] 2xl:h-[650px]" alt="" width={1000} height={1000} />
                             <div className='z-20 absolute justify-center top-6  text-white'>
                                 <div className='px-5'>
 
 
-                                    <h2 className='text-4xl xl:text-5xl leading-snug font-extrabold playfair_display'>We’d love to <br />hear from you.</h2>
-                                    <h2 className='leading-snug text-lg pt-2 xl:text-xl'>By enabling an innovative <br />digital experience <br />that fulfills new-age demands.</h2>
+                                    <h2 className='text-3xl xl:text-5xl leading-snug font-extrabold playfair_display'>We’d love to <br />hear from you.</h2>
+                                    <h2 className='leading-snug text-base pt-2 xl:text-xl'>By enabling an innovative <br />digital experience <br />that fulfills new-age demands.</h2>
                                 </div>
                             </div>
                             <div className='absolute bottom-6 text-white'>
@@ -167,7 +171,7 @@ const DumyForm = () => {
                             className="    "
                         >
                             <div class="flex flex-col  gap-10  w-full">
-                                <div class="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-[550px] bg-[#FFF]  md:h-[550px] xl:h-[650px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                <div class="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
                                     <div class="flex pt-10  justify-end ">
 
                                         <svg onClick={handleClose} class="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -177,13 +181,13 @@ const DumyForm = () => {
                                             </path>
                                         </svg>
                                     </div>
-                                      <div className='flex flex-col lg:mt-8 gap-4 xl:gap-10'>
+                                      <div className='flex flex-col xl:mt-8 gap-4 xl:gap-10'>
                                     <div className="relative z-0   w-full  group">
                                         <input
                                             type="text"
                                             name="Name"
                                             id="floating_first_name"
-                                            className="block py-2.5 px-0 w-full text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full xl:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Name}
                                             autoComplete="off"
@@ -198,7 +202,7 @@ const DumyForm = () => {
 
                                         <label
                                             for="Name"
-                                            className="peer-focus:font-medium  absolute text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium  absolute xl:text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Full Name*
                                         </label>
@@ -210,7 +214,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="Email"
                                             id="floating_last_name"
-                                            className="block py-2.5 px-0 w-full text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full xl:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Email}
                                             autoComplete="off"
@@ -225,7 +229,7 @@ const DumyForm = () => {
 
                                         <label
                                             for="Email"
-                                            className="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute xl:text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             E-Mail ID*
                                         </label>
@@ -260,7 +264,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="message"
                                             id="floating_email"
-                                            className="block py-2.5 px-0 w-full text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full xl:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.message}
                                             autoComplete="off"
@@ -275,7 +279,7 @@ const DumyForm = () => {
 
                                         <label
                                             for="message"
-                                            className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute xl:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Message (Optional)
                                         </label>
@@ -308,7 +312,7 @@ const DumyForm = () => {
 
                                     <button
                                         onClick={getdata}
-                                        className="rounded-full rounds t-4 text-white border-white border-2 bg-[#7b61ff]  hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display  text-lg w-full sm:w-auto px-8 py-3 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        className="rounded-full rounds t-4 text-white border-white border-2 bg-[#7b61ff]  hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display  xl:text-lg w-full sm:w-auto xl:px-8 xl:py-3 px-4 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                         type="submit"
                                         style={{
                                             backgroundColor: isCaptchaValid ? "green" : "[#7b61ff]",
@@ -319,7 +323,7 @@ const DumyForm = () => {
                                         Submit
                                     </button>
                                     </div>
-                                    <div className=' flex justify-between items-center mt-10 xl:mt-16'>
+                                    <div className=' flex justify-between items-center mt-4 xl:mt-16'>
 
                                    
                                     <h2 className='text-[#000000] z-20 text-sm md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
