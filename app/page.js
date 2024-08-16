@@ -7,6 +7,7 @@ import Digital from "@/components/Digital"
 import Testimonial from "@/components/Testimonial";
 import Blog from "@/components/Blog";
 import Started from "@/components/Started";
+import DumyForm from "@/components/dumyForm"
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
    <Digital/>
   <Testimonial/>
   
-   
+   <DumyForm/>
    <Blog/>
    <Started/>
    </main>

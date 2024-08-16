@@ -5,7 +5,7 @@ import Navbar from '../component/Navbarjsx'
 import { FaCheckCircle } from "react-icons/fa";
 import { generateArithmeticCaptcha } from "@/app/utils/generateCaptcha";
 import Ban1 from "@/public/Logo1.svg";
-
+import { useRouter } from 'next/navigation';
 const Page = () => {
 
 
@@ -13,6 +13,12 @@ const Page = () => {
   const [inputCaptcha, setInputCaptcha] = useState("");
   const [errors, setErrors] = useState({});
   const [successBanner, setSuccessBanner] = useState(false);
+
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    router.push('/dumyForm'); // Replace '/your-form-route' with the actual route
+  };
   const [user, setUser] = useState({
     Name: "",
     Email: "",
@@ -134,7 +140,7 @@ const Page = () => {
                     <div>
                       <Image src="./Mailbox.svg" alt="./Mailbox.svg" width={24} height={24} />
                     </div>
-                    <span className='text-xl'>  sales@techlerate.com </span>
+                    <span className='text-xl'>  contact@techlerate.com </span>
 
                   </div>
                   <div className='flex justify-left items-center gap-4'>
@@ -356,7 +362,7 @@ const Page = () => {
 
                 </div>
                 <div className="text-[#000000] px-4 py-4 md:px-6 md:py-4 lg:py-6 2xl:text-xl 2xl:pt-8 Poppinx ">
-                  <p> For Job Opportunities : <span className="text-[#7b61ff]">hr@techletate.com </span>, or visit our <span className="text-[#7b61ff]">careers page </span></p>
+                  <p> For Job Opportunities : <span className="text-[#7b61ff]">contact@techlerate.com </span>, or visit our <span className="text-[#7b61ff]">careers page </span></p>
                 </div>
 
               </div>
@@ -371,7 +377,8 @@ const Page = () => {
                 <h2 className="playfair_display leading-snug text-lg md:text-3xl lg:text-4xl xl:text-5xl text-[#7b61ff]">
                   Get your ideas validated.<br /> Let’s give you an honest opinion.
                 </h2>
-                <button className="  mt-4 mb-6 lg:mb-8 lg:mt-6  bg-[#7b61ff]  rounded-full  inline-flex items-center md:text-base  py-2 px-4 xl:px-8    lg:mr-10 xl:mr-0">
+                
+                <button onClick={handleButtonClick} className="  mt-4 mb-6 lg:mb-8 lg:mt-6  bg-[#7b61ff]  rounded-full  inline-flex items-center md:text-base  py-2 px-4 xl:px-8    lg:mr-10 xl:mr-0">
                   Let&apos;s Talk
                 </button>
               </div>

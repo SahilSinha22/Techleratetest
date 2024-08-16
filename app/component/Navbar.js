@@ -46,7 +46,7 @@ const services = [
 const technology = [
 
   { name: "React Native", logo: "/OnDemand.svg" },
-  { name: "Android App", logo: "/Ecommerce.svg" },
+  { name: "Android", logo: "/Ecommerce.svg" },
   { name: "PHP/Node JS Development", logo: "/Realestate.svg" },
   { name: "ionic", logo: "/Healthcare.svg" },
   { name: "IOT", logo: "/Saas.svg" },

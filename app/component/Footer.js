@@ -19,8 +19,8 @@ const Footer = () => {
           </div>
           <p className="text-[#7b61ff]  ">Connect with us:</p>
           <p className="text-[#9a9898] ">Call: +91 88 820 76 755</p>
-          <p className="text-[#9a9898] ">Email: amit@spacetotech.com</p>
-          <p className="text-[#9a9898]">Office: C-171 Sector-63 Noida, Uttar Pradesh 201301</p>
+          <p className="text-[#9a9898] ">Email: contact@techlerate.com</p>
+          <p className="text-[#9a9898]">Office: Platina Heights, C24, C Block, Phase 2,<br/> Industrial Area, Sector 62, Noida, Uttar Pradesh 201309</p>
           <div className="flex mt-6 space-x-4 ">
             <a href="#" aria-label="Instagram">
               <Image src={Insta} alt="Instagram Icon" className='rounded-full' width={40} height={2}/>
