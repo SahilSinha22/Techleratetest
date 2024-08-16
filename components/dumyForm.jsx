@@ -181,7 +181,7 @@ const DumyForm = () => {
                                             </path>
                                         </svg>
                                     </div>
-                                      <div className='flex flex-col xl:mt-8 gap-4 xl:gap-10'>
+                                      <div className='flex flex-col xl:mt-6 2xl:mt-8 gap-4 xl:gap-10'>
                                     <div className="relative z-0   w-full  group">
                                         <input
                                             type="text"
@@ -237,7 +237,7 @@ const DumyForm = () => {
                                     </div>
                                     <div className='flex flex-col mt-4 xl:mt-8 gap-4 xl:gap-10'>
                                    
-                                    <div class=" pt-2">
+                                    <div class=" ">
                                     <div class="relative text-lg flex w-full">
                                         <PhoneInput
                                             country={'in'}
@@ -323,7 +323,7 @@ const DumyForm = () => {
                                         Submit
                                     </button>
                                     </div>
-                                    <div className=' flex justify-between items-center mt-4 xl:mt-16'>
+                                    <div className=' flex justify-between items-center mt-4 2xl:mt-8'>
 
                                    
                                     <h2 className='text-[#000000] z-20 text-sm md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
