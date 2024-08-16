@@ -212,10 +212,10 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              href="/Blog"
-              className="block nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+              href="#"
+              className=" hidden nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
             >
-              Blog
+              
             </Link>
           </div>
           <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">

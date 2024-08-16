@@ -6,6 +6,10 @@ import { FaCheckCircle } from "react-icons/fa";
 import { generateArithmeticCaptcha } from "@/app/utils/generateCaptcha";
 import Ban1 from "@/public/Logo1.svg";
 import { useRouter } from 'next/navigation';
+import Modal from '@/components/Modal'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/dumyForm';
+import Link from "next/link";
+import Bannerxcontact from "@/components/bannerxcontact";
 const Page = () => {
 
 
@@ -14,10 +18,14 @@ const Page = () => {
   const [errors, setErrors] = useState({});
   const [successBanner, setSuccessBanner] = useState(false);
 
-  const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleButtonClick = () => {
-    router.push('/dumyForm'); // Replace '/your-form-route' with the actual route
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
   const [user, setUser] = useState({
     Name: "",
@@ -368,23 +376,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="py-20">
-            <div className="bg-black flex py-10 md:py-20 justify-around">
-              <div>
-
-              </div>
-              <div>
-                <h2 className="playfair_display leading-snug text-lg md:text-3xl lg:text-4xl xl:text-5xl text-[#7b61ff]">
-                  Get your ideas validated.<br /> Let’s give you an honest opinion.
-                </h2>
-                
-                <button onClick={handleButtonClick} className="  mt-4 mb-6 lg:mb-8 lg:mt-6  bg-[#7b61ff]  rounded-full  inline-flex items-center md:text-base  py-2 px-4 xl:px-8    lg:mr-10 xl:mr-0">
-                  Let&apos;s Talk
-                </button>
-              </div>
-
-            </div>
-          </div>
+          <Bannerxcontact/>
 
         </div>
 
@@ -402,6 +394,9 @@ const Page = () => {
           <Image src="/Path.svg" alt="" width={20} height={20} />
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm />
+      </Modal>
     </div>
   )
 }

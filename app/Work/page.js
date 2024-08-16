@@ -1,14 +1,23 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Phone from "@/public/phone.png";
 import Sucess from '@/components/Sucess';
 import Cop from "@/components/Cop"
 import Navbar from '../component/Navbar';
+import Modal from '@/components/Modal'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/dumyForm';
 const Page = () => {
   const textRef = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -59,12 +68,15 @@ const Page = () => {
       <div  className=" bg-black text-white  py-14 xl:pt-10 text-center">
         <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
         <span className="  text-lg text-white md:text-3xl  xl:text-4xl Poppins">READY FOR YOUR NEXT PROJECT?</span>
-        <span  className=" text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
+        <span onClick={handleButtonClick} className=" text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
           LET&apos;S TALK
         </span>
         </div>
       </div>
     </div>
+    <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm />
+      </Modal>
     </>
   );
 }

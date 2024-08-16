@@ -562,10 +562,21 @@ background: #444;
 
 .navbar{
   /*background-image: url('/Navbarbg.png'); */
-  background-color: black;
-  background-size: cover;
+
+ 
 height: 400px;
-opacity: 0.8;
+
+
+  background-image: url('/Navbarbg.png');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5); /* The dark overlay color */
+  background-blend-mode: multiply; /* The blend mode */
+  /* Adjust as needed */
+   /* Ensure your text is white */
+  padding: 20px;
+
+
 
 
 }
@@ -583,16 +594,21 @@ opacity: 0.8;
 @media screen and (min-width:1530px) and (max-width:2200px) {
   .navbar{
    
-    background: transparent url('/Navbarbg.png') 0% 0% no-repeat padding-box;
-border: 1px solid #707070;
-opacity: 0.3;
-    background-size:cover;
-    background-position: center;
+  background-image: url('/Navbarbg.png');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(112, 111, 111, 0.726); /* The dark overlay color */
+  background-blend-mode: multiply; /* The blend mode */
+  /* Adjust as needed */
+   /* Ensure your text is white */
+  padding: 20px;
+
+
    
    
-    background-size: cover;
+    
   height: 600px;
-  opacity: 0.8;
+ 
   
   
   }
