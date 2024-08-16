@@ -156,7 +156,7 @@ const Page = () => {
 
 
 
-                <div className="lg:pt-16 pt-10  px-4 md:px-6 lg:px-10 2xl:px-10 round  ">
+                <div className="lg:pt-16 pt-10  px-4 md:px-6 lg:px-10 2xl:px-10   ">
                   <h2 className="text-[#000000] text-2xl lg:text-3xl xl:text-4xl font-bold  Poppins ">Consult over experts!</h2>
                   {successBanner && (
                     <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
@@ -169,8 +169,8 @@ const Page = () => {
                     onSubmit={handleSubmit}
                     className=" mx-auto  my-4 lg:my-10  "
                   >
-                    <div className="grid w-full md:grid-cols-2 md:gap-10 xl:gap-10 2xl:gap-0 ">
-                      <div className="relative z-0 w-full mb-4 group">
+                    <div className="grid w-full md:grid-cols-2 md:gap-10 xl:gap-10 2xl:gap-10 ">
+                      <div className="relative z-0 mb-4  group">
                         <input
                           type="text"
                           name="Name"
