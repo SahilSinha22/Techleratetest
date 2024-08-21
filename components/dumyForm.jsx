@@ -103,7 +103,7 @@ const DumyForm = () => {
         const timer = setTimeout(() => {
             setVisible(true);
             document.body.style.overflow = 'hidden';
-        }, 1000);
+        }, 4000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -117,9 +117,9 @@ const DumyForm = () => {
     if (!visible) return null;
     return (
         <div className=''>
-            <div class="justify-center items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div class="justify-center Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none focus:outline-none">
                 <div className='relative'>
-                <div class=" grid md:grid-cols-2  w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-left place-content-center xl:max-w-4xl ">
+                <div class=" grid md:grid-cols-2  w-[350px] md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
@@ -327,7 +327,7 @@ const DumyForm = () => {
 
                                    
                                     <h2 className='text-[#000000] z-20 text-sm md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
-                                    <Image src="/whatsapp.svg" className="" alt="" width={40} height={40} />
+                                    <a href="https://api.whatsapp.com/send?phone=8882076755">   <Image src="/whatsapp.svg" className="mr-20" alt="" width={40} height={40} /> </a>
 
                                     </div>
                                     </div>

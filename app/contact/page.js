@@ -128,13 +128,13 @@ const Page = () => {
 
 
 
-      <div className='bg-[#18191F] relative  2xl:h-[1100px] text-white 2xl:px-40 '>
+      <div className='bg-[#18191F] md:relative  2xl:h-[1100px] text-white 2xl:px-40 '>
         <div className="">
 
-          <div className="h-[550px] ">
+          <div className=" h-[1000px] md:h-[550px] ">
 
 
-            <div className='grid grid-rows-2  -top-80 md:-top-16   md:grid-cols-2   absolute lg:-top-20  justify-self-start 2xl:-top-52  md:justify-between px-10 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
+            <div className='grid grid-rows-2  top-28 md:-top-16   md:grid-cols-2  absolute lg:-top-20  justify-self-start 2xl:-top-52  md:justify-between px-4 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
               <div className="pr-6 lg:pr-16  ">
                 <h2 className=' text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl leading-relaxed Poppinx font-medium'>
                   Unlock Your Business <br /> Potential Today!
@@ -146,14 +146,16 @@ const Page = () => {
                   <span className='text-[#7b61ff] text-xl'>  We are just a call away </span>
                   <div className='flex justify-left py-3 items-center gap-4 leading-loose'>
                     <div>
-                      <Image src="./Mailbox.svg" alt="./Mailbox.svg" width={24} height={24} />
+                    <a href= "mailto: contact@techlerate.com  ">  <Image src="./Mailbox.svg" alt="./Mailbox.svg" width={24} height={24} /></a>
                     </div>
-                    <span className='text-xl'>  contact@techlerate.com </span>
+                    <a href= "mailto: contact@techlerate.com  "> <span className='text-xl'>  contact@techlerate.com </span></a>
 
                   </div>
                   <div className='flex justify-left items-center gap-4'>
-                    <div> <Image src="./Calling.svg" alt="./Calling.svg" width={24} height={24} /> </div>
-                    <span className='text-xl'>  +91 88 820 76 755 </span>
+                    <div>
+                    <a href="tel:+91 88 820 76 755" > <Image src="./Calling.svg" alt="./Calling.svg" width={24} height={24} /> </a>
+                     </div>
+                     <a href="tel:+91 88 820 76 755" > <span className='text-xl'>  +91 88 820 76 755 </span></a>
                   </div>
                 </div>
                 <div className='gap-6 xl:gap-10 my-16 flex'>
@@ -291,7 +293,7 @@ const Page = () => {
                             className=" peer h-full  text-lg  text-gray-600 font-bold  bg-transparent pb-1.5 font-poppins  text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-500"
                           >
                             <div
-                              className="peer  text-xs md:text-lg  text-gray-600 border-gray-500 bg-transparent  pb-1.5 font-poppins font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-500"
+                              className="peer text-lg  text-gray-600 border-gray-500 bg-transparent  pb-1.5 font-poppins font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-500"
 
                             >
                               Budget*
@@ -370,7 +372,7 @@ const Page = () => {
 
                 </div>
                 <div className="text-[#000000] px-4 py-4 md:px-6 md:py-4 lg:py-6 2xl:text-xl 2xl:pt-8 Poppinx ">
-                  <p> For Job Opportunities : <span className="text-[#7b61ff]">contact@techlerate.com </span>, or visit our <span className="text-[#7b61ff]">careers page </span></p>
+                  <p> For Job Opportunities : <span className="text-[#7b61ff]">  <a href= "mailto: contact@techlerate.com   ">contact@techlerate.com </a></span>, or visit our <span className="text-[#7b61ff]">careers page </span></p>
                 </div>
 
               </div>
@@ -388,11 +390,15 @@ const Page = () => {
 
       </div>
 
-      <div className="bg-[#18191F]  justify-start px-28 2xl:px-60   ">
+      <div className="bg-[#18191F]  justify-start pb-20 px-10 md:px-28 2xl:px-40   ">
         <div className="flex text-3xl text-white gap-4 py-16 ">
           <h2>Find us on Google Maps</h2>
           <Image src="/Path.svg" alt="" width={20} height={20} />
         </div>
+
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin" width="950" height="400"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe> 
+
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ContactForm />
