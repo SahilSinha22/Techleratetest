@@ -7,7 +7,7 @@ import Sucess from '@/components/Sucess';
 import Cop from "@/components/Cop"
 import Navbar from '../component/Navbar';
 import Modal from '@/components/Modal'; // Assuming Modal is in the same directory
-import ContactForm from '@/components/dumyForm';
+import ContactForm from '@/components/Popups';
 const Page = () => {
   const textRef = useRef(null);
   const [isModalOpen, setIsModalOpen] = useState(false);

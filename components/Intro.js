@@ -82,13 +82,14 @@ const Intro = () => {
         <nav className="  items-center px-4 p-4  lg:p-8 2xl:px-40">
           <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
             <div className="flex items-center flex-shrink-0 text-white">
-              <Image
+            <Link href="/" > <Image
                 src={Logo}
                 alt="Techlerate Logo"
                 className="h-10 w-48 md:w-96  md:h-14 lg:h-10 xl:h-12 lg:w-60 2xl:w-76"
                 width={400}
                 height={5}
               />
+              </Link> 
             </div>
             <div className="block lg:hidden">
               <button

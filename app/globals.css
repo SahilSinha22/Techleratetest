@@ -337,7 +337,6 @@ display: block;
   background: #ccc;
   margin: 0 10px;
 }
-
 #slide1:checked ~ #bullets label:nth-child(1),
 #slide2:checked ~ #bullets label:nth-child(2),
 #slide3:checked ~ #bullets label:nth-child(3),
@@ -570,7 +569,7 @@ height: 400px;
   background-image: url('/Navbarbg.png');
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.5); /* The dark overlay color */
+  background-color: rgba(73, 71, 71, 0.5); /* The dark overlay color */
   background-blend-mode: multiply; /* The blend mode */
   /* Adjust as needed */
    /* Ensure your text is white */
@@ -597,7 +596,7 @@ height: 400px;
   background-image: url('/Navbarbg.png');
   background-size: cover;
   background-position: center;
-  background-color: rgba(112, 111, 111, 0.726); /* The dark overlay color */
+  background-color: rgba(42, 42, 44, 0.5); /* The dark overlay color */
   background-blend-mode: multiply; /* The blend mode */
   /* Adjust as needed */
    /* Ensure your text is white */
