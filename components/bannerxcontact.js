@@ -15,7 +15,7 @@ const Bannerxcontact = () => {
   return (
     <div>
        <div className="py-20">
-            <div className="bg-black flex py-10 md:py-20 justify-around">
+            <div className="bg-black mx-4 md:mx-10 flex py-10 md:py-20 justify-around">
               <div>
 
               </div>

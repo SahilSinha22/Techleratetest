@@ -134,12 +134,12 @@ const Page = () => {
           <div className=" h-[1000px] md:h-[550px] ">
 
 
-            <div className='grid grid-rows-2  top-28 md:-top-16   md:grid-cols-2  absolute lg:-top-20  justify-self-start 2xl:-top-52  md:justify-between px-4 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
+            <div className='grid grid-rows-2  top-28 md:-top-16 md:grid-cols-2  absolute lg:-top-20  justify-self-start 2xl:-top-52  md:justify-between px-4 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
               <div className="pr-6 lg:pr-16  ">
                 <h2 className=' text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl leading-relaxed Poppinx font-medium'>
                   Unlock Your Business <br /> Potential Today!
                 </h2>
-                <p className='py-4 text-base xl:text-base 2xl:text-lg'>
+                <p className='py-10 text-base xl:text-base 2xl:text-lg'>
                   “Connect with us now to discover how our expert solutions and unparalleled support can drive success for your business!”
                 </p>
                 <div className='flex flex-col leading-loose'>
@@ -383,6 +383,7 @@ const Page = () => {
         </div>
 
       </div>
+      
 
 
       <div className="bg-[#252730] md:px-10 xl:px-20 px-2 py-10 md:py-16 text-muted-foreground flex justify-center space-x-4 lg:space-x-8">
@@ -396,7 +397,7 @@ const Page = () => {
           <Image src="/Path.svg" alt="" width={20} height={20} />
         </div>
 
-        <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin" width="950" height="400"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        <iframe className="w-72  md:w-[750px] max-w-screen-xl  sm:w-[600px] lg:w-[1000px] lg:max-w-6xl  2xl:w-[1600px] 2xl:max-w-[1960px] xl:max-w-screen-xl"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin" width="950" height="400"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe> 
 
       </div>

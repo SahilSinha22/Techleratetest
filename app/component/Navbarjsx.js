@@ -71,8 +71,8 @@ const Navbar = () => {
   const isContactPage = router.pathname === '/contact';
 
   return (
-    <nav className={` ${isContactPage  ? 'bg-white' : ''} items-center md:px-4 md:p-4   lg:p-6 2xl:px-40 `}>
-          <div className="   md:relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
+    <nav className={` ${isContactPage  ? 'bg-white' : ''} items-center md:px-4 p-4   lg:p-6 2xl:px-40 `}>
+          <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
             <div className="flex items-center flex-shrink-0 text-white">
               <Image
                 src={Logo}
@@ -85,7 +85,7 @@ const Navbar = () => {
             <div className="block lg:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center pr-3 py-2 font-extrabold rounded bg-black text-zinc-500 hover:text-black-400"
+                className="flex items-center pr-3 py-2 font-extrabold rounded text-zinc-700 hover:text-black-400"
               >
                 <svg
                   className={`fill-current h-5 sm:h-10 sm:w-10 w-5 ${isOpen ? "hidden" : "block"
@@ -105,13 +105,13 @@ const Navbar = () => {
               </button>
             </div>
             <div
-              className={`w-full  block   flex-grow justify-between text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
+              className={`w-full block flex-grow justify-between text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
                 }`}
             >
-              <div className="text-lg  2xl:text-xl justify-around text-center lg:flex-grow">
+              <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
                 <Link
                   href="/"
-                  className="nav-link block  text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+                  className="nav-link block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                 >
                   About
                 </Link>
@@ -132,7 +132,7 @@ const Navbar = () => {
                     <Image src={Arrow} alt="" className="inline-flex" width={32} height={32}/>
                   </Link>
                   <div
-                    className={`md:absolute left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto  text-white  Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                    className={`absolute left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto  text-white  Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
                   >
                     <section className="grid grid-rows-2  md:flex Poppinx ">
                       <div className="p-6 xl:p-10">
