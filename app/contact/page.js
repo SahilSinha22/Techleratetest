@@ -120,7 +120,7 @@ const Page = () => {
     alert("Form submitted successfully!");
   };
   return (
-    <div className="">
+    <div>
       <div className='w-full  navbar '>
         <Navbar />
 
@@ -128,13 +128,13 @@ const Page = () => {
 
 
 
-      <div className='bg-[#18191F] md:relative  2xl:h-[1100px] text-white 2xl:px-40  '>
+      <div className='bg-[#18191F]   2xl:h-[1100px] text-white  '>
         <div className="">
 
-          <div className=" h-[1000px] md:h-[550px] ">
+          <div className=" h-[1000px] md:relative 2xl:px-40  md:h-[550px] ">
 
 
-            <div className='grid grid-rows-2  top-28 md:-top-16 md:grid-cols-2  absolute lg:-top-20  justify-self-start 2xl:-top-52  md:justify-between px-4 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
+            <div className='grid grid-rows-2  top-28 md:-top-16 md:grid-cols-2   absolute lg:-top-20 h-[200px] justify-self-start 2xl:-top-52  md:justify-between px-4 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
               <div className="pr-6 lg:pr-16  ">
                 <h2 className=' text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl leading-relaxed Poppinx font-medium'>
                   Unlock Your Business <br /> Potential Today!
@@ -168,12 +168,12 @@ const Page = () => {
 
                 </div>
               </div>
-              <div className="bg-white   rounded-3xl" >
+              <div className="   " >
 
 
 
-                <div className="lg:pt-16 pt-10  px-4 md:px-6 lg:px-10 2xl:px-10   ">
-                  <h2 className="text-[#000000] text-2xl lg:text-3xl xl:text-4xl font-bold  Poppins ">Consult over experts!</h2>
+                <div className="lg:pt-16 pt-10   rounded-3xl bg-white  ">
+                  <h2 className="text-[#000000] px-4 md:px-6 lg:px-10 2xl:px-10 text-2xl lg:text-3xl xl:text-4xl font-bold  Poppins ">Consult over experts!</h2>
                   {successBanner && (
                     <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
                       <FaCheckCircle size={24} className="mr-2" />
@@ -183,7 +183,7 @@ const Page = () => {
                   <form
                     method="POST"
                     onSubmit={handleSubmit}
-                    className=" mx-auto  my-4 lg:my-10  "
+                    className=" mx-auto px-4 md:px-6 lg:px-10 2xl:px-10 my-4 lg:my-10  "
                   >
                     <div className="grid w-full md:grid-cols-2 md:gap-10 xl:gap-10 2xl:gap-10 ">
                       <div className="relative z-0 mb-4  group">
@@ -369,17 +369,18 @@ const Page = () => {
                       </div>
                     </div>
                   </form>
-
-                </div>
-                <div className="text-[#000000] px-4 py-4 md:px-6 md:py-4 lg:py-6 2xl:text-xl 2xl:pt-8 Poppinx ">
+                  <div className="text-[#000000] px-4 py-4 md:px-6 md:py-4 lg:py-6 2xl:text-xl 2xl:pt-8 Poppinx ">
                   <p> For Job Opportunities : <span className="text-[#7b61ff]">  <a href= "mailto: contact@techlerate.com   ">contact@techlerate.com </a></span>, or visit our <span className="text-[#7b61ff]">careers page </span></p>
                 </div>
+                </div>
+               
 
               </div>
             </div>
           </div>
+          <div className="2xl:px-40">
           <Bannerxcontact/>
-
+          </div>
         </div>
 
       </div>

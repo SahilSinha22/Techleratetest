@@ -577,8 +577,7 @@ height: 400px;
   image-rendering: high-quality;
   image-resolution: from-image 300dpi;
   image-resolution: inherit;
-  -webkit-transform: scale(0.999);
-  transform: scale(0.999);
+ 
 
 }
 @media screen and (max-width:720px) {

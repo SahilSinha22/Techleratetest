@@ -75,7 +75,7 @@ const Page = () => {
       </div>
     </div>
     <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ContactForm />
+        <ContactForm onClose={closeModal}/>
       </Modal>
     </>
   );
