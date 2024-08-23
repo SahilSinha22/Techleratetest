@@ -120,15 +120,15 @@ const Page = () => {
     alert("Form submitted successfully!");
   };
   return (
-    <div>
-      <div className='w-full  navbar'>
+    <div className="">
+      <div className='w-full  navbar '>
         <Navbar />
 
       </div>
 
 
 
-      <div className='bg-[#18191F] md:relative  2xl:h-[1100px] text-white 2xl:px-40 '>
+      <div className='bg-[#18191F] md:relative  2xl:h-[1100px] text-white 2xl:px-40  '>
         <div className="">
 
           <div className=" h-[1000px] md:h-[550px] ">

@@ -71,7 +71,7 @@ const Navbar = () => {
   const isContactPage = router.pathname === '/contact';
 
   return (
-    <nav className={` ${isContactPage  ? 'bg-white' : ''} items-center md:px-4 p-4   lg:p-6 2xl:px-40 `}>
+    <nav className={` ${isContactPage  ? 'bg-white' : ''} items-center md:px-4 md:p-4   lg:p-6 2xl:px-40 `}>
           <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
             <div className="flex items-center flex-shrink-0 text-white">
              

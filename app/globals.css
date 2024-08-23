@@ -574,9 +574,11 @@ height: 400px;
   /* Adjust as needed */
    /* Ensure your text is white */
   padding: 20px;
-
-
-
+  image-rendering: high-quality;
+  image-resolution: from-image 300dpi;
+  image-resolution: inherit;
+  -webkit-transform: scale(0.999);
+  transform: scale(0.999);
 
 }
 @media screen and (max-width:720px) {

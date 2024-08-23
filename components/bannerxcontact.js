@@ -17,11 +17,11 @@ const Bannerxcontact = () => {
     <div>
        <div className="py-10 md:py-20 ">
             <div className="bg-[#04040C]  mx-4 md:mx-10 flex  justify-around">
-              <div>
-<Image className="object-cover w-28 h-40 sm:w-60 md:h-72 lg:w-80 xl:w-96 lg:h-96 xl:h-[450px] sm:h-60 " src="/FormImg.png" alt="" width={1000} height={1000} />
+              <div className=" w-40 sm:w-[300px] lg:w-[350px] xl:w-[400px]">
+<Image className="object-cover   " src="/FormImg.png" alt="" width={1000} height={1000} />
               </div>
-              <div className="pt-12 sm:py-10 lg:py-20 md:pt-24 lg:pt-28 xl:pt-40">
-                <h2 className="playfair_display leading-snug text-xs md:text-2xl lg:text-3xl xl:text-5xl text-[#7b61ff]">
+              <div className="pt-6 sm:py-10 lg:py-10  place-content-center md:pt-16 lg:pt-20 xl:pt-24 2xl:pt-16">
+                <h2 className="playfair_display  leading-snug text-xs md:text-2xl lg:text-3xl xl:text-5xl text-[#7b61ff]">
                   Get your ideas validated.<br /> Let’s give you an honest opinion.
                 </h2>
 
