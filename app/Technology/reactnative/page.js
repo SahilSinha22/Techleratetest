@@ -9,7 +9,10 @@ const page = () => {
     <div>
       <Navbar/>
       <Technology/>
+      <div class="2xl:px-20">
       <Indus/>
+      </div>
+     
       <Form/>
     </div>
   )
