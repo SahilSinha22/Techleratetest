@@ -30,8 +30,8 @@ const Sucess = () => {
     setCursorPosition({ x: event.clientX, y: event.clientY });
   };
 
-  const handleViewMoreClick = () => {
-    router.push('/introduction');
+  const handleViewMoreClick = (navigation) => {
+    router.push(navigation);
   };
 
   useEffect(() => {
@@ -84,7 +84,7 @@ const Sucess = () => {
     { image: Gaming, title: "Gaming App" },
     { image: Phone, title: "Find the Doctors Online" },
     { image: Gym, title: "Fit with Our App" },
-    { image: Tablet, title: "Water Purifier App" },
+    { image: Tablet, title: "Water Purifier App", alt:"LiquiClear"},
     { image: Bluecard, title: "Dating App" },
     { image: Maskcard, title: "Free Games Online" },
     { image: Aicard, title: "Generative AI" },
@@ -126,7 +126,7 @@ const Sucess = () => {
                     top: `${cursorPosition.y - 10}px`,
                     left: `${cursorPosition.x + 20}px`,
                   }}
-                  onClick={handleViewMoreClick}
+                  onClick={() => handleViewMoreClick(card.alt)}
                 >
                   Read<br/> More...
                 </div>
@@ -159,7 +159,7 @@ const Sucess = () => {
                     top: `${cursorPosition.y - 20}px`,
                     left: `${cursorPosition.x + 10}px`,
                   }}
-                  onClick={handleViewMoreClick}
+                  onClick={() => handleViewMoreClick(card.alt)}
                 >
                   <span className='text-white'>
                   Read<br/> More...

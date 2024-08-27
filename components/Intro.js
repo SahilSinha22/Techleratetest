@@ -174,7 +174,8 @@ const Intro = () => {
                              height={100}
                            />
                            <Link
-                             href={`/services/${service.name.toLowerCase().replace(/\s+/g, "")}`}
+                            /* href={`/services/${service.name.toLowerCase().replace(/\s+/g, "")}`} */
+                            href="#"
                              className="block lg:px-2  dropslash py-2 md:py-4 lg:py-0"
                            >
                              {service.name}
