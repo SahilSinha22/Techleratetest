@@ -626,9 +626,7 @@ height: 400px;
   
   
   }
-  iframe{
-    width:1600px;
-    }
+  
 }
 
 .gallery{
@@ -839,9 +837,7 @@ bottom:0;
     font-size:8px;
     left:0px;
   }
-  iframe{
-    width:300px;
-    }
+
 }
 
 
@@ -986,9 +982,7 @@ bottom:0;
        padding:1px 1px 1px 1px ;
         left:0px;
       }
-      iframe{
-        width:460px;
-        }
+     
          }
     
 
@@ -1095,9 +1089,7 @@ bottom:0;
         border-radius: 25px;
         padding:4px 4px 4px 1px;
       }
-      iframe{
-        width:600px;
-        }
+     
     }
 
     @media only screen and (min-width : 900px) and (max-width: 1024px) {
@@ -1148,9 +1140,7 @@ bottom:0;
         border-radius: 25px;
         padding:4px 4px 4px 1px;
       }
-      iframe{
-        width:760px;
-        }
+     
     }
 
 
@@ -1203,9 +1193,7 @@ bottom:0;
         border-radius: 25px;
         padding:1px 1px 1px 0px;
       }
-      iframe{
-        width:870px;
-        }
+     
      
     }
 
@@ -1258,9 +1246,7 @@ bottom:0;
         border-radius: 25px;
         padding:4px 2px 2px 2px;
       }
-      iframe{
-        width:970px;
-        }
+     
     }
     .gallery{
       display:flex;
@@ -1600,3 +1586,25 @@ bottom:0;
           background-position: center;
           opacity: 0.75;
          } 
+
+
+
+         
+/*--------------------Map responsove------------------*/
+
+.map-responsive{
+  overflow: hidden;
+  /*padding-bottom: 56.25%;*/
+  position: relative;
+  height: 410px;
+
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}
