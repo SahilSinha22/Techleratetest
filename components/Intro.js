@@ -76,7 +76,7 @@ const Intro = () => {
           loop
           className="absolute z-0 inset-0 w-full h-full object-cover"
         >
-          <source src="/earths.mp4" type="video/mp4" />
+          <source src="/earth.webm" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <nav className="  items-center px-4 p-4  lg:p-8 2xl:px-40">

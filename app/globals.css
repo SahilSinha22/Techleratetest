@@ -569,8 +569,7 @@ height: 400px;
   background-image: url('/Navbarbg.png');
   background-size: cover;
   background-position: center;
-  background-color: rgba(73, 71, 71, 0.5); /* The dark overlay color */
-  background-blend-mode: multiply; /* The blend mode */
+/* The blend mode */
   /* Adjust as needed */
    /* Ensure your text is white */
   padding: 20px;
@@ -611,8 +610,7 @@ height: 400px;
   background-image: url('/Navbarbg.png');
   background-size: cover;
   background-position: center;
-  background-color: rgba(42, 42, 44, 0.5); /* The dark overlay color */
-  background-blend-mode: multiply; /* The blend mode */
+  /* The blend mode */
   /* Adjust as needed */
    /* Ensure your text is white */
   padding: 20px;

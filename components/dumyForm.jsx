@@ -124,7 +124,7 @@ const DumyForm = () => {
                         <div className='relative '>
 
 
-                            <Image src="/FormImage.png" className="-z-20 w-[300px] lg:w-[450px] xl:w-[500px] h-[500px] xl:h-[600px] 2xl:h-[650px]" alt="" width={1000} height={1000} />
+                            <Image src="/FormImage.webp" className="-z-20 w-[300px] lg:w-[450px] xl:w-[500px] h-[500px] xl:h-[600px] 2xl:h-[650px]" alt="" width={1000} height={1000} />
                             <div className='z-20 absolute justify-center top-6  text-white'>
                                 <div className='px-5'>
 
