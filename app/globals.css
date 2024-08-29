@@ -1614,3 +1614,8 @@ bottom:0;
 border-radius: 40px;
 opacity: 1;
 }
+
+
+.dropslash:hover>div{
+  background-color: #7b61ff;
+  }
