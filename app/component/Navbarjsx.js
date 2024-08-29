@@ -45,21 +45,21 @@ const services = [
 ];
 const technology = [
 
-  { name: "React Native", logo: "/OnDemand.svg" },
-  { name: "Android", logo: "/Ecommerce.svg" },
-  { name: "PHP/Node JS Development", logo: "/Realestate.svg" },
-  { name: "ionic", logo: "/Healthcare.svg" },
-  { name: "IOT", logo: "/Saas.svg" },
-  { name: "Ui/UX Design", logo: "/Education.svg" },
-  { name: "IOS App", logo: "/Restaurant.svg" },
-  { name: "Quality Analyst", logo: "/Games.svg" },
-  { name: "VR Development", logo: "/News.svg" },
-  { name: "AI", logo: "/Entertainment.svg" },
-  { name: "Blockchain", logo: "/Wellness.svg" },
-  { name: "Flutter", logo: "/Logistics.svg" },
-  { name: "wearables", logo: "/Travel.svg" },
-  { name: "Argumented Reality", logo: "/Finance.svg" },
-  { name: "Chatbots", logo: "/Travel.svg" },
+  { name: "React Native", logo: "/Technology/reactNative.svg" },
+  { name: "AI Development", logo: "/Technology/Ai.svg" },
+  { name: "Chatbot", logo: "/Technology/Chatbot.svg" },
+  { name: "IOT", logo: "/Technology/IOT.svg" },
+  { name: "Augmented Reality", logo: "/Technology/AR.svg" },
+  { name: "Ionic", logo: "/Technology/Ionic.svg" },
+  { name: "VR Development", logo: "/Technology/VR.svg" },
+  { name: "PHP/Nodes JS", logo: "/Technology/Php.svg" },
+  { name: "Quality Analyst", logo: "/Technology/Quality.svg" },
+  { name: "Wearable", logo: "/Technology/Wearable.svg" },
+  { name: "iOS App", logo: "/Technology/IOS.svg" },
+  { name: "Flutter", logo: "/Technology/Flutter.svg" },
+  { name: "Android App", logo: "/Technology/Android.svg" },
+  { name: "Blockchain", logo: "/Technology/Blockchain.svg" },
+  { name: "UI/UX Designing", logo: "/Technology/Ui.svg" },
 
 
 ];
@@ -190,23 +190,32 @@ const Navbar = () => {
 
               </Link>
               <div
-                className={`absolute left-0  mt-10 w-auto h-full md:h-auto md:px-10 xl:px-20 2xl:px-60 text-white  Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                className={`absolute  max-w-7xl left-0 xl:left-28 2xl:left-40  justify-center  mt-10  h-full md:h-auto  text-white  z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
               >
-                <div className="grid grid-rows-2 justify-center  md:flex Poppinx ">
 
+
+                <section className="flex flex-row justify-between rounded-3xl w-full md:gap-6 pt-16 pb-6 md:px-0 Glassy md:flex Poppinx ">
+                  <div className="max-w-5xl xl:w-1/2  sm:w-[250px]  mt-6 lg:mt-0  hidden md:block">
+                    <h2 className="text-xl lg:text-4xl text-left  font-medium pl-6 Poppind">Technologies</h2>
+                    <Image src="/Technology/Technologyimg.png" className=" m-6 " alt="" width={400} height={400} />
+                  </div>
                   <ul className="py-1 text-xs md:text-base  lg:text-base xl:text-lg  Poppin grid grid-cols-3">
                     {technology.map((service, index) => (
-                      <li key={index} className="flex items-center  dropslash lg:mr-2 xl:mr-10 p-2 hover:text-[#7b61ff] custom-filter">
-                        <Image
-                          src={service.logo}
-                          alt={`${service.name} logo`}
-                          className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
-                          width={100}
-                          height={100}
-                        />
+                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#7b61ff] custom-filter">
+                        <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
+
+                          <Image
+                            src={service.logo}
+                            alt={`${service.name} logo`}
+                            width={100}
+                            height={100}
+                          />
+                        </div>
                         <Link
-                         href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`} 
-                         
+                          /* href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}  */
+                          href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}${service.name.toLowerCase() === 'flutter' || service.name.toLowerCase() === 'reactnative' ? '' : '#'}`}
+
+
                           className="block lg:px-2 py-2 md:py-4 lg:py-0 "
                         >
                           {service.name}
@@ -214,7 +223,7 @@ const Navbar = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </section>
               </div>
             </div>
                 </div>
