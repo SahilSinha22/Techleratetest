@@ -1606,3 +1606,11 @@ bottom:0;
   position: absolute;
   border: 0;
 }
+
+
+/*------------------Liquiclera---*/
+.bannerxx{
+  background: transparent linear-gradient(180deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;
+border-radius: 40px;
+opacity: 1;
+}

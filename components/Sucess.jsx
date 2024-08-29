@@ -106,6 +106,7 @@ const Sucess = () => {
               className="bg-card mt-10 lg:mt-16 2xl:p-4 rounded-lg shadow-lg relative"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
+              onClick={() => handleViewMoreClick(card.alt)}
             >
               <Image src={card.image} alt={card.title} className="card rounded-lg mb-2" width={1000} height={1000} />
               <div className="mt-6 2xl:mt-10">
@@ -123,7 +124,7 @@ const Sucess = () => {
                     top: `${cursorPosition.y - 5}px`,
                     left: `${cursorPosition.x + 20}px`,
                   }}
-                  onClick={() => handleViewMoreClick(card.alt)}
+                  
                 >
                   Read<br/> More...
                 </div>
@@ -139,6 +140,7 @@ const Sucess = () => {
               className="bg-card mt-10 lg:mt-16 2xl:p-4 rounded-lg shadow-lg relative"
               onMouseEnter={() => handleMouseEnter(index + 5)}
               onMouseLeave={handleMouseLeave}
+              onClick={() => handleViewMoreClick(card.alt)}
             >
               <Image src={card.image} alt={card.title} className="card rounded-lg mb-2" width={1000} height={1000} />
               <div className="mt-6 2xl:mt-10">
@@ -156,7 +158,7 @@ const Sucess = () => {
                     top: `${cursorPosition.y - 5}px`,
                     left: `${cursorPosition.x + 20}px`,
                   }}
-                  onClick={() => handleViewMoreClick(card.alt)}
+                 
                 >
                   Read<br/> More...
                 </div>
