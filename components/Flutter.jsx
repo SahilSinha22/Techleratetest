@@ -104,9 +104,7 @@ const Flutter = () => {
         }
     
         return () => {
-          if (textRef.current) {
-            observer.unobserve(textRef.current);
-          }
+         
         };
       }, []);
     return (
@@ -133,21 +131,21 @@ const Flutter = () => {
                     <Image src="/Logoicons.png" className=' w-96 md:max-w-6xl xl:max-w-7xl px-2 md:px-10 xl:px-0 md:w-full 2xl:mx-40 ' alt='' width={1000} height={1000} />
                 </div>
             </div>
-            <div class="flex flex-col  lg:gap-10 p-2 md:p-6 max-w-7xl md:flex-row items-center  m-auto ">
-                <div class="flex h-full lg:mt-20 ">
+            <div className="flex flex-col  lg:gap-10 p-2 md:p-6 max-w-7xl md:flex-row items-center  m-auto ">
+                <div className="flex h-full lg:mt-20 ">
                     <Image src="/mobileflutter.png" alt='' className='w-full h-40 md:h-[350px] ' width={1000} height={1000} />
                 </div>
-                <div class="flex-1 xl:text-xl p-6 ">
-                    <h2 class="text-2xl xl:text-5xl font-medium Poppin py-4 text-foreground">Introduction to Flutter</h2>
-                    <p class=" Poppin mt-2  ">
+                <div className="flex-1 xl:text-xl p-6 ">
+                    <h2 className="text-2xl xl:text-5xl font-medium Poppin py-4 text-foreground">Introduction to Flutter</h2>
+                    <p className=" Poppin mt-2  ">
                         Initially released by Google in 2017, it is an app framework rapidly amplified with yearly improvements and alterations. The tech is well-known for providing charismatic, distinctive, and natively compiled applications supporting desktop, mobile, and cloud-based platform development. Furthermore, with robust graphics and animation libraries, the Flutter framework ensures easy building UIs that respond fluently.
                     </p>
-                    <p class="text-muted-foreground mt-2">
+                    <p className="text-muted-foreground mt-2">
                         But how to get started working with the framework? <br />
                         Space to Tech - a CMMI Level 3 and top-notch flutter mobile application development company, is the way to go! We are a team of technocrats that will help you reach a wider audience by building an app for multiple platforms.
 
                     </p>
-                    <p class="text-muted-foreground mt-2">The organization has weaved over 900 highly successful mobile apps and has helped businesses generate high revenue.
+                    <p className="text-muted-foreground mt-2">The organization has weaved over 900 highly successful mobile apps and has helped businesses generate high revenue.
                         .</p>
                 </div>
 
@@ -170,44 +168,44 @@ const Flutter = () => {
             </div>
 
 
-            <div class="bg-card max-w-7xl Poppind flex-row m-auto justify-center text-card-foreground mt-4 p-6 ">
-                <h2 class="text-3xl Poppin font-medium mb-4">Trump Card Played By Flutter App Development Company</h2>
-                <p class="text-lg mb-6">The flutter mechanism comes along with a number of benefits, and the best flutter app development company in <br />India, UK & USA helps you bag the same.</p>
-                <div class="bg-[#313131] p-4 rounded-lg  leading-loose mb-4">
-                    <h2 class="text-xl pb-1">Reduced Time for App Development</h2>
-                    <p class="text-base">
+            <div className="bg-card max-w-7xl Poppind flex-row m-auto justify-center text-card-foreground mt-4 p-6 ">
+                <h2 className="text-3xl Poppin font-medium mb-4">Trump Card Played By Flutter App Development Company</h2>
+                <p className="text-lg mb-6">The flutter mechanism comes along with a number of benefits, and the best flutter app development company in <br />India, UK & USA helps you bag the same.</p>
+                <div className="bg-[#313131] p-4 rounded-lg  leading-loose mb-4">
+                    <h2 className="text-xl pb-1">Reduced Time for App Development</h2>
+                    <p className="text-base">
                         When working on a medium-sized Android application, the process of adjusting a layout feature can consume up to 40 seconds. However, with the built-in hot reload feature, your modifications
                         become nearly instantaneous.
                     </p>
                 </div>
 
-                <div class="bg-[#313131] p-4 rounded-lg leading-loose mb-4">
-                    <h2 class="text-xl pb-1">Accelerated Time To Market</h2>
-                    <p class="text-base">
+                <div className="bg-[#313131] p-4 rounded-lg leading-loose mb-4">
+                    <h2 className="text-xl pb-1">Accelerated Time To Market</h2>
+                    <p className="text-base">
                         Building apps separately for different platforms will require varied specialized teams. However, it takes only half a workforce of a Flutter app development company to work with the framework,
                         as platform-specific code is not required.
                     </p>
                 </div>
 
-                <div class="bg-[#313131] p-4 rounded-lg leading-loose mb-4">
-                    <h2 class="text-xl pb-1">Similar Framework to Native App Development</h2>
-                    <p class="text-base">
+                <div className="bg-[#313131] p-4 rounded-lg leading-loose mb-4">
+                    <h2 className="text-xl pb-1">Similar Framework to Native App Development</h2>
+                    <p className="text-base">
                         Building digital products also demands fabricating apps that prioritize the user experience. Therefore, the Flutter framework can create exceptional user interface animations and eliminate
                         performance bugs.
                     </p>
                 </div>
 
-                <div class="bg-[#313131] p-4 rounded-lg leading-loose mb-4">
-                    <h2 class="text-xl pb-1">Speedy App Growth</h2>
-                    <p class="text-base">
+                <div className="bg-[#313131] p-4 rounded-lg leading-loose mb-4">
+                    <h2 className="text-xl pb-1">Speedy App Growth</h2>
+                    <p className="text-base">
                         You can accelerate both development and expansion by utilizing numerous widgets in your development process. Additionally, if you aim to capture a share of the market for your application,
                         Flutter allows you to craft smooth-running apps.
                     </p>
                 </div>
 
-                <div class="bg-[#313131] p-4 rounded-lg leading-loose mb-4">
-                    <h2 class="text-xl  pb-1">Minimalist Design Features</h2>
-                    <p class="text-base">
+                <div className="bg-[#313131] p-4 rounded-lg leading-loose mb-4">
+                    <h2 className="text-xl  pb-1">Minimalist Design Features</h2>
+                    <p className="text-base">
                         Should you desire to employ unique widgets within your application, Flutter can fashion new ones. These newly crafted widgets can be utilized independently or seamlessly with pre-existing ones.
                     </p>
                 </div>
@@ -236,79 +234,79 @@ const Flutter = () => {
             </Modal>
 
 
-            <div class="p-6 bg-background text-foreground max-w-7xl mt-10  m-auto">
-                <h2 class="text-3xl font-medium mb-4">Types of Businesses That Prefer Using Flutter</h2>
-                <p class="mb-6 Poppind">
+            <div className="p-6 bg-background text-foreground max-w-7xl mt-10  m-auto">
+                <h2 className="text-3xl font-medium mb-4">Types of Businesses That Prefer Using Flutter</h2>
+                <p className="mb-6 Poppind">
                     While Flutter seems like a potential framework, there may be better fits for some projects. Can you leverage the  <br/>framework in your app with the help of a Flutter mobile app development company?
                     Take a look!
                 </p>
 
-                <section class="flex text-[#000000] Poppin flex-col md:flex-row gap-4">
-                    <div class="p-4 border border-border pt-6 md:max-w-sm lg:max-w-lg bg-[#EBEBEB] rounded-lg bg-card">
-                        <h3 class="text-lg font-semibold mb-2">Startups</h3>
+                <section className="flex text-[#000000] Poppin flex-col md:flex-row gap-4">
+                    <div className="p-4 border border-border pt-6 md:max-w-sm lg:max-w-lg bg-[#EBEBEB] rounded-lg bg-card">
+                        <h3 className="text-lg font-semibold mb-2">Startups</h3>
                         <p>
                             Flutter, an easy-to-use and free framework, is highly convenient for startup businesses as the mechanism also possesses good tooling and libraries for developing a top-notch app. Icing on the
                             cake?
                         </p>
                     </div>
 
-                    <div class="p-4 border border-border pt-6 md:max-w-lg lg:max-w-2xl bg-[#EBEBEB] rounded-lg bg-card">
-                        <h3 class="text-lg font-semibold mb-2">Businesses Working on MVPs</h3>
+                    <div className="p-4 border border-border pt-6 md:max-w-lg lg:max-w-2xl bg-[#EBEBEB] rounded-lg bg-card">
+                        <h3 className="text-lg font-semibold mb-2">Businesses Working on MVPs</h3>
                         <p>
                             A Minimum Viable Product (MVP) is a product with basic features that provides an idea of the success that can be attained. Therefore, Flutter is a dazzling option offered by a tremendous
                             Flutter app development company for MVP creation, as it’s quick and easy.
                         </p>
                     </div>
                 </section>
-                <section class="flex text-[#000000] Poppin my-4   flex-col md:flex-row gap-4">
-                    <div class="p-4 border border-border pt-6 md:max-w-lg lg:max-w-2xl bg-[#EBEBEB]  rounded-lg bg-card">
-                        <h3 class="text-lg font-semibold mb-2">Businesses with Limited Resources</h3>
+                <section className="flex text-[#000000] Poppin my-4   flex-col md:flex-row gap-4">
+                    <div className="p-4 border border-border pt-6 md:max-w-lg lg:max-w-2xl bg-[#EBEBEB]  rounded-lg bg-card">
+                        <h3 className="text-lg font-semibold mb-2">Businesses with Limited Resources</h3>
                         <p>
                             Flutter is an excellent option for any business with limited resources, as it saves time and money. Moreover, the right strategies fabricated by one of India’s top Flutter app development
                             companies add the cherry on top!
                         </p>
                     </div>
 
-                    <div class="p-4 border border-border pt-6 bg-[#EBEBEB]   md:max-w-sm lg:max-w-lg rounded-lg bg-card">
-                        <h3 class="text-lg font-semibold mb-2">Other Well-Established Businesses</h3>
+                    <div className="p-4 border border-border pt-6 bg-[#EBEBEB]   md:max-w-sm lg:max-w-lg rounded-lg bg-card">
+                        <h3 className="text-lg font-semibold mb-2">Other Well-Established Businesses</h3>
                         <p>As said, there’s always scope for improvement. Therefore, businesses looking forward to building their cross-network platforms can use the Flutter framework and reach a wider audience.</p>
                     </div>
                 </section>
             </div>
 
 
-            <div class="bg-background p-6 Poppin max-w-7xl mt-6 m-auto">
-  <h2 class="text-3xl font-medium text-foreground mb-4">Types of Businesses That Prefer Using Flutter</h2>
-  <p class="text-muted-foreground Poppind mb-6">
+            <div className="bg-background p-6 Poppin max-w-7xl mt-6 m-auto">
+  <h2 className="text-3xl font-medium text-foreground mb-4">Types of Businesses That Prefer Using Flutter</h2>
+  <p className="text-muted-foreground Poppind mb-6">
     While Flutter seems like a potential framework, there may be better fits for some projects. Can you leverage the <br/> framework in your app with the help of a Flutter mobile app development company?
     Take a look!
   </p>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <div class="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
-      <h3 class="pb-2 text-xl">Market Experience</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
+      <h3 className="pb-2 text-xl">Market Experience</h3>
       <p className='text-base leading-relaxed'>For efficient flutter development services, your dedicated flutter mobile application development company must have a clear understanding of your target audience.</p>
     </div>
-    <div class="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
-      <h3 class="pb-2 text-xl">Cutting-Edge Development</h3>
+    <div className="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
+      <h3 className="pb-2 text-xl">Cutting-Edge Development</h3>
       <p className='text-base leading-relaxed'>We offer a clear-cut app development process and stick to the pattern and strategies. Every individual involved in the project will be educated about the objectives to be achieved.</p>
     </div>
-    <div class="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
-      <h3 class="pb-2 text-xl">Skills and Well-Defined Roles</h3>
+    <div className="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
+      <h3 className="pb-2 text-xl">Skills and Well-Defined Roles</h3>
       <p className='text-base leading-relaxed'>Sure, having an experience is not enough! Therefore, we have a team with diverse skills, and being a flawless and the best flutter application development company in India.</p>
     </div>
-    <div class="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
-      <h3 class="pb-2 text-xl">Open Communication Channels</h3>
+    <div className="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
+      <h3 className="pb-2 text-xl">Open Communication Channels</h3>
       <p className='text-base leading-relaxed'>
         We believe in an easy-to-reach approach, which is why, being a top flutter mobile app development company, we are always available for client support via emails, chat, or even video
         conferencing.
       </p>
     </div>
-    <div class="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
-      <h3 class="pb-2 text-xl">Elevated Coding Standards</h3>
+    <div className="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
+      <h3 className="pb-2 text-xl">Elevated Coding Standards</h3>
       <p className='text-base leading-relaxed'>A flutter app development company that chases high coding standards should always be your first pick; and fortunately, our team is familiar with using multiple programming languages.</p>
     </div>
-    <div class="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
-      <h3 class="pb-2 text-xl">Dedication To the Project</h3>
+    <div className="bg-gradient-to-b from-[#1880AF] to-[#18191F]  pb-6 xl:pb-10 text-primary-foreground p-6 rounded-2xl shadow-lg">
+      <h3 className="pb-2 text-xl">Dedication To the Project</h3>
       <p className='text-base leading-relaxed'>
         We are a dedicated flutter app development company in India of 150+ experts who go to lengths to bring out the best in each of our projects. Our clients bring us raw ideas, and we turn them
         into a money.
