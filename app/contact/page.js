@@ -131,10 +131,10 @@ const Page = () => {
       <div className='bg-[#18191F]   2xl:h-[1100px] text-white  '>
         <div className="">
 
-          <div className=" h-[1000px] md:relative 2xl:px-40  md:h-[550px] ">
+          <div className=" h-[800px] md:relative 2xl:px-40  md:h-[550px] ">
 
 
-            <div className='grid grid-rows-2  top-28 md:-top-16 md:grid-cols-2   absolute lg:-top-20 h-[200px] justify-self-start 2xl:-top-52  md:justify-between px-4 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
+            <div className='grid grid-rows-2  top-28 md:-top-16 md:grid-cols-2   absolute lg:-top-20 h-[1000px] justify-self-start 2xl:-top-52  md:justify-between px-4 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
               <div className="pr-6 lg:pr-16  ">
                 <h2 className=' text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl leading-relaxed Poppinx font-medium'>
                   Unlock Your Business <br /> Potential Today!

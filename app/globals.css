@@ -581,8 +581,8 @@ height: 400px;
 }
 @media screen and (max-width:720px) {
   .navbar{
-    /*background-image: url('/Navbarbg.png'); */
-    background-color: black;
+    background-image: url('/Navbarbg.png'); 
+   
     background-size: cover;
   height: 600px;
   opacity: 0.8;
