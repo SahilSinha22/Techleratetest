@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
-import Phone from "@/public/phone.png";
+
 import Sucess from '@/components/Sucess';
 import Cop from "@/components/Cop"
 import Navbar from '../component/Navbar';
