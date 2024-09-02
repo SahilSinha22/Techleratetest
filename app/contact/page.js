@@ -350,7 +350,7 @@ const Page = () => {
               </div>
               <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
               <Link Link href="/contact"  className="inline-flex">
-                <button className="block nav-link text-[#000000] lg:inline-block text-white-200 mr-2 xl:mr-4">
+                <button className="block nav-link text-white lg:inline-block text-white-200 mr-2 xl:mr-4">
                   Contact Us
                 </button>
                 <Image src={Star} alt="" className="h-6 w-6" width={20} height={20} />
