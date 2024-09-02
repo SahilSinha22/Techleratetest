@@ -7,7 +7,7 @@ import Image from 'next/image';
 const banner = () => {
   return (
     <>
-    <div className='bg-[#4862e3] w-full'>
+    <div className='bg-[#4862e3] w-full -z-10'>
     <div className=" logos  py-4 w-full text-white text-primary-foreground  text-center">
     <div className=" logos-slide     px-4">
       <span className="mx-2 lg:mx-4  text-lg md:text-4xl font-bold">CREATIVE WORKS</span>

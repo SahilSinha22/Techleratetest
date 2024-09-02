@@ -71,9 +71,9 @@ const Navbar = () => {
   const isContactPage = router.pathname === '/contact';
 
   return (
-    <nav className={` ${isContactPage  ? 'bg-white' : ''} items-center md:px-4 md:p-4   lg:p-6 2xl:px-40 `}>
-          <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
-            <div className="flex items-center flex-shrink-0 text-[#7b61ff] md:text-white">
+    <nav className={` ${isContactPage  ? 'bg-white' : ''} items-center md:px-4 md:p-4  z-50 lg:p-6 2xl:px-40 `}>
+          <div className=" relative xl:px-10 flex items-center justify-between z-50 lg:justify-around flex-wrap">
+            <div className="flex items-center flex-shrink-0 text-white">
              
              <Link href="/" ><Image
                 src={Logo}
@@ -87,7 +87,7 @@ const Navbar = () => {
             <div className="block lg:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center pr-3 py-2 font-extrabold rounded text-zinc-950 lg:text-zinc-700 hover:text-black-400"
+                className="flex items-center pr-3 py-2 font-extrabold rounded text-zinc-900 lg:text-zinc-700 hover:text-black-400"
               >
                 <svg
                   className={`fill-current h-5 sm:h-10 sm:w-10 w-5 ${isOpen ? "hidden" : "block"
@@ -107,26 +107,26 @@ const Navbar = () => {
               </button>
             </div>
             <div
-              className={`w-full block flex-grow  justify-between text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
+              className={`w-full block flex-grow justify-between text-center  z-50 lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
                 }`}
             >
               <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
                 <Link
                   href="/"
-                  className="nav-link block  font-bold md:font-normal text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+                  className="nav-link block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                 >
                   About
                 </Link>
                 <Link
                   href="/Work"
-                  className="nav-link block font-bold md:font-normal md:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+                  className="nav-link block text-[#000000] md:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                 >
                   Work
                 </Link>
                 <div className=" lg:inline-block  group">
                   <Link
                     href="#"
-                    className="nav-link block font-bold md:font-normal text-white mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
+                    className="nav-link block text-white mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
                     aria-haspopup="true"
                     aria-expanded={isOpen ? true : false}
                   >
@@ -183,26 +183,26 @@ const Navbar = () => {
                 <div className=" lg:inline-block  group">
               <Link
                 href="#"
-                className="block text-[#000000] font-bold md:font-normal md:text-white nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+                className="block text-white nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
               >
                 Technology
                 <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
 
               </Link>
               <div
-                className={`absolute  w-auto left-0 xl:left-10   justify-center  mt-10  h-full md:h-auto Glassy text-white   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                className={`absolute  w-auto left-0 xl:left-10   justify-center  mt-10  h-auto md:h-auto Glassy text-white   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
               >
 
 
-                <section className="flex flex-row justify-between rounded-3xl w-full md:gap-10 lg:gap-6 pt-16 pb-6 md:px-0  md:flex Poppinx ">
-                  <div className="max-w-5xl xl:w-1/2 lg:w-1/4  sm:w-[250px]  mt-6 lg:mt-0  hidden md:block">
+                <section className="flex flex-col md:flex-row justify-between rounded-3xl w-full md:gap-10 lg:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0  md:flex Poppinx ">
+                  <div className="max-w-5xl xl:w-1/2 lg:w-1/4  w-[300px] sm:w-[250px]  mt-6 lg:mt-0  ">
                     <h2 className="text-xl lg:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
-                    <Image src="/Technology/Technologyimg.png" className=" m-6  xl:w-2/3 2xl:w-3/4 " alt="" width={400} height={400} />
+                    <Image src="/Technology/Technologyimg.png" className=" m-6 w-72 md:w-auto xl:w-auto 2xl:w-3/4 " alt="" width={400} height={400} />
                   </div>
-                  <ul className="py-1 text-xs sm:text-base  lg:text-base xl:text-lg xl:gap-4 2xl:gap-6 Poppin grid grid-cols-3">
+                  <ul className="py-1 text-xs sm:text-xs  lg:text-base xl:text-lg xl:gap-4 2xl:gap-6 Poppin grid grid-cols-2 md:grid-cols-3">
                     {technology.map((service, index) => (
                       <li key={index} className="flex items-center w-auto sm:w-[220px] md:w-full lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#7b61ff] custom-filter">
-                        <div className="lg:h-8 lg:w-8 h-4 w-4 sm:h-6 sm:w-6  hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
+                        <div className="lg:h-8 lg:w-8 h-6 w-6 sm:h-6 sm:w-6  hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
 
                           <Image
                             src={service.logo}
@@ -236,7 +236,7 @@ const Navbar = () => {
               </div>
               <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
              < Link href="/contact"  className="inline-flex">
-                <button className="block nav-link font-bold md:font-normal md:text-white lg:inline-block text-white-200 mr-2 xl:mr-4">
+                <button className="block nav-link text-white lg:inline-block text-white-200 mr-2 xl:mr-4">
                   Contact Us
                 </button>
                 <Image src={Star} alt="" className="h-6 w-6" width={20} height={20} />
