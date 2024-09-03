@@ -39,9 +39,7 @@ const Page = () => {
     }
 
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
-      }
+      
     };
   }, []);
   return (

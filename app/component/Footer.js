@@ -9,7 +9,7 @@ import Logo from "@/public/Logo2.svg"
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-card-foreground py-8 p-12">
+    <footer className="bg-black text-card-foreground py-8 md:p-12">
     <div className=" border-t  border-[#535353] ">
       <div className="flex-1 md:flex  px-10 pt-20   pb-12 justify-between">
         <div className="w-full md:w-2/4 mb-6 Poppins md:mb-0 ">
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
   
-        <div className="w-full md:w-2/4 flex flex-wrap">
+        <div className="w-full md:w-2/4 flex flex-row">
           <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
             <h3 className=" text-white mb-4">Solution</h3>
             <ul className="space-y-2">
