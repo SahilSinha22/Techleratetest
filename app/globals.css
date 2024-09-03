@@ -597,12 +597,18 @@ height: 400px;
 }
 @media screen and (max-width:720px) {
   .navbar{
-    background-image: url('/Navbarbg.png'); 
-   position: relative;
-   
+    background-image: url('/Navbarbg.png');
     background-size: cover;
+    background-position: center;
+  /* The blend mode */
+    /* Adjust as needed */
+     /* Ensure your text is white */
+    padding: 20px;
+    image-rendering: high-quality;
+    image-resolution: from-image 300dpi;
+    image-resolution: inherit;
   height: 600px;
-  opacity: 0.8;
+ 
   
   
   }
