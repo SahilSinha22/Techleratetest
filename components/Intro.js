@@ -251,7 +251,7 @@ const Intro = () => {
           </div>
         </nav>
         <div className="relative z-10 flex flex-col items-center justify-center md:h-full xl:space-y-8">
-          <div className="text-center mt-32 lg:mt-0 xl:-mt-20 lg:mb-10 mb-10 xl:mb-20">
+          <div className="text-center mt-32 lg:mt-36 xl:mt-20 lg:mb-10 mb-10 xl:mb-20">
             <h2 className="md:text-6xl lg:text-7xl xl:text-7xl mx-2 text-3xl 2xl:text-8xl font-bold">
               HELP <span className="text-black font-bold Poppins">YOUR WORK </span> WITH <br />
             </h2>
