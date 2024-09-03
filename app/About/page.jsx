@@ -49,13 +49,17 @@ const Page = () => {
       <Navbar/>
       <About/>
       <Aboutproc/>
-      <div className='bg-[#000000]'>
+      <div className='bg-[#18191F]'>
+        <div className='max-w-[1660px] m-auto'>
+
+        
       <Bannerxcontact/>
+      </div>
 <Award/>
 <Leader/>
 </div>
       <Testimonials/>
-      <div className=" bg-black text-white  py-14 xl:pt-10 text-center">
+      <div className=" bg-black text-white  py-14 xl:pt-16 text-center">
           <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
             <span className="  text-lg text-white md:text-3xl  xl:text-4xl Poppins">READY FOR YOUR NEXT PROJECT?</span>
             <span onClick={handleButtonClick} className=" text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">

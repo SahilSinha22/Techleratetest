@@ -12,7 +12,7 @@ const Leadership = [
 const Leader = () => {
 
   return (
-    <div className='flex flex-col max-w-[1530px] m-auto text-white p-4 playfair_displays'>
+    <div className='flex flex-col max-w-[1560px] m-auto text-white p-4 playfair_displays'>
       <div class=" md:mx-10 xl:mx-20 2xl:px-0 2xl:mx-0 py-10 ">
         <h2 class="text-2xl md:text-4xl font-bold text-left mb-4 ">Leadership That Inspires</h2>
         <p class=" text-xl  text-left mb-8 open_sans_display">Here’s our leadership team that is driving our purpose to help<br /> our clients succeed.</p>

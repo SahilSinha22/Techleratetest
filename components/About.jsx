@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const About = () => {
     return (
-        <div className='bg-[#000000]' >
+        <div className='bg-[#18191F]' >
 
             <div className=' m-auto p-4 md:px-10 xl:px-20   pt-20 lg:pt-40 pb-20 max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto text-white '>
                 <div class="flex flex-col max-w-7xl text-center  justify-center place-content-center leading-relaxed ">
@@ -16,7 +16,7 @@ const About = () => {
 
 
             </div>
-            <Image src="/About.png" className="w-screen h-full" alt='' width={1000} height={1000} />
+            <Image src="/About.webp" className="w-screen h-full" alt='' width={1000} height={1000} />
 
             <div className='bg-[#7B61FF]'>
                 <div className=' flex  xl:gap-10  max-w-7xl  justify-around m-auto'>
@@ -84,12 +84,12 @@ const About = () => {
 
                 </div>
             </div>
-            <div className='b-2  text-white text-center   py-8'>
-                <span className='border-black border-b py-1 text-lg md:text-2xl lg:text-3xl playfair_displays font-bold'> Location we are Catering</span>
-                <div className='place-content-center py-10 items-center flex justify-center'>
+            <div className='b-2  text-white text-center   py-8 lg:pt-12'>
+                <span className=' py-1 text-lg md:text-2xl lg:text-5xl  Poppins font-medium'> Location we are Catering</span>
+                <div className='place-content-center py-10 lg:py-16 items-center flex justify-center'>
 
 
-                    <Image src="/World.png" alt="" width={1000} height={1000} />
+                    <Image src="/World.webp" alt="" width={1000} height={1000} />
                 </div>
             </div>
         </div>
