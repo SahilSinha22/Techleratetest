@@ -51,6 +51,22 @@
         text-align: left;
         color: #7b61ff;
       }
+      @media only screen and (max-width: 640px) {
+        .PORTFOLIO {
+          width: 1030px;
+          height: 75px;
+          margin: 60.9px 14px 2.1px 0;
+         
+          font-size: 24px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: 7.2px;
+          text-align: left;
+          color: #7b61ff;
+        }
+      }
 h1{
 position:relative;
 left:40px;
@@ -1362,7 +1378,20 @@ bottom:0;
     left:0px;
   }
   @media only screen and (max-width: 400px) {
-    
+    .PORTFOLIO {
+      width: 1030px;
+      height: 75px;
+      margin: 60.9px 14px 2.1px 0;
+     
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: 7.2px;
+      text-align: left;
+      color: #7b61ff;
+    }
       .gallery{
         display:flex;
           align-items:center;

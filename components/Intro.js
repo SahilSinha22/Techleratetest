@@ -196,7 +196,7 @@ const Intro = () => {
 
                 </Link>
                 <div
-                className={`absolute  w-auto left-0 xl:left-10   justify-center  mt-10  h-auto md:h-auto Glassy text-white   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                className={`absolute  w-full left-4 sm:left-0 lg:w-auto m-auto xl:left-8   justify-center  mt-10  h-auto md:h-auto Glassy text-white   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
               >
 
 
