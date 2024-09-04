@@ -628,7 +628,7 @@ const Page = () => {
 
       </div>
 
-      <div className="bg-[#18191F]  justify-start pb-20 px-10 md:px-28 2xl:px-40   ">
+      <div className="bg-[#18191F]  justify-start pb-20 px-6 md:px-10 2xl:px-52   ">
         <div className="flex text-3xl text-white gap-4 py-16 ">
           <h2>Find us on Google Maps</h2>
           <Image src="/Path.svg" alt="" width={20} height={20} />
