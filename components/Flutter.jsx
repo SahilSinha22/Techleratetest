@@ -110,8 +110,8 @@ const Flutter = () => {
     return (
         <div className='bg-[#18191F] text-white'>
             <div className='mx-auto  text-white'>
-                <div className="max-w-7xl 2xl:max-w-full items-center text-center  mx-auto px-2 md:px-10 xl:px-20 2xl:px-10 py-16 md:py-20 lg:pt-28 xl:pt-48 lg:pb-10 ">
-                    <h2 className="text-base sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:leading-snug xl:leading-normal 2xl:leading-snug   font-bold playfair_displays mb-4">Flutter App Development Company Helps You <br />Build Applications for Multiple Screens!</h2>
+                <div className="max-w-7xl flex flex-col justify-center 2xl:max-w-full m-auto items-center text-center  mx-auto px-2 md:px-10 xl:px-20 2xl:px-10 py-16 md:py-20 lg:pt-28 xl:pt-48 lg:pb-10 ">
+                    <h2 className="text-base sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:leading-snug xl:leading-normal 2xl:leading-snug w-[340px] md:w-[680px] lg:w-[840px]  xl:w-[1100px] 2xl:w-[1400px] font-bold playfair_displays mb-4">Flutter App Development Company Helps You Build Applications for Multiple Screens!</h2>
                     <p className="  text-base lg:text-xl xl:text-2xl   text-muted-foreground mb-6">Introducing big waves in modern cross-platform app development, Flutter <br /> tech  builds exquisite, high-performing, and flawless mobile apps.</p>
 
                 </div>

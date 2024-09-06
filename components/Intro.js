@@ -255,7 +255,7 @@ const Intro = () => {
             <h2 className="md:text-6xl lg:text-7xl xl:text-7xl mx-2 text-3xl 2xl:text-8xl font-bold">
               HELP <span className="text-black font-bold Poppins">YOUR WORK </span> WITH <br />
             </h2>
-            <h2 className="md:text-6xl mt-6 lg:text-7xl xl:text-7xl mx-2 text-3xl 2xl:text-8xl font-bold">
+            <h2 className="md:text-6xl sm:mt-6 lg:text-7xl xl:text-7xl mx-2 text-3xl 2xl:text-8xl font-bold">
               <span className="text-black Poppins">OUR </span> STRATEGY
             </h2>
           </div>

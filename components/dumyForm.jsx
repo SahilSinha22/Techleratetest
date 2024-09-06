@@ -118,8 +118,8 @@ const DumyForm = () => {
     return (
         <div className=''>
             <div class="justify-center Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none focus:outline-none">
-                <div className='relative'>
-                <div class=" grid md:grid-cols-2  w-[350px] md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
+                <div className='relative  -top-4 md:-left-16 lg:left-0 lg:top-0'>
+                <div class="  grid md:grid-cols-2  w-[350px] md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
@@ -170,8 +170,8 @@ const DumyForm = () => {
                             onSubmit={handleSubmit}
                             className="    "
                         >
-                            <div class="flex flex-col  gap-10  w-full">
-                                <div class="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                            <div class="flex flex-col  gap-10 rounded-4xl md:rounded-none w-full">
+                                <div class="lg:w-[450px] md:w-[400px] xl:w-[550px] rounded-xl md:rounded-none xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
                                     <div class="flex pt-10  justify-end ">
 
                                         <svg onClick={handleClose} class="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

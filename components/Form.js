@@ -129,10 +129,10 @@ const Form = () => {
             the right product - faster.
           </h2>
 
-          <div className="sm:mx-10 lg:mx-20 xl:mx-40 ">
+          <div className="sm:mx-10 mx-4 lg:mx-20 xl:mx-40 ">
             <div className="border-b flex  2xl:mt-6 flex-col lg:flex-row items-center m-auto 2xl:h-auto  md:mx-4 ">
               <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
-                <div className="m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
+                <div className="m-4 md:m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
                   <h2 className="md:text-2xl text-2xl 2xl:text-3xl font-semibold">
                     Hello now !
                   </h2>
@@ -156,7 +156,7 @@ const Form = () => {
                 </div>
               </div>
 
-              <div className="mr-4  xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-60  xl:ml-20 md:mx-2 sm:ml-10 ">
+              <div className="mr-4 w-full px-4 lg:w-auto xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-60  xl:ml-20 md:mx-2 sm:ml-10 ">
                 {successBanner && (
                   <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
                     <FaCheckCircle size={24} className="mr-2" />
