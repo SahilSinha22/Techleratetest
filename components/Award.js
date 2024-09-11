@@ -10,7 +10,7 @@ const Award = () => {
             <div className="font-bold Poppin">
             Awards & Recognition
             </div>
-            <div className="text-lg outfit_dispaly font-light  sm:text-base lg:text-xl 2xl:text-2xl md:text-lg">
+            <div className="text-lg outfit_dispaly font-light mt-2 sm:text-base lg:text-xl 2xl:text-2xl md:text-lg">
             We have been featured and certified by recognised <br/>authorities Worldwide.
             </div>
           </div>
