@@ -144,7 +144,7 @@ const Page = () => {
                         >
                             <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
                                 <Link
-                                    href="/"
+                                    href="/About"
                                     className="nav-link block text-white hover:text-[#7B61FF] mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                                 >
                                     About
