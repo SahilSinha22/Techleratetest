@@ -35,7 +35,7 @@ const DumyForm = ({ onClose }) => {
         else if (!/\S+@\S+\.\S+/.test(user.Email)) newErrors.Email = 'Email address is invalid';
         if (!user.Number.trim()) newErrors.Number = 'Phone number is required';
         else if (!/^\d{7,12}$/.test(user.Number)) newErrors.Number = 'Phone number must be between 7 to 12 digits';
-        if (!user.message) newErrors.message = 'description is a required ';
+       if (!user.message) newErrors.message = 'description is a required ';
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -113,9 +113,9 @@ const DumyForm = ({ onClose }) => {
     if (!visible) return null;
     return (
         <div className=''>
-            <div className="justify-center Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none focus:outline-none">
+            <div className="md:justify-center px-4 md:px-0 Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none focus:outline-none">
                 <div className='relative'>
-                <div className=" grid md:grid-cols-2  w-[350px] md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
+                <div className=" grid md:grid-cols-2  w-auto md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
@@ -167,7 +167,7 @@ const DumyForm = ({ onClose }) => {
                             className="    "
                         >
                             <div className="flex flex-col  gap-10  w-full">
-                                <div className="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                <div className="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-auto bg-[#FFFFFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col rounded-2xl md:rounded-none  ">
                                     <div className="flex pt-10  justify-end ">
 
                                         <svg onClick={handleClose} className="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -267,7 +267,7 @@ const DumyForm = ({ onClose }) => {
                                             required
                                             onChange={data}
                                         />
-                                        {errors.message && (
+                                    {errors.message && (
                                             <p className="text-red-600 text-xs mt-1">
                                                 {errors.message}
                                             </p>
@@ -308,7 +308,7 @@ const DumyForm = ({ onClose }) => {
 
                                     <button
                                         onClick={getdata}
-                                        className="rounded-full rounds t-4 text-white border-white border-2 bg-[#7b61ff]  hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display  xl:text-lg w-full sm:w-auto xl:px-8 xl:py-3 px-4 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        className="rounded-full rounds t-4 text-white border-white border-2 bg-[#7b61ff]   focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display  xl:text-lg w-full sm:w-auto xl:px-8 xl:py-3 px-4 py-2.5 text-center  "
                                         type="submit"
                                         style={{
                                             backgroundColor: isCaptchaValid ? "green" : "[#7b61ff]",
@@ -322,8 +322,8 @@ const DumyForm = ({ onClose }) => {
                                     <div className=' flex justify-between items-center pb-6 md:pb-0 mt-6 md:mt-12 2xl:mt-8'>
 
                                    
-                                    <h2 className='text-[#000000] z-20 text-sm md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
-                                    <a href="https://api.whatsapp.com/send?phone=918882076755">   <Image src="/whatsapp.svg" className="mr-20" alt="" width={40} height={40} /> </a>
+                                    <h2 className='text-[#000000] z-20 text-xs md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
+                                    <a href="https://api.whatsapp.com/send?phone=918882076755">   <Image src="/whatsapp.svg" className="md:mr-20" alt="" width={40} height={40} /> </a>
 
                                     </div>
                                     </div>

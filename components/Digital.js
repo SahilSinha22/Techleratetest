@@ -15,7 +15,7 @@ const Digital = () => {
       <div className=" flex">
         <h1 className="text-secondary w-auto text-lg font-semibold tracking-widest uppercase mb-2">Digital Marketing</h1>
         </div>
-        <h2 className="text-4xl  text-white  xl:my-3 mb-4">Provide Digital Marketing</h2>
+        <h2 className="text-4xl  text-white  xl:my-3 md:mb-4">Provide Digital Marketing</h2>
         <h2 className="text-4xl  text-white  xl:mb-6 mb-4"> Strategy for Our Clients</h2>
 
         <p className="text-muted-foreground mb-6">

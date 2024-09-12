@@ -117,9 +117,9 @@ const DumyForm = () => {
     if (!visible) return null;
     return (
         <div className=''>
-            <div class="justify-center Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none  focus:outline-none">
+            <div class="md:justify-center px-4 md:px-0 Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none  focus:outline-none">
                 <div className='relative  -top-4 md:-left-16 lg:left-0 lg:top-0'>
-                <div class="  grid md:grid-cols-2  w-[350px] md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
+                <div class="  grid md:grid-cols-2  w-auto md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
@@ -326,8 +326,8 @@ const DumyForm = () => {
                                     <div className=' flex justify-between items-center pb-6 md:pb-0 mt-6 md:mt-12 2xl:mt-8'>
 
                                    
-                                    <h2 className='text-[#000000] z-20 text-sm md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
-                                    <a href="https://api.whatsapp.com/send?phone=918882076755">   <Image src="/whatsapp.svg" className="mr-20" alt="" width={40} height={40} /> </a>
+                                    <h2 className='text-[#000000] z-20 text-xs md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
+                                    <a href="https://api.whatsapp.com/send?phone=918882076755">   <Image src="/whatsapp.svg" className="md:mr-20" alt="" width={40} height={40} /> </a>
 
                                     </div>
                                     </div>
