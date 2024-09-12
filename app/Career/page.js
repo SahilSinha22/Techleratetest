@@ -265,7 +265,7 @@ const Page = () => {
                                 </Link>
                             </div>
                             <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
-                                <Link Link href="/contact" className="inline-flex">
+                                <Link  href="/contact" className="inline-flex">
                                     <button className="block nav-link text-white hover:text-[#7B61FF] lg:inline-block text-white-200 mr-2 xl:mr-4">
                                         Contact Us
                                     </button>
@@ -286,18 +286,18 @@ const Page = () => {
                 </div>
 
 
-                <div class="bg-[#18191F] text-zinc-500  pt-20 pb-10 xl:py-20 px-4 md:px-10">
+                <div className="bg-[#18191F] text-zinc-500  pt-20 pb-10 xl:py-20 px-4 md:px-10">
                     <div className="max-w-7xl 2xl:max-w-[1500px] justify-between flex flex-col md:flex-row gap-10 xl:gap-28 m-auto ">
                         <div>
 
-                            <h2 class="text-2xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-[#FFFFFF] Poppins font-medium mb-4">Welcome to our career site</h2>
-                            <p class="text-base md:text-base xl:text-xl 2xl:text-2xl mb-6 md:w-[350px] lg:w-[500px] xl:w-[590px] 2xl:w-[730px]">We are Techlerate. A group of talented designers and developers, accelerating hand picked start-ups to become the best they can be. </p>
-                            <p class="text-base md:text-base xl:text-xl 2xl:text-2xl md:mb-8 md:w-[350px] lg:w-[500px] xl:w-[610px] 2xl:w-[730px]">
+                            <h2 className="text-2xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-[#FFFFFF] Poppins font-medium mb-4">Welcome to our career site</h2>
+                            <p className="text-base md:text-base xl:text-xl 2xl:text-2xl mb-6 md:w-[350px] lg:w-[500px] xl:w-[590px] 2xl:w-[730px]">We are Techlerate. A group of talented designers and developers, accelerating hand picked start-ups to become the best they can be. </p>
+                            <p className="text-base md:text-base xl:text-xl 2xl:text-2xl md:mb-8 md:w-[350px] lg:w-[500px] xl:w-[610px] 2xl:w-[730px]">
                                 Our team is full of passionate professionals who work on the newest technologies to push the limits of their knowledge. We believe by putting ourselves at the forefront of our industry, we will build products that are high quality, meaningful and original.
                             </p>
                         </div>
                         <div>
-                            <Image class="rounded-lg shadow-lg w-auto h-auto" src="/Career/Intro2.png" alt="Team working together" width={1000} height={1000} />
+                            <Image className="rounded-lg shadow-lg w-auto h-auto" src="/Career/Intro2.png" alt="Team working together" width={1000} height={1000} />
 
                         </div>
                     </div>

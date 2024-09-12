@@ -5,10 +5,10 @@ const About = () => {
         <div className='bg-[#18191F]' >
 
             <div className=' m-auto p-4 md:px-10 xl:px-20  text-center flex flex-col justify-center pt-20 lg:pt-28 xl:pt-40 pb-20 max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto text-white '>
-                <div class="flex flex-col m-auto max-w-7xl text-center  justify-center  place-content-center leading-relaxed ">
-                    <h2 class="text-base md:text-3xl lg:text-4xl md:leading-[1.5]  xl:text-5xl md:w-[640px] lg:w-[780px] xl:w-[1040px] font-medium leading-loose text-center flex justify-center  Poppin">Know our team who is putting day & night for yourwonderful digital experience</h2>
+                <div className="flex flex-col m-auto max-w-7xl text-center  justify-center  place-content-center leading-relaxed ">
+                    <h2 className="text-base md:text-3xl lg:text-4xl md:leading-[1.5]  xl:text-5xl md:w-[640px] lg:w-[780px] xl:w-[1040px] font-medium leading-loose text-center flex justify-center  Poppin">Know our team who is putting day & night for yourwonderful digital experience</h2>
 
-                    <p class=" text-[12px] mt-2 xl:mt-6 md:text-lg lg:text-xl xl:text-3xl text-muted-foreground w-[320px] md:w-[650px] lg:w-[750px] xl:w-[1120px] text-center Poppind leading-relaxed font-semibold  m-auto">
+                    <p className=" text-[12px] mt-2 xl:mt-6 md:text-lg lg:text-xl xl:text-3xl text-muted-foreground w-[320px] md:w-[650px] lg:w-[750px] xl:w-[1120px] text-center Poppind leading-relaxed font-semibold  m-auto">
                         Spacetotech is turning ideas into reality for a decade now. Partner with us & drive digitization to your business with innovation and technology.
                     </p>
                 </div>

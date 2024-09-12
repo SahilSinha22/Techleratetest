@@ -113,9 +113,9 @@ const DumyForm = ({ onClose }) => {
     if (!visible) return null;
     return (
         <div className=''>
-            <div class="justify-center Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none focus:outline-none">
+            <div className="justify-center Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none focus:outline-none">
                 <div className='relative'>
-                <div class=" grid md:grid-cols-2  w-[350px] md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
+                <div className=" grid md:grid-cols-2  w-[350px] md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
@@ -153,7 +153,7 @@ const DumyForm = ({ onClose }) => {
 
 
 
-                    <div class="w-full flex  md:w-[500px]  2xl:w-[650px]   items-center ">
+                    <div className="w-full flex  md:w-[500px]  2xl:w-[650px]   items-center ">
 
                         {successBanner && (
                             <div className=" translate-x-2 absolute  z-10 top-10  xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
@@ -166,11 +166,11 @@ const DumyForm = ({ onClose }) => {
                             onSubmit={handleSubmit}
                             className="    "
                         >
-                            <div class="flex flex-col  gap-10  w-full">
-                                <div class="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
-                                    <div class="flex pt-10  justify-end ">
+                            <div className="flex flex-col  gap-10  w-full">
+                                <div className="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                    <div className="flex pt-10  justify-end ">
 
-                                        <svg onClick={handleClose} class="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <svg onClick={handleClose} className="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M1 1L19 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         </path>
                                             <path d="M1 19L19 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -233,8 +233,8 @@ const DumyForm = ({ onClose }) => {
                                     </div>
                                     <div className='flex flex-col mt-4 xl:mt-8 gap-4 xl:gap-10'>
                                    
-                                    <div class=" ">
-                                    <div class="relative text-lg flex w-full">
+                                    <div className=" ">
+                                    <div className="relative text-lg flex w-full">
                                         <PhoneInput
                                             country={'in'}
                                             value={user.Number}
