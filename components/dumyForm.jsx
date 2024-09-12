@@ -118,13 +118,13 @@ const DumyForm = () => {
     return (
         <div className=''>
             <div class="md:justify-center px-4 md:px-0 Glassy  md:pl-0 items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-20 outline-none  focus:outline-none">
-                <div className='relative  -top-4 md:-left-16 lg:left-0 lg:top-0'>
-                <div class="  grid md:grid-cols-2  w-auto md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-left place-content-center xl:max-w-4xl ">
+                <div className='relative  -top-4  lg:left-0 lg:top-0'>
+                <div class="  flex w-auto md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto md:justify-center place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
 
-                            <Image src="/FormImage.webp" className="-z-20 w-[300px] lg:w-[450px] xl:w-[500px] h-[500px] xl:h-[600px] 2xl:h-[650px]" alt="" width={1000} height={1000} />
+                            <Image src="/FormImage.webp" className="-z-20 w-[400px] lg:w-[450px] xl:w-[500px] h-[500px] xl:h-[600px] 2xl:h-[650px]" alt="" width={1000} height={1000} />
                             <div className='z-20 absolute justify-center top-6  text-white'>
                                 <div className='px-5'>
 
@@ -137,12 +137,12 @@ const DumyForm = () => {
                                 <div className='px-5'>
 
 
-                                    <h2 className='text-2xl leading-snug  open_sans_displays inline-block border-b'>Explore our works —</h2>
-                                    <div className='grid  aspect grid-cols-3 items-center py-4 gap-4 xl:gap-4'>
-                                        <div className='border-r-2 pr-4'>
+                                    <h2 className='text-xl lg:text-2xl leading-snug  open_sans_displays inline-block border-b'>Explore our works —</h2>
+                                    <div className='flex  aspect  items-center py-4 gap-4 xl:gap-4'>
+                                        <div className='border-r-2 pr-2 lg:pr-4'>
                                             <Image src="/premio.png" alt='' className="" width={100} height={100} />
                                         </div>
-                                        <div className='border-r-2 pr-4 inline-block'>
+                                        <div className='border-r-2 pr-2 lg:pr-4 inline-block'>
                                             <Image src="/Dominos.png"  className="" alt='' width={120} height={120} />
                                         </div>
                                         <div className=''>
@@ -171,7 +171,7 @@ const DumyForm = () => {
                             className="    "
                         >
                             <div class="flex flex-col  gap-10 rounded-4xl md:rounded-none w-full">
-                                <div class="lg:w-[450px] md:w-[400px] xl:w-[550px] rounded-xl md:rounded-none xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                <div class="lg:w-[450px] md:w-[350px] xl:w-[550px] rounded-xl md:rounded-none xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[500px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
                                     <div class="flex pt-10  justify-end ">
 
                                         <svg onClick={handleClose} class="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="none">
@@ -187,7 +187,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="Name"
                                             id="floating_first_name"
-                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-base lg:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Name}
                                             autoComplete="off"
@@ -202,7 +202,7 @@ const DumyForm = () => {
 
                                         <label
                                             for="Name"
-                                            className="peer-focus:font-medium  absolute text-sm md:text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium  absolute text-sm md:text-base lg:text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Full Name*
                                         </label>
@@ -214,7 +214,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="Email"
                                             id="floating_last_name"
-                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-base lg:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Email}
                                             autoComplete="off"
@@ -229,7 +229,7 @@ const DumyForm = () => {
 
                                         <label
                                             for="Email"
-                                            className="peer-focus:font-medium absolute text-sm md:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute text-sm md:text-base lg:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             E-Mail ID*
                                         </label>
@@ -264,7 +264,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="message"
                                             id="floating_email"
-                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-base lg:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.message}
                                             autoComplete="off"
@@ -279,7 +279,7 @@ const DumyForm = () => {
 
                                         <label
                                             for="message"
-                                            className="peer-focus:font-medium absolute text-sm md:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute text-sm md:text-base lg:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-4 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Message (Optional)
                                         </label>
@@ -327,7 +327,7 @@ const DumyForm = () => {
 
                                    
                                     <h2 className='text-[#000000] z-20 text-xs md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
-                                    <a href="https://api.whatsapp.com/send?phone=918882076755">   <Image src="/whatsapp.svg" className="md:mr-20" alt="" width={40} height={40} /> </a>
+                                    <a href="https://api.whatsapp.com/send?phone=918882076755">   <Image src="/whatsapp.svg" className="" alt="" width={40} height={40} /> </a>
 
                                     </div>
                                     </div>

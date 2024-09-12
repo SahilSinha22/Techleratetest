@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 import Insta from "@/public/Insta.svg";
 import Linkedin from "@/public/Linkdinn.svg";
 import Twitter from "@/public/Twit.svg";
@@ -14,8 +14,9 @@ const Footer = () => {
       <div className="flex-1 md:flex  px-10 pt-20   pb-12 justify-between">
         <div className="w-full md:w-2/4 mb-6 Poppins md:mb-0 ">
           <div className="flex items-center mb-4">
+            <Link href="/">
             <Image src={Logo} alt="Techlerate Logo" className="mr-2" width={200} height={5}/>
-            
+            </Link>
           </div>
           <p className="text-[#7b61ff]  ">Connect with us:</p>
           <p className="text-[#9a9898] ">Call: +91 88 820 76 755</p>
