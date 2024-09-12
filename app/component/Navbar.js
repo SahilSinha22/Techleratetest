@@ -225,7 +225,7 @@ const Navbar = () => {
             </div>
             <Link
               href="/Career"
-              className=" hidden nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+              className=" block nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
             >
               Career
             </Link>
