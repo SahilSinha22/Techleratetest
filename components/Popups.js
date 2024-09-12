@@ -170,7 +170,7 @@ const DumyForm = ({ onClose }) => {
                                 <div className="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-auto bg-[#FFFFFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col rounded-2xl md:rounded-none  ">
                                     <div className="flex pt-10  justify-end ">
 
-                                        <svg onClick={handleClose} className="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <svg onClick={handleClose} className="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="none">
                                         <path d="M1 1L19 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         </path>
                                             <path d="M1 19L19 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -183,7 +183,7 @@ const DumyForm = ({ onClose }) => {
                                             type="text"
                                             name="Name"
                                             id="floating_first_name"
-                                            className="block py-2.5 px-0 w-full xl:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Name}
                                             autoComplete="off"
@@ -198,7 +198,7 @@ const DumyForm = ({ onClose }) => {
 
                                         <label
                                             for="Name"
-                                            className="peer-focus:font-medium  absolute xl:text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium  absolute text-sm md:text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-5 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Full Name*
                                         </label>
@@ -210,7 +210,7 @@ const DumyForm = ({ onClose }) => {
                                             type="text"
                                             name="Email"
                                             id="floating_last_name"
-                                            className="block py-2.5 px-0 w-full xl:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Email}
                                             autoComplete="off"
@@ -225,7 +225,7 @@ const DumyForm = ({ onClose }) => {
 
                                         <label
                                             for="Email"
-                                            className="peer-focus:font-medium absolute xl:text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute text-sm md:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-5 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             E-Mail ID*
                                         </label>
@@ -260,7 +260,7 @@ const DumyForm = ({ onClose }) => {
                                             type="text"
                                             name="message"
                                             id="floating_email"
-                                            className="block py-2.5 px-0 w-full xl:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-[#000000] bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.message}
                                             autoComplete="off"
@@ -275,7 +275,7 @@ const DumyForm = ({ onClose }) => {
 
                                         <label
                                             for="message"
-                                            className="peer-focus:font-medium absolute xl:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute text-sm md:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-5 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Message (Optional)
                                         </label>
