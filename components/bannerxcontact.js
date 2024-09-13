@@ -15,7 +15,7 @@ const Bannerxcontact = () => {
     };
   return (
     <div>
-       <div className="py-10 md:py-20 ">
+       <div className="py-10 md:py-20 z-50">
             <div className="bg-[#04040C]  mx-4 md:mx-10 flex  justify-around">
               <div className=" w-40 sm:w-[300px] lg:w-[350px] xl:w-[400px]">
 <Image className="object-cover   " src="/FormImg.png" alt="" width={1000} height={1000} />

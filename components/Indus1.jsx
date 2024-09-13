@@ -1,11 +1,10 @@
 'use client'
-
-import React ,{ useEffect } from "react";
-
+import React, { useEffect } from "react";
+import Link from "next/link";
 
 const Indus = () => {
   useEffect(() => {
-    console.log("hello");
+
     const panels = document.querySelectorAll(".panel");
 
     panels.forEach((panel) => {
@@ -55,9 +54,9 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className=" mt-5  lg:mt-5 xl:mt-10">
-                  <a href="#" className="round  ">
-                   <span  className=" px-1 md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  <Link href="#" onClick={(e) => e.preventDefault()} className="round  ">
+                    <span className=" px-1 md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -71,14 +70,14 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
+                    <span className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="panel Indus2">
-            <div className="img-boxs ">
+              <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
@@ -87,14 +86,14 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
+                    <span className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="panel Indus3">
-            <div className="img-boxs ">
+              <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
@@ -103,14 +102,14 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
+                    <span className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="panel Indus4">
-            <div className="img-boxs ">
+              <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
@@ -119,14 +118,14 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round">
+                    <span className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="panel Indus5">
-            <div className="img-boxs ">
+              <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
@@ -135,15 +134,15 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
+                    <span className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   );

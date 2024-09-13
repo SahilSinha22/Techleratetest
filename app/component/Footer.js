@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Link from 'next/link';
 import Insta from "@/public/Insta.svg";
@@ -23,18 +24,18 @@ const Footer = () => {
           <p className="text-[#9a9898] ">Email: contact@techlerate.com</p>
           <p className="text-[#9a9898]">Office: Platina Heights, C24, C Block, Phase 2,<br/> Industrial Area, Sector 62, Noida, Uttar Pradesh 201309</p>
           <div className="flex mt-6 space-x-4 ">
-            <a href="#" aria-label="Instagram">
+            <Link href="#" onClick={(e) => e.preventDefault()}  aria-label="Instagram">
               <Image src={Insta} alt="Instagram Icon" className='rounded-full' width={40} height={2}/>
-            </a>
-            <a href="#" aria-label="LinkedIn">
+            </Link>
+            <Link href="#" onClick={(e) => e.preventDefault()} aria-label="LinkedIn">
               <Image src={Linkedin} alt="LinkedIn Icon" className='rounded-full' width={40}  height={2}/>
-            </a>
-            <a href="#" aria-label="Twitter">
+            </Link>
+            <Link href="#" onClick={(e) => e.preventDefault()} aria-label="Twitter">
               <Image src={Twitter} alt="Twitter Icon" className='rounded-full ' width={40}  height={2}/>
-            </a>
-            <a href="#" aria-label="YouTube">
+            </Link>
+            <Link href="#" onClick={(e) => e.preventDefault()} aria-label="YouTube">
               <Image src={Youtube} alt="YouTube Icon" className='rounded-full ' width={40}  height={2}/>
-            </a>
+            </Link>
           </div>
         </div>
   
@@ -42,32 +43,32 @@ const Footer = () => {
           <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
             <h3 className=" text-white mb-4">Solution</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white hover:text-primary">Brand & Design</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Video Production</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Social Media</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Digital Campaign</a></li>
-              <li><a href="#" className="text-white hover:text-primary">UI/UX</a></li>
-              <li><a href="#" className="text-white hover:text-primary">SEO</a></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Brand & Design</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Video Production</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Social Media</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Digital Campaign</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">UI/UX</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">SEO</Link></li>
             </ul>
           </div>
           <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
             <h3 className=" text-white mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white hover:text-primary">About</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Contact</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Testimonial</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Partners</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Portfolio</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Careers</a></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">About</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Contact</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Testimonial</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Partners</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Portfolio</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Careers</Link></li>
             </ul>
           </div>
           <div className="w-full sm:w-1/3">
             <h3 className=" text-white mb-4">Support</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white hover:text-primary">Help center</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Terms of service</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Legal</a></li>
-              <li><a href="#" className="text-white hover:text-primary">Privacy policy</a></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Help center</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Terms of service</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Legal</Link></li>
+              <li><Link href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-primary">Privacy policy</Link></li>
             </ul>
           </div>
         </div>

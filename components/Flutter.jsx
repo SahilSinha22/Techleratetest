@@ -321,10 +321,10 @@ const Flutter = () => {
 
 
 
-            <div className=" h-auto pt-2 mt-10 sm:px-10 xl:px-20">
+            <div className=" h-auto pt-2 mt-5 sm:px-10 xl:px-20">
                     <div className=" text-white open_sans_displays pt-6  max-w-7xl mx-auto text-foreground p-6">
                         <span className='text-4xl'> FAQs</span>
-                        <div className="space-y-4 my-10 xl:my-20">
+                        <div className="space-y-4 my-7 xl:my-10">
                             {faqContent.map((item, index) => (
                                 <div key={index} className='xl:py-4'>
                                     <h3
@@ -347,7 +347,7 @@ const Flutter = () => {
 
 
 
-                <div className="  text-white  py-14 xl:pt-10 text-center">
+                <div className="  text-white  pb-14 xl:pt-5 text-center">
           <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
             <span className="  text-lg text-white md:text-3xl  xl:text-4xl Poppins">READY FOR YOUR NEXT PROJECT?</span>
             <span onClick={handleButtonClick} className=" text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
