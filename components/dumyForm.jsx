@@ -117,14 +117,14 @@ const DumyForm = () => {
     if (!visible) return null;
     return (
         <div className='w-full'>
-            <div class="md:justify-center px-4 md:px-0 Glassy   items-center flex m-auto w-full    overflow-y-auto fixed inset-0 z-20 e">
+            <div class="sm:justify-center px-4 sm:px-0 Glassy   items-center flex m-auto w-full    overflow-y-auto fixed inset-0 z-20 e">
                 <div className='relative  -top-4  lg:left-0 lg:top-0'>
                 <div class="  flex w-auto md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6  md:justify-center place-content-center xl:max-w-4xl 2xl:max-w-7xl">
-                    <div className=' hidden md:block'>
+                    <div className=' hidden sm:block'>
                         <div className='relative '>
 
 
-                            <Image src="/FormImage.webp" className="-z-20 w-[400px] lg:w-[450px] xl:w-[500px] h-[500px] xl:h-[600px] 2xl:h-[650px]" alt="" width={1000} height={1000} />
+                            <Image src="/FormImage.webp" className="-z-20 w-[300px] md:w-[400px] lg:w-[450px] xl:w-[500px] h-[490px]  md:h-[500px] xl:h-[600px] 2xl:h-[650px]" alt="" width={1000} height={1000} />
                             <div className='z-20 absolute justify-center top-6  text-white'>
                                 <div className='px-5'>
 
@@ -157,7 +157,7 @@ const DumyForm = () => {
 
 
 
-                    <div class="w-full flex  md:w-[500px]  2xl:w-[650px]   items-center  ">
+                    <div class="w-full flex sm:w-[300px] md:w-[500px]  2xl:w-[650px]   items-center  ">
 
                         {successBanner && (
                             <div className=" translate-x-2 absolute  z-10 top-10  xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500  text-white p-4 rounded-lg">
@@ -171,7 +171,7 @@ const DumyForm = () => {
                             className="    "
                         >
                             <div class="flex flex-col  gap-10 rounded-4xl md:rounded-none w-full">
-                                <div class="lg:w-[450px] md:w-[350px] xl:w-[550px] rounded-xl md:rounded-none xl:max-w-4xl h-auto bg-[#FFF]  md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[550px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                <div class="lg:w-[450px] sm:w-[300px]  md:w-[350px] xl:w-[550px] rounded-xl sm:rounded-none xl:max-w-4xl h-auto bg-[#FFF]  sm:h-[490px] md:h-[500px] xl:h-[600px] 2xl:h-[650px] 2xl:w-[550px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
                                     <div class="flex pt-10  justify-end ">
 
                                         <svg onClick={handleClose} class="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="none">
