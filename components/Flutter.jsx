@@ -314,13 +314,6 @@ const Flutter = () => {
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
             <div className=" h-auto pt-2 mt-5 sm:px-10 xl:px-20">
                     <div className=" text-white open_sans_displays pt-6  max-w-7xl mx-auto text-foreground p-6">
                         <span className='text-4xl'> FAQs</span>
