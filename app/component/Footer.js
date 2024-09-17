@@ -6,7 +6,7 @@ import Linkedin from "@/public/Linkdinn.svg";
 import Twitter from "@/public/Twit.svg";
 import Youtube from "@/public/Yout.svg";
 import Image from 'next/image';
-import Logo from "@/public/logo.svg"
+import Logo from "@/public/Techlerate logo.svg"
 
 const Footer = () => {
   return (
@@ -14,9 +14,9 @@ const Footer = () => {
     <div className=" border-t  border-[#535353] ">
       <div className="flex-1 md:flex  px-10 pt-20   pb-12 justify-between">
         <div className="w-full md:w-2/4 mb-6 Poppins md:mb-0 ">
-          <div className="flex items-center mb-4">
+          <div className="flex w-full items-center mb-2">
             <Link href="/">
-            <Image src={Logo} alt="Techlerate Logo" className="mr-2" width={200} height={5}/>
+            <Image src={Logo} alt="Techlerate Logo" className="" width={220} height={20}/>
             </Link>
           </div>
           <p className="text-[#7b61ff]  ">Connect with us:</p>

@@ -46,7 +46,7 @@ const Indus = () => {
           <div className="containers mr-10">
             <div className="panel active Indus">
               <div className="img-boxs">
-                <h3 className="head">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -62,7 +62,7 @@ const Indus = () => {
             </div>
             <div className="panel Indus1">
               <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -78,7 +78,7 @@ const Indus = () => {
             </div>
             <div className="panel Indus2">
               <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -94,7 +94,7 @@ const Indus = () => {
             </div>
             <div className="panel Indus3">
               <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -110,7 +110,7 @@ const Indus = () => {
             </div>
             <div className="panel Indus4">
               <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -126,7 +126,7 @@ const Indus = () => {
             </div>
             <div className="panel Indus5">
               <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
                     Lorem Ipsum is simply dummy text of the printing and

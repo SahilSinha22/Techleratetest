@@ -4,6 +4,7 @@ import Image from "next/image";
 import Mobi from "@/public/1form.png";
 import { FaCheckCircle } from "react-icons/fa";
 import { generateArithmeticCaptcha } from "@/app/utils/generateCaptcha";
+import PhoneInput from 'react-phone-input-2';
 
 import Script from "next/script";
 const Form = () => {
@@ -147,7 +148,7 @@ const Form = () => {
                   </h2>
                   <div className="text-xl lg:text-base flex flex-col space-y-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
                     <span> Email : contact@techlerate.com </span>
-                    
+
                     <span className="w-[300px] 2xl:w-[450px] leading-7">Office : Platina Heights, C24, C Block,
                       Phase 2, Industrial Area, Sector 62,
                       Noida, Uttar Pradesh 201309, </span>
@@ -187,7 +188,7 @@ const Form = () => {
                       )}
 
                       <label
-                        for="Name"
+                        htmlFor="Name"
                         className="peer-focus:font-medium  absolute text-sm  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         Full Name
@@ -212,50 +213,36 @@ const Form = () => {
                       )}
 
                       <label
-                        for="Email"
+                        htmlFor="Email"
                         className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         Email*
                       </label>
                     </div>
                   </div>
-                  <div className="grid md:grid-cols-2 md:gap-6">
-                    <div className="relative z-0 w-full mb-5 group">
-                      <input
-                        type="tel"
-                        name="Number"
-                        id="floating_phone"
-                        className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                        placeholder=" "
-                        value={user.Number}
-                        autoComplete="off"
-                        required
-                        onChange={data}
-                      />
-                      {errors.Number && (
-                        <p className="text-red-600 text-xs mt-1">
-                          {errors.Number}
-                        </p>
-                      )}
+                  <div className="grid md:grid-cols-2  gap-4 md:gap-6">
+                    <div class=" md:mt-1">
+                      <div class="relative text-lg flex w-full bg-[#000000]">
+                        <PhoneInput
+                          country={'in'}
+                          value={user.Number}
+                          onChange={value => setUser({ ...user, Number: value })}
+                          inputProps={{
+                            name: 'Number',
+                            required: true,
+                            autoFocus: false
+                          }}
+                          autoComplete="off"
+                          className="border-b-2 w-full text-lg bg-[#000000] dark:border-gray-600   border-gray-300 peer-placeholder-shown:text-blue-gray-500"
+                          containerStyle={{ width: '100%', background: 'black' }}
+                          inputStyle={{ width: '100%', border: 'none', color: 'white', background: 'black' }}
+                          buttonStyle={{ border: 'none', background: 'transparent', color: 'black' }}
+                        />
 
-                      <label
-                        for="Number"
-                        className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                      >
-                        <div className="flex flex-row">
-                          <div className="">
-                            <Image
-                              src="/flag.svg"
-                              alt="flag"
-                              width={30}
-                              height={2}
-                            />{" "}
-                          </div>
-                          <div className="">+91</div>
-                        </div>
-                      </label>
+                      </div>
+                      {errors.Number && <p className="text-red-600 text-xs mt-1">{errors.Number}</p>}
                     </div>
-                    <div className="relative z-0 w-full mb-5 group">
+                    <div className="relative z-0 w-full mb-5 md:mb-5 group">
                       <input
                         type="text"
                         name="Budget"
@@ -274,10 +261,10 @@ const Form = () => {
                       )}
 
                       <label
-                        for="floating_company"
+                        htmlFor="floating_company"
                         className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
-                       Budget*
+                        Budget*
                       </label>
                     </div>
                   </div>
@@ -300,7 +287,7 @@ const Form = () => {
                     )}
 
                     <label
-                      for="message"
+                      htmlFor="message"
                       className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Description
