@@ -71,7 +71,7 @@ const Form = () => {
     };
 
     const res = await fetch(
-      "https://nextfirebase-fab92-default-rtdb.firebaseio.com/UserData.json",
+      "https://nextfirebase-fab92-default-rtdb.firebaseio.com/Techlerate.json",
       options
     );
     if (res) {

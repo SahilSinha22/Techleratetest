@@ -1655,3 +1655,16 @@ opacity: 1;
 .dropslash:hover>div{
   background-color: #7b61ff;
   }
+
+
+  /*----------------------Liquiclear ------------*/
+  .bori{
+  
+    background: linear-gradient(180deg, #00dbd9, #4186fe) ;
+  }
+
+  .bannerx{
+    background: transparent linear-gradient(180deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;
+  
+  opacity: 1;
+  }

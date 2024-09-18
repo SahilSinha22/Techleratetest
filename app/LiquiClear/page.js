@@ -304,10 +304,10 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center p-6">
-          <h2 className="text-2xl font-semibold mb-4">Tech Stacks</h2>
-          <div className="w-full  bori 2xl:max-w-[1600px] rounded-xl p-1 max-w-4xl">
-          <div className="bg-[#000000]  p-6 rounded-xl grid grid-cols-3 md:grid-cols-6 justify-around w-full 2xl:max-w-[1600px] px-6 py-10 max-w-4xl">
+        <div className="flex flex-col items-center  w-auto m-auto xl:mx-40 mx-4 md:mx-10">
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4">Tech Stacks</h2>
+          <div className="w-full  bori 2xl:max-w-[1600px] rounded-xl p-1 max-w-7xl m-auto ">
+          <div className="bannerx  p-6 rounded-xl grid grid-cols-3 md:flex justify-around w-full 2xl:max-w-[1600px] px-6 py-10 m-auto max-w-7xl">
             <div className="flex flex-col items-center my-4">
               <Image
                 src={Tech1}
