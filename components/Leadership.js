@@ -14,7 +14,7 @@ const Leader = () => {
   return (
     <div className='flex flex-col max-w-[1560px] m-auto bg-[#18191F] text-white p-4 playfair_displays'>
       <div className=" md:mx-10 xl:mx-20 2xl:px-0 2xl:mx-0 py-10 ">
-        <h2 className="text-2xl md:text-4xl font-bold text-left mb-4 ">Leadership That Inspires</h2>
+        <h2 className="text-2xl md:text-4xl font-semibold text-left mb-4 ">Big Experience Guys to post on here</h2>
         <p className=" text-xl  text-left mb-8 open_sans_display">Here’s our leadership team that is driving our purpose to help<br /> our clients succeed.</p>
         <div className=' relative '>
 

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Journey = () => {
     return (
-        <div className="bannerx ">
+        <div className="">
 
       
         <div className=" max-w-7xl 2xl:max-w-[1530px] 2xl:mt-6 my-10 mt-6 px-4 py-12 m-auto text-[#000000] ">

@@ -9,12 +9,13 @@ import Leader from '@/components/Leadership';
 import Bannerxcontact from '@/components/bannerxcontact';
 import About from '@/components/About';
 import Aboutproc from '@/components/Aboutprocess';
-
+import { useRouter } from 'next/navigation';
 const Page = () => {
   const textRef = useRef(null);
+  const router = useRouter(); 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const handleButtonClick = () => {
-    setIsModalOpen(true);
+    router.push('/contact');
   };
 
   const closeModal = () => {
@@ -60,7 +61,7 @@ const Page = () => {
       <div className=" bg-black text-white  py-14 xl:pt-16 text-center">
           <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
             <span className="  text-lg text-white md:text-3xl  xl:text-4xl Poppins">READY FOR YOUR NEXT PROJECT?</span>
-            <span onClick={handleButtonClick} className=" text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
+            <span onClick={handleButtonClick} className=" text-white cursor-pointer text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
               LET&apos;S TALK
             </span>
           </div>

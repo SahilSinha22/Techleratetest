@@ -1,7 +1,7 @@
 
 "use client"
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Blog1 from "@/public/Blog1.png";
 import Blog2 from "@/public/Blog3.png";
 import Blog3 from "@/public/Blog2.png";
@@ -48,13 +48,19 @@ const blogs = [
 
 const Blog = () => {
   const [visibleBlogs, setVisibleBlogs] = useState(3);
-
+  const scrollPosition = useRef(0);
   const handleLoadMore = () => {
+    scrollPosition.current = window.scrollY;
     setVisibleBlogs((prevVisibleBlogs) => prevVisibleBlogs + 3);
   };
 
   const handleShowLess = () => {
     setVisibleBlogs((prevVisibleBlogs) => Math.max(prevVisibleBlogs - 3, 3));
+
+    window.scrollTo({
+      top: scrollPosition.current,
+      behavior: 'smooth',
+    });
   };
 
   return (

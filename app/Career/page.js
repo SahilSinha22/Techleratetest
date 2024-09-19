@@ -326,7 +326,7 @@ const Page = () => {
                             </p>
                         </div>
                         <div className="text-center  flex flex-col px-4 md:px-8  lg:px-8 2xl:px-20  border-r-2 justify-center lg:my-20 my-10 lg:pt-0 2xl:pt-0 items-center">
-                            <Image src="/TeamSize.png" alt="" className="w-20 h-14 lg:w-28 lg:h-20 xl:w-32 xl:h-24" width={100} height={100} />
+                            <Image src="/TeamSize.png" alt="" className="w-20 h-14 lg:w-28 lg:h-20 xl:w-auto  object-contain xl:h-24" width={100} height={100} />
                             <div className="flex flex-row text-center text-[#7B61FF] pt-4 lg:pt-0 justify-center">
                                 <h2
                                     className="number Bebas_Neue text-6xl proportional-nums md:text-7xl lg:text-7xl xl:text-8xl 2xl:text-8xl lg:pt-8"
