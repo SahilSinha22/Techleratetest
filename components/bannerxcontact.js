@@ -3,11 +3,21 @@ import React, { useState, useEffect } from "react";
 import Modal from '@/components/Modal'; // Assuming Modal is in the same directory
 import ContactForm from '@/components/Popups';
 import Image from "next/image";
+import { useRouter, usePathname } from 'next/navigation';
+import pathname from "react"
 const Bannerxcontact = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const router = useRouter(); 
+    const pathname = usePathname()
 
     const handleButtonClick = () => {
-      setIsModalOpen(true);
+      if(pathname === "/contact"){
+        return  window.scrollTo({
+          top: 200,
+          behavior: 'smooth', // This adds the smooth scroll effect
+        });
+      }
+      router.push('/contact');
     };
   
     const closeModal = () => {

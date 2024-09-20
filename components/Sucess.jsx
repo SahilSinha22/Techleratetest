@@ -84,7 +84,7 @@ const Sucess = () => {
     { image: Gaming, title: "Gaming App" },
     { image: Phone, title: "Find the Doctors Online" },
     { image: Gym, title: "Fit with Our App", },
-    { image: Tablet, title: "Water Purifier App", alt: "LiquiClear" },
+    { image: Tablet, title: "Water Purifier App", alt: "/Work/LiquiClear" },
     { image: Bluecard, title: "Dating App",  },
     { image: Maskcard, title: "Free Games Online" },
     { image: Aicard, title: "Generative AI",  },

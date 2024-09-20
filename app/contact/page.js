@@ -251,51 +251,51 @@ const Page = () => {
                     Services
                     <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
                   </Link>
-                  <div
-                    className={`absolute left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto  text-white  Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
-                  >
-                    <section className="grid grid-rows-2  md:flex Poppinx ">
-                      <div className="p-6 xl:p-10">
+                  <div 
+                className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-auto h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'}`}
+              >
+                <section className="flex flex-col md:flex-row justify-between  rounded-3xl w-full  md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-16 lg:pt-4 pb-6 md:px-0 md:flex Poppinx">
+                  <div className="p-6 xl:p-10">
 
 
-                        <div className=" text-2xl md:text-xl lg:text-3xl  text-left xl:text-3xl 2xl:text-5xl  ">
+                    <div className=" w-auto text-2xl md:text-xl lg:text-3xl  text-left xl:text-3xl 2xl:text-4xl  ">
 
-                          <p className="leading-relaxed text-left">
-                            60
-                            <div className="inline-block ml-1 align-middle">
-                              <Image src={Starx} alt="star" className="h-4 w-4 xl:h-6 xl:w-6" width={28} height={28} />
-                            </div>
-                            &nbsp;Software Types <br /> in Our Development <br /> Portfolio
-                          </p>
-
+                      <p className="leading-relaxed text-left">
+                        60
+                        <div className="inline-block ml-1 align-middle">
+                          <Image src={Starx} alt="star" className="w-auto" width={28} height={28} />
                         </div>
-                        <div className={`mt-5 text-left block  `}>
-                          <Image src={ServicesPic} className=" md:w-60 lg:w-96 xl:w-60 2xl:w-[600px]" alt="" width={1000} height={1000} />
-                          <h2 className="mt-5 text-sm md:text-xs lg:text-lg   2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
-                        </div>
-                      </div>
-                      <ul className="py-1 text-xs  lg:text-base xl:text-lg grid grid-cols-3">
-                        {services.map((service, index) => (
-                          <li key={index} className="flex items-center mr-2 lg:mr-2 xl:mr-10 dropslash 2xl:mr-2 hover:text-[#7b61ff] custom-filter">
-                            <Image
-                              src={service.logo}
-                              alt={`${service.name} logo`}
-                              className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10 "
-                              width={100}
-                              height={100}
-                            />
-                            <Link
-                              /* href={`/services/${service.name.toLowerCase().replace(/\s+/g, "")}`} */
-                              href="#"
-                              className="block lg:px-2  dropslash py-2 md:py-4 lg:py-0"
-                            >
-                              {service.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </section>
+                        &nbsp;Software Types <br /> in Our Development <br /> Portfolio
+                      </p>
+
+                    </div>
+                    <div className={`mt-5 text-left block  `}>
+                      <Image src={ServicesPic} className=" w-72 md:w-auto xl:w-full" alt="" width={400} height={400} />
+                      <h2 className="mt-5 text-sm md:text-xs lg:text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
+                    </div>
                   </div>
+                  <ul className="py-1 text-xs  lg:text-base xl:text-lg Poppin grid grid-cols-3">
+                    {services.map((service, index) => (
+                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[280px]  xl:max-w-7xl xl:w-[300px] hover:text-[#7b61ff] custom-filter `}>
+                        <Image
+                          src={service.logo}
+                          alt={`${service.name} logo`}
+                          className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
+                          width={100}
+                          height={100}
+                        />
+                        <Link
+                         /* href={`/services/${service.name.toLowerCase().replace(/\s+/g, "")}`}*/
+                         href="#"
+                          className="block lg:px-2 py-2 md:py-4 lg:py-0 "
+                        >
+                          {service.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              </div>
                 </div>
                 <div className=" lg:inline-block  group">
                   <Link
@@ -307,20 +307,20 @@ const Page = () => {
 
                   </Link>
                   <div
-        className={`absolute w-auto  left-4 sm:left-0 lg:w-auto m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
-         pathname ==="/Technology/reactnative" ? 'text-[#000000]' : 'text-white'
+        className={`absolute w-auto  left-4 sm:left-4 lg:w-auto m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
+         pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear" ? 'text-[#000000]' : 'text-white'
         }`}
       >
-        <section className="flex flex-col md:flex-row justify-between  rounded-3xl w-full  md:gap-10 lg:gap-6 xl:gap-8 2xl:gap-20 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
+        <section className="flex flex-col md:flex-row justify-center  lg:justify-between  rounded-3xl w-full  md:gap-6 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
           <div className="w-auto mt-6 lg:mt-0">
-            <h2 className="text-xl lg:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
-            <Image src="/Technology/Technologyimg.png" className="m-6 w-72 md:w-auto xl:w-full " alt="" width={400} height={400} />
+            <h2 className="text-xl lg:text-3xl  xl:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
+            <Image src="/Technology/Technologyimg.png" className="m-6 w-72 md:w-60 lg:w-60 md:max-w-7xl  xl:w-full " alt="" width={400} height={400} />
           </div>
           <ul className="py-1  text-xs sm:text-xs lg:text-base xl:text-lg xl:gap-4 2xl:gap-6 Poppin grid grid-cols-2 md:grid-cols-3">
             {technology.map((service, index) => (
               <li
                 key={index}
-                className={`flex items-center  w-auto sm:w-[220px] md:w-full lg:w-[280px]  xl:max-w-7xl xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#7b61ff] custom-filter`}
+                className={` items-center  w-auto sm:w-[220px] md:w-auto lg:w-[230px] flex lg:max-w-[280px]  xl:max-w-7xl xl:w-[250px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#7b61ff] custom-filter`}
               >
                 <div className="lg:h-8 lg:w-8 h-6 w-6 sm:h-6 sm:w-6 hover:bg-yellow-700 hover-dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
                   <Image src={service.logo} alt={`${service.name} logo`} width={100} height={100} />
@@ -580,18 +580,20 @@ const Page = () => {
                         )}
                       </div>
                       <div className="">
-                        <button
-                          onClick={getdata}
-                          className="rounds  text-white rounded-3xl border-2 Poppinx font-semibold bg-[#7b61ff] focus:ring-4 focus:outline-none   text-base w-full sm:w-auto px-6 py-2.5 xl:px-8  text-center  "
-                          type="submit"
-                          style={{
-                            backgroundColor: isCaptchaValid ? "green" : "[#7b61ff]",
-                            color: "white",
-                          }}
-                          disabled={isCaptchaValid === null || !isCaptchaValid}
-                        >
-                          Submit
-                        </button>
+                      <button
+                                    onClick={getdata}
+                                    className={`rounded-full rounds t-4 text-white border-white border-2 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display xl:text-lg w-full sm:w-auto xl:px-8 xl:py-3 px-4 py-2.5 text-center transition-opacity duration-300 ${
+                                        isCaptchaValid ? 'bg-green-500 hover:bg-green-600' : 'bg-[#7b61ff] opacity-50 cursor-not-allowed'}`}
+                                  
+                                    type="submit"
+                                    style={{
+                                        backgroundColor: isCaptchaValid ? "green" : "[#7b61ff]",
+                                        color: "white",
+                                    }}
+                                    disabled={isCaptchaValid === null || !isCaptchaValid}
+                                >
+                                    Submit
+                                </button>
                       </div>
                     </div>
                   </form>
@@ -624,7 +626,7 @@ const Page = () => {
           <Image src="/Path.svg" alt="" width={20} height={20} />
         </div>
         <div className="map-responsive">
-          <iframe className="w-72  md:w-[600px] max-w-screen-xl  sm:w-[600px] lg:w-[850px] lg:max-w-6xl xl:w-[1100px] 2xl:w-[1600px] 2xl:max-w-[1960px] xl:max-w-screen-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin" width="950" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          <iframe className="w-72  md:w-[600px] max-w-screen-xl  sm:w-[600px] lg:w-[850px] lg:max-w-6xl xl:w-[1100px] 2xl:w-[1600px] xl:max-w-[1960px] xl:max-w-screen-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin" width="950" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
 
