@@ -138,7 +138,7 @@ const Navbar = () => {
                 <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
               </Link>
               <div
-                className={`absolute left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative" ? 'text-[#000000]' : 'text-white'}`}
+                className={`absolute left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative"|| "/LiquiClear"  ? 'text-[#000000]' : 'text-white'}`}
               >
                 <section className="grid grid-rows-2  md:flex Poppinx ">
                   <div className="p-6 xl:p-10">
@@ -195,7 +195,7 @@ const Navbar = () => {
       </Link>
       <div
         className={`absolute w-auto  left-4 sm:left-0 lg:w-auto m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
-         pathname ==="/Technology/reactnative" ? 'text-[#000000]' : 'text-white'
+         pathname ==="/Technology/reactnative" || "/LiquiClear" ? 'text-[#000000]' : 'text-white'
         }`}
       >
         <section className="flex flex-col md:flex-row justify-between  rounded-3xl w-full  md:gap-10 lg:gap-6 xl:gap-8 2xl:gap-20 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
