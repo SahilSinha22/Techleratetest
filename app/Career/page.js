@@ -12,6 +12,8 @@ import ServicesPic from "@/public/ServicesPic.png";
 import Leader from "@/components/Leadership";
 import Award from "@/components/Award";
 import Carrercurr from "@/components/Carrercurr";
+import { useRouter } from 'next/navigation';
+
 const services = [
 
     { name: "On Demand", logo: "/OnDemand.svg" },
@@ -68,11 +70,12 @@ const technology = [
 ];
 const Page = () => {
     const textRef = useRef(null);
+    const router = useRouter(); 
 
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const handleButtonClick = () => {
-        setIsModalOpen(true);
+        router.push('/contact');
     };
 
     const closeModal = () => {
@@ -375,7 +378,7 @@ const Page = () => {
                 <div className=" bg-[#18191F] text-white  py-10 xl:pt-16 text-center">
                     <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
                         <span className="  text-lg text-white md:text-3xl  xl:text-4xl Poppins">READY FOR YOUR NEXT PROJECT?</span>
-                        <span onClick={handleButtonClick} className=" text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
+                        <span onClick={handleButtonClick} className="cursor-pointer text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
                             LET&apos;S TALK
                         </span>
                     </div>

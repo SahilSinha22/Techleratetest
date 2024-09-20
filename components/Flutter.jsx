@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 import Modal from '@/components/Modal'; // Assuming Modal is in the same directory
 import ContactForm from '@/components/Popups';
 
+import { useRouter } from 'next/navigation';
 
 const Services = [
     {
@@ -20,10 +21,12 @@ const Services = [
 const Flutter = () => {
 
     const textRef = useRef(null);
+    const router = useRouter(); 
+
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleButtonClick = () => {
-        setIsModalOpen(true);
+        router.push('/contact');
     };
 
     const closeModal = () => {

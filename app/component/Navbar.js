@@ -194,16 +194,16 @@ const Navbar = () => {
         <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
       </Link>
       <div
-        className={`absolute w-full left-4 sm:left-0 lg:w-auto m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
+        className={`absolute w-auto  left-4 sm:left-0 lg:w-auto m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
          pathname ==="/Technology/reactnative" ? 'text-[#000000]' : 'text-white'
         }`}
       >
-        <section className="flex flex-col md:flex-row justify-between rounded-3xl w-full md:gap-10 lg:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
-          <div className="max-w-5xl xl:w-1/2 lg:w-1/4 w-[300px] sm:w-[250px] mt-6 lg:mt-0">
+        <section className="flex flex-col md:flex-row justify-between  rounded-3xl w-full  md:gap-10 lg:gap-6 xl:gap-8 2xl:gap-20 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
+          <div className="w-auto mt-6 lg:mt-0">
             <h2 className="text-xl lg:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
-            <Image src="/Technology/Technologyimg.png" className="m-6 w-72 md:w-auto xl:w-auto 2xl:w-3/4" alt="" width={400} height={400} />
+            <Image src="/Technology/Technologyimg.png" className="m-6 w-72 md:w-auto xl:w-full " alt="" width={400} height={400} />
           </div>
-          <ul className="py-1 text-xs sm:text-xs lg:text-base xl:text-lg xl:gap-4 2xl:gap-6 Poppin grid grid-cols-2 md:grid-cols-3">
+          <ul className="py-1  text-xs sm:text-xs lg:text-base xl:text-lg xl:gap-4 2xl:gap-6 Poppin grid grid-cols-2 md:grid-cols-3">
             {technology.map((service, index) => (
               <li
                 key={index}
