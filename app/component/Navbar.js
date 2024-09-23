@@ -162,7 +162,7 @@ const Navbar = () => {
                   </div>
                   <ul className="py-1 text-xs  lg:text-base xl:text-lg Poppin grid grid-cols-3">
                     {services.map((service, index) => (
-                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[280px]  xl:max-w-7xl xl:w-[300px] hover:text-[#7b61ff] custom-filter `}>
+                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[250px]  xl:max-w-7xl xl:w-[300px] hover:text-[#7b61ff] custom-filter `}>
                         <Image
                           src={service.logo}
                           alt={`${service.name} logo`}
@@ -198,27 +198,27 @@ const Navbar = () => {
          pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear" ? 'text-[#000000]' : 'text-white'
         }`}
       >
-        <section className="flex flex-col md:flex-row justify-center  lg:justify-between  rounded-3xl w-full  md:gap-6 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
+        <div className="flex flex-col md:flex-row justify-center  lg:justify-between  rounded-3xl w-full  md:gap-6 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
           <div className="w-auto mt-6 lg:mt-0">
             <h2 className="text-xl lg:text-3xl  xl:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
-            <Image src="/Technology/Technologyimg.png" className="m-6 w-72 md:w-60 lg:w-60 md:max-w-7xl  xl:w-auto " alt="" width={400} height={400} />
+            <Image src="/Technology/Technologyimg.png" className="w-72 m-4  md:w-72 xl:w-full max-w-7xl " alt="" width={400} height={400} />
           </div>
-          <ul className="py-1  text-xs sm:text-xs lg:text-base xl:text-lg xl:gap-4 2xl:gap-6 Poppin grid grid-cols-2 md:grid-cols-3">
+          <div className="py-1  text-xs sm:text-xs lg:text-base xl:text-lg gap-6  w-auto Poppin grid grid-cols-2 md:grid-cols-3">
             {technology.map((service, index) => (
-              <li
+              <div
                 key={index}
-                className={` items-center  w-auto sm:w-[220px] md:w-auto lg:w-[230px] flex lg:max-w-[280px]  xl:max-w-7xl xl:w-[270px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#7b61ff] custom-filter`}
+                className={` dropslash  inline-flex  items-center w-auto md:w-[120px] lg:w-[200px] xl:w-[300px]  hover:text-[#7b61ff] `}
               >
                 <div className="lg:h-8 lg:w-8 h-6 w-6 sm:h-6 sm:w-6 hover:bg-yellow-700 hover-dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
                   <Image src={service.logo} alt={`${service.name} logo`} width={100} height={100} />
                 </div>
-                <Link href={`${service.link}`} className={`block lg:px-2 py-2 md:py-4 lg:py-0`}>
+                <Link href={`${service.link}`} className={`block lg:px-2 whitespace-nowrap overflow-hidden text-ellipsis py-2 md:py-4 lg:py-0`}>
                   {service.name}
                 </Link>
-              </li>
+              </div>
             ))}
-          </ul>
-        </section>
+          </div>
+        </div>
       </div>
     </div>
             <Link
