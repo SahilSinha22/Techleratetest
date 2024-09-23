@@ -178,7 +178,7 @@ const Intro = () => {
                         <Link
                          /* href={`/services/${service.name.toLowerCase().replace(/\s+/g, "")}`}*/
                          href="#"
-                          className="block lg:px-2 py-2 md:py-4 lg:py-0 "
+                          className="block lg:px-2 py-2 md:py-4 lg:py-0 whitespace-nowrap overflow-hidden text-ellipsis "
                         >
                           {service.name}
                         </Link>

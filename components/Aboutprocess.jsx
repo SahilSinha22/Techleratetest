@@ -14,7 +14,7 @@ const Journey = () => {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br/>industry’s standard dummy text ever since the 1500s.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3  max-w-7xl  2xl:max-w-max lg:grid-cols-5 xl:grid-cols-5  justify-center items-center gap-6 2xl:gap-10  mt-8">
-                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-[#5FE2D8] rounded-3xl">
+                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-gradient-to-t from-[#EBCBFF] to-[#E0E3FF] rounded-3xl">
                         <div className="   flex flex-col justify-center    ">
                             <div className="flex justify-center ">
                                 <Image
@@ -31,7 +31,7 @@ const Journey = () => {
                             
                         </div>
                     </div>
-                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-[#5FE2D8] rounded-3xl">
+                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-gradient-to-t from-[#EBCBFF] to-[#E0E3FF] rounded-3xl">
                         <div className="   flex flex-col justify-center    ">
                             <div className="flex justify-center ">
                                 <Image
@@ -48,7 +48,7 @@ const Journey = () => {
                             
                         </div>
                     </div>
-                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-[#5FE2D8] rounded-3xl">
+                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-gradient-to-t from-[#EBCBFF] to-[#E0E3FF] rounded-3xl">
                         <div className="   flex flex-col justify-center    ">
                             <div className="flex justify-center ">
                                 <Image
@@ -65,7 +65,7 @@ const Journey = () => {
                             
                         </div>
                     </div>
-                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-[#5FE2D8] rounded-3xl">
+                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-gradient-to-t from-[#EBCBFF] to-[#E0E3FF] rounded-3xl">
                         <div className="   flex flex-col justify-center    ">
                             <div className="flex justify-center ">
                                 <Image
@@ -82,7 +82,7 @@ const Journey = () => {
                             
                         </div>
                     </div>
-                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-[#5FE2D8] rounded-3xl">
+                    <div className="text-center  items-center  w-auto h-auto mt-4  p-6 2xl:p-10 bg-gradient-to-t from-[#EBCBFF] to-[#E0E3FF] rounded-3xl">
                         <div className="   flex flex-col justify-center    ">
                             <div className="flex justify-center ">
                                 <Image
