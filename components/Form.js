@@ -140,14 +140,14 @@ const Form = () => {
                   <div className="flex flex-row my-2">
                     <Image src="/flag.svg" alt="logo" width={40} height={4} />{" "}
                     <div className="ml-4 2xl:text-3xl md:text-xl">
-                      +91 88 820 76 755{" "}
+                    <a href="tel:+91 88 820 76 755" > +91 88 820 76 755{" "}</a>
                     </div>{" "}
                   </div>
                   <h2 className="md:text-2xl 2xl:text-3xl text-2xl font-semibold mt-2 xl:mt-4">
                     Connect with us
                   </h2>
                   <div className="text-xl lg:text-base flex flex-col space-y-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
-                    <span> Email : contact@techlerate.com </span>
+                  <a href="mailto: contact@techlerate.com  ">  <span> Email : contact@techlerate.com </span></a>
 
                     <span className="w-[300px] 2xl:w-[450px] leading-7">Office : Platina Heights, C24, C Block,
                       Phase 2, Industrial Area, Sector 62,
