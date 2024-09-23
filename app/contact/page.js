@@ -314,7 +314,7 @@ const Page = () => {
         <div className="flex flex-col md:flex-row justify-center  lg:justify-between  rounded-3xl w-full  md:gap-6 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
           <div className="w-auto mt-6 lg:mt-0">
             <h2 className="text-xl lg:text-3xl  xl:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
-            <Image src="/Technology/Technologyimg.png" className="w-72 m-4  md:w-72 xl:w-full max-w-4xl " alt="" width={400} height={400} />
+            <Image src="/Technology/Technologyimg.png" className="w-72 m-4  md:w-72 xl:w-[400px] " alt="" width={400} height={400} />
           </div>
           <div className="py-1  text-xs sm:text-xs lg:text-base xl:text-lg gap-6  w-auto Poppin grid grid-cols-2 md:grid-cols-3">
             {technology.map((service, index) => (
