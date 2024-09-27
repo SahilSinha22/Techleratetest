@@ -49,8 +49,7 @@ const Indus = () => {
                 <h3 className="text-xs md:text-sm lg:text-lg">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry&apos;s.
+                  Transforming patient care with innovative solutions and compassionate support.
                   </p>
                 </div>
                 <div className=" mt-5  lg:mt-5 xl:mt-10">
@@ -62,11 +61,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus1">
               <div className="img-boxs ">
-                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Manufacturing</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry&apos;s.
+                  Streamlining production with cutting-edge technology and precision expertise.
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
@@ -78,11 +76,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus2">
               <div className="img-boxs ">
-                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Health Sector</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry&apos;s.
+                  Improving lives through collaborative research and exceptional care.
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
@@ -94,11 +91,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus3">
               <div className="img-boxs ">
-                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Water Purification</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry&apos;s.
+                  Ensuring access to clean water for a healthier tomorrow.
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
@@ -110,11 +106,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus4">
               <div className="img-boxs ">
-                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Social Media</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry&apos;s.
+                  Connecting communities and empowering voices through digital innovation.
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
@@ -126,11 +121,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus5">
               <div className="img-boxs ">
-                <h3 className="text-xs md:text-sm lg:text-lg ">Healthcare</h3>
+                <h3 className="text-xs md:text-sm lg:text-lg ">Food and Hospitality</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry&apos;s.
+                  Delivering memorable experiences and savory delights with passion
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">

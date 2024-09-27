@@ -71,7 +71,7 @@ const Blog = () => {
           LATEST <span className="text-white py-10 lg:py-0">ARTICLES</span>
         </h2>
       </div>
-      <div className="grid grid-cols-1 justify-center items-center md:grid-cols-3 lg:gap-8">
+      <div className="flex flex-col justify-center items-center md:grid md:grid-cols-3 lg:gap-8">
         {blogs.slice(0, visibleBlogs).map((blog, index) => (
           <div key={index} className="bg-card items-center justify-center p-4 rounded-lg">
             <Image
@@ -85,7 +85,7 @@ const Blog = () => {
               <span className="bg-gray-700 text-[#627af1] text-base py-1 px-4 rounded-full">{blog.category}</span>
               <span className="text-[#9a9898] text-base">{blog.date}</span>
             </div>
-            <h2 className="text-2xl text-white">{blog.title}</h2>
+            <h2 className="text-2xl sm:w-[340px] md:w-full text-white">{blog.title}</h2>
           </div>
         ))}
       </div>

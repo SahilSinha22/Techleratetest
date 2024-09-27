@@ -89,7 +89,7 @@ const Testimonials = () => {
       <div className="text-center mb-8">
         <span className="text-[#7b61ff] text-xl xl:text-lg 2xl:text-2xl PORTFOLIO mb-2">TESTIMONIALS</span>
         <h2 className="text-4xl md:text-6xl pt-2 lg:pt-0 pb-2 text-black Poppins font-bold">FROM OUR</h2>
-        <h2 className="text-4xl md:text-6xl font-bold text-white">BELOVED CLIENT</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-white">BELOVED PARTNERS</h2>
       </div>
       <div className="flex flex-col lg:mx-20 lg:space-x-8 items-center space-y-6" {...swipeHandlers}>
         <div ref={carouselRef} className="relative w-full overflow-hidden">

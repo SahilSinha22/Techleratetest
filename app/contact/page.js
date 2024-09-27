@@ -4,7 +4,7 @@ import Image from "next/image";
 import Navbar from '../component/Navbarjsx'
 import { FaCheckCircle } from "react-icons/fa";
 import { generateArithmeticCaptcha } from "@/app/utils/generateCaptcha";
-import Ban1 from "@/public/Logo1.svg";
+import Ban1 from "@/public/Logoicons.png";
 import { useRouter } from 'next/navigation';
 import Modal from '@/components/Modal'; // Assuming Modal is in the same directory
 import ContactForm from '@/components/dumyForm';
@@ -616,7 +616,7 @@ const Page = () => {
 
 
       <div className="bg-[#252730] md:px-10 xl:px-20 px-2 py-10 md:py-16 text-muted-foreground flex justify-center space-x-4 lg:space-x-8">
-        <Image src={Ban1} alt="afterpay logo" className="w-full" width={300} height={5} />
+        <Image src={Ban1} alt="afterpay logo" className="w-full" width={1000} height={1000} />
 
       </div>
 

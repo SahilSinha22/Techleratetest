@@ -16,7 +16,7 @@ const Opening = [
   ];
 const Carrercurr = () => {
   return (
-    <div className='text-[#FFFFFF] max-w-7xl 2xl:max-w-[1580px] w-full m-auto px-4 md:px-10 xl:px-0'>
+    <div id="carrercurr" className='text-[#FFFFFF] max-w-7xl 2xl:max-w-[1580px] w-full m-auto px-4 md:px-10 xl:px-0'>
       <h2 className='text-2xl md:text-3xl 2xl:text-4xl Poppin font-medium'>Current Openings</h2>
       <p className='Poppind my-2 text-base md:text-xl md:w-[580px] '>Here’s our leadership team that is driving our purpose to help our clients succeed.</p>
 

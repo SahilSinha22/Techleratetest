@@ -72,7 +72,7 @@ const technology = [
 ];
 const Page = () => {
     const textRef = useRef(null);
-    const router = useRouter(); 
+    const router = useRouter();
     const pathname = usePathname()
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -170,51 +170,51 @@ const Page = () => {
                                         Services
                                         <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
                                     </Link>
-                                    <div 
-                className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-auto h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'}`}
-              >
-                <section className="flex flex-col md:flex-row justify-between  rounded-3xl w-full  md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-16 lg:pt-4 pb-6 md:px-0 md:flex Poppinx">
-                  <div className="p-6 xl:p-10">
+                                    <div
+                                        className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-auto h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname === "/Technology/reactnative" || pathname === "/Work/LiquiClear" ? 'text-[#000000]' : 'text-white'}`}
+                                    >
+                                        <section className="flex flex-col md:flex-row justify-between  rounded-3xl w-full  md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-16 lg:pt-4 pb-6 md:px-0 md:flex Poppinx">
+                                            <div className="p-6 xl:p-10">
 
 
-                    <div className=" w-auto text-2xl md:text-xl lg:text-3xl  text-left xl:text-3xl 2xl:text-4xl  ">
+                                                <div className=" w-auto text-2xl md:text-xl lg:text-3xl  text-left xl:text-3xl 2xl:text-4xl  ">
 
-                      <p className="leading-relaxed text-left">
-                        60
-                        <div className="inline-block ml-1 align-middle">
-                          <Image src={Starx} alt="star" className="w-auto" width={28} height={28} />
-                        </div>
-                        &nbsp;Software Types <br /> in Our Development <br /> Portfolio
-                      </p>
+                                                    <p className="leading-relaxed text-left">
+                                                        60
+                                                        <div className="inline-block ml-1 align-middle">
+                                                            <Image src={Starx} alt="star" className="w-auto" width={28} height={28} />
+                                                        </div>
+                                                        &nbsp;Software Types <br /> in Our Development <br /> Portfolio
+                                                    </p>
 
-                    </div>
-                    <div className={`mt-5 text-left block  `}>
-                      <Image src={ServicesPic} className=" w-72 md:w-auto xl:w-full" alt="" width={400} height={400} />
-                      <h2 className="mt-5 text-sm md:text-xs lg:text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
-                    </div>
-                  </div>
-                  <ul className="py-1 text-xs  lg:text-base xl:text-lg Poppin grid grid-cols-3">
-                    {services.map((service, index) => (
-                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[250px]  xl:max-w-7xl xl:w-[300px] hover:text-[#7b61ff] custom-filter `}>
-                        <Image
-                          src={service.logo}
-                          alt={`${service.name} logo`}
-                          className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
-                          width={100}
-                          height={100}
-                        />
-                        <Link
-                         /* href={`/services/${service.name.toLowerCase().replace(/\s+/g, "")}`}*/
-                         href="#"
-                          className="block lg:px-2 py-2 md:py-4 lg:py-0 "
-                        >
-                          {service.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              </div>
+                                                </div>
+                                                <div className={`mt-5 text-left block  `}>
+                                                    <Image src={ServicesPic} className=" w-72 md:w-auto xl:w-full" alt="" width={400} height={400} />
+                                                    <h2 className="mt-5 text-sm md:text-xs lg:text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
+                                                </div>
+                                            </div>
+                                            <ul className="py-1 text-xs  lg:text-base xl:text-lg Poppin grid grid-cols-3">
+                                                {services.map((service, index) => (
+                                                    <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[250px]  xl:max-w-7xl xl:w-[300px] hover:text-[#7b61ff] custom-filter `}>
+                                                        <Image
+                                                            src={service.logo}
+                                                            alt={`${service.name} logo`}
+                                                            className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
+                                                            width={100}
+                                                            height={100}
+                                                        />
+                                                        <Link
+                                                            /* href={`/services/${service.name.toLowerCase().replace(/\s+/g, "")}`}*/
+                                                            href="#"
+                                                            className="block lg:px-2 py-2 md:py-4 lg:py-0 "
+                                                        >
+                                                            {service.name}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </section>
+                                    </div>
                                 </div>
                                 <div className=" lg:inline-block  group">
                                     <Link
@@ -226,32 +226,31 @@ const Page = () => {
 
                                     </Link>
                                     <div
-        className={`absolute w-auto  left-4 sm:left-4 lg:w-auto m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
-         pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear" ? 'text-[#000000]' : 'text-white'
-        }`}
-      >
-        <div className="flex flex-col md:flex-row justify-center  lg:justify-between  rounded-3xl w-full  md:gap-6 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
-          <div className="w-auto mt-6 lg:mt-0">
-            <h2 className="text-xl lg:text-3xl  xl:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
-            <Image src="/Technology/Technologyimg.png" className="w-72 m-4  md:w-72 xl:w-[400px] " alt="" width={400} height={400} />
-          </div>
-          <div className="py-1  text-xs sm:text-xs lg:text-base xl:text-lg gap-6  w-auto Poppin grid grid-cols-2 sm:grid-cols-3">
-            {technology.map((service, index) => (
-              <div
-                key={index}
-                className={` dropslash  inline-flex  items-center w-auto sm:w-[200px] md:w-[120px] lg:w-[200px] xl:w-[300px]  hover:text-[#7b61ff] `}
-              >
-                <div className="lg:h-8 lg:w-8 h-6 w-6 sm:h-6 sm:w-6 hover:bg-yellow-700 hover-dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
-                  <Image src={service.logo} alt={`${service.name} logo`} width={100} height={100} />
-                </div>
-                <Link href={`${service.link}`} className={`block lg:px-2 whitespace-nowrap overflow-hidden text-ellipsis py-2 md:py-4 lg:py-0`}>
-                  {service.name}
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>             </div>
+                                        className={`absolute w-auto  left-4 sm:left-4 lg:w-auto m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname === "/Technology/reactnative" || pathname === "/Work/LiquiClear" ? 'text-[#000000]' : 'text-white'
+                                            }`}
+                                    >
+                                        <div className="flex flex-col md:flex-row justify-center  lg:justify-between  rounded-3xl w-full  md:gap-6 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
+                                            <div className="w-auto mt-6 lg:mt-0">
+                                                <h2 className="text-xl lg:text-3xl  xl:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
+                                                <Image src="/Technology/Technologyimg.png" className="w-72 m-4  md:w-72 xl:w-[400px] " alt="" width={400} height={400} />
+                                            </div>
+                                            <div className="py-1  text-xs sm:text-xs lg:text-base xl:text-lg gap-6  w-auto Poppin grid grid-cols-2 sm:grid-cols-3">
+                                                {technology.map((service, index) => (
+                                                    <div
+                                                        key={index}
+                                                        className={` dropslash  inline-flex  items-center w-auto sm:w-[200px] md:w-[120px] lg:w-[200px] xl:w-[300px]  hover:text-[#7b61ff] `}
+                                                    >
+                                                        <div className="lg:h-8 lg:w-8 h-6 w-6 sm:h-6 sm:w-6 hover:bg-yellow-700 hover-dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
+                                                            <Image src={service.logo} alt={`${service.name} logo`} width={100} height={100} />
+                                                        </div>
+                                                        <Link href={`${service.link}`} className={`block lg:px-2 whitespace-nowrap overflow-hidden text-ellipsis py-2 md:py-4 lg:py-0`}>
+                                                            {service.name}
+                                                        </Link>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>             </div>
                                 <Link
                                     href="/Career"
                                     className="block nav-link text-[#7B61FF] mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
@@ -260,7 +259,7 @@ const Page = () => {
                                 </Link>
                             </div>
                             <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
-                                <Link  href="/contact" className="inline-flex">
+                                <Link href="/contact" className="inline-flex">
                                     <button className="block nav-link text-white hover:text-[#7B61FF] lg:inline-block text-white-200 mr-2 xl:mr-4">
                                         Contact Us
                                     </button>
@@ -272,9 +271,10 @@ const Page = () => {
                 </nav>
                 <div className="absolute items-center  text-center bottom-60 lg:bottom-20 xl:bottom-40 2xl:bottom-60  w-full text-white z-10 m-auto">
                     <div className="m-auto flex flex-col  w-full justify-center text-center items-center">
-                        <h2 className="Poppins text-3xl md:text-4xl 2xl:text-5xl ">We are Techlerate</h2>
-                        <p className="text-sm md:text-xl md:px-10 lg:px-0 lg:w-[800px]  xl:text-xl 2xl:text-2xl Poppind font-semibold my-4 mx-4 xl:w-[800px] 2xl:w-[1000px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</p>
-                        <button className=" rounded-full Poppind font-bold text-sm lg:text-sm xl:text-sm 2xl:text-lg xl:px-3 xl:py-2 bg-[#7b61ff] px-3 py-2 lg:px-4 lg:py-2 md:px-5 md:py-4">
+                        <h2 className="Poppins text-3xl md:text-4xl 2xl:text-5xl ">Join Techlerate</h2>
+                        <p className="text-sm md:text-xl md:px-10 lg:px-0 lg:w-[800px]  xl:text-xl 2xl:text-2xl Poppind font-semibold my-4 mx-4 xl:w-[800px] 2xl:w-[1000px]">Transforming ideas into innovative products, Techlearte combines technology and creativity to deliver exceptional solutions and user experiences.</p>
+                        <button className=" rounded-full Poppind font-bold text-sm lg:text-sm xl:text-sm 2xl:text-lg xl:px-3 xl:py-2 bg-[#7b61ff] px-3 py-2 lg:px-4 lg:py-2 md:px-5 md:py-4"
+                        onClick={() => document.getElementById('carrercurr').scrollIntoView({ behavior: 'smooth' })}>
                             Current Openings
                         </button>
                     </div>
@@ -316,7 +316,7 @@ const Page = () => {
                             </div>
 
                             <p className='text-white text-xs lg:text-sm text-center xl:text-base  lg:w-[280px] xl:w-[340px] 2xl:w-[360px] 2xl:text-lg'>
-                                Lorem Ipsum is simply dummy text of the 
+                                Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry.
                             </p>
                         </div>
@@ -336,7 +336,7 @@ const Page = () => {
 
                             <p className='text-white text-xs lg:text-sm text-center xl:text-base lg:w-[280px] xl:w-[340px] 2xl:w-[360px] 2xl:text-lg'>
                                 Lorem Ipsum is simply dummy text of the
-                                 printing and typesetting industry.
+                                printing and typesetting industry.
                             </p>
                         </div>
                         <div className="text-center px-4 md:px-8  lg:pl-8 lg:pr-0 2xl:px-20 flex flex-col lg:my-20  my-10 justify-center items-center">
@@ -361,20 +361,13 @@ const Page = () => {
 
                     </div>
                 </div>
-                <div className="bg-[#18191F]">
-                    <Leader />
-                    <Carrercurr/>
+                <div  className="bg-[#18191F]">
+
+                    <Carrercurr />
                     <Award />
-                   
+
                 </div>
-                <div className=" bg-[#18191F] text-white  py-10 xl:pt-16 text-center">
-                    <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
-                        <span className="  text-lg text-white md:text-3xl  xl:text-4xl Poppins">READY FOR YOUR NEXT PROJECT?</span>
-                        <span onClick={handleButtonClick} className="cursor-pointer text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">
-                            LET&apos;S TALK
-                        </span>
-                    </div>
-                </div>
+
 
                 <Modal isOpen={isModalOpen} onClose={closeModal}>
                     <ContactForm onClose={closeModal} />

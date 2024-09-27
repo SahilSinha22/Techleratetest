@@ -547,7 +547,15 @@ background: #444;
 }
 
 
-
+.Glass{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  
+  
+  
+}
 
 
 .Glassy{
@@ -952,7 +960,7 @@ bottom:0;
         background-size:cover;
         background-position:center;
         background-repeat: no-repeat;
-        height:160px;
+        height:250px;
         width:40px;
         border-radius:10px;
         color:#fff;
@@ -1025,7 +1033,7 @@ bottom:0;
         background-size:cover;
         background-position:center;
         background-repeat: no-repeat;
-        height:200px;
+        height:250px;
         width:60px;
         border-radius:10px;
         color:#fff;
@@ -1039,7 +1047,7 @@ bottom:0;
     
       .panel.active .img-boxs{
         opacity:1;
-        bottom:20px;
+        bottom:30px;
         left:10px;
         right:10px;
         font-size:10px;

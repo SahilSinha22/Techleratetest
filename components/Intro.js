@@ -116,7 +116,7 @@ const Intro = () => {
               </button>
             </div>
             <div
-              className={`w-full block flex-grow justify-between text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
+              className={`w-full block flex-grow justify-between  text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block  " : "hidden"
                 }`}
             >
               <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
@@ -246,27 +246,27 @@ const Intro = () => {
         <div className="relative z-10 flex flex-col items-center justify-center md:h-full xl:space-y-8">
           <div className="text-center mt-32 lg:mt-36 xl:mt-20 lg:mb-10 mb-10 xl:mb-20">
             <h2 className="md:text-6xl lg:text-7xl xl:text-7xl mx-2 text-3xl 2xl:text-8xl font-bold">
-              HELP <span className="text-black font-bold Poppins">YOUR WORK </span> WITH <br />
+            YOUR <span className="text-black font-bold Poppins">DIGITAL </span> INNOVATION <br />
             </h2>
             <h2 className="md:text-6xl sm:mt-6 lg:text-7xl xl:text-7xl mx-2 text-3xl 2xl:text-8xl font-bold">
-              <span className="text-black Poppins">OUR </span> STRATEGY
+              <span className="text-black Poppins">PARTNERS</span>
             </h2>
           </div>
           <div className="flex md:space-x-8 mb-8 lg:mb-20 xl:mt-60 bg-blue-400 bg-opacity-20 pt-4">
             <div className="text-center md:h-20 border-gray-400 2xl:px-12 border-r-2 md:mx-2 mx-1 mb-4 px-2 md:mb-8 md:px-8">
-              <p className="md:text-6xl lg:text-7xl xl:text-6xl text-2xl 2xl:text-7xl Bebas_Neue">32</p>
+              <p className="md:text-6xl lg:text-7xl xl:text-6xl text-2xl 2xl:text-7xl Bebas_Neue">32+</p>
               <p className="text-xs md:text-base xl:text-sm lg:text-lg">EXPERT</p>
             </div>
             <div className="text-center border-gray-400 2xl:px-12 border-r-2 md:mx-2 mx-1 mb-4 px-2 md:mb-8 md:px-8">
-              <p className="md:text-6xl xl:text-6xl lg:text-7xl text-2xl Bebas_Neue 2xl:text-7xl">164</p>
-              <p className="text-xs lg:text-lg xl:text-sm md:text-base">CLIENTS</p>
+              <p className="md:text-6xl xl:text-6xl lg:text-7xl text-2xl Bebas_Neue 2xl:text-7xl">30+</p>
+              <p className="text-xs lg:text-lg xl:text-sm md:text-base">PARTNERS</p>
             </div>
             <div className="text-center border-gray-400 2xl:px-12 border-r-2 md:mx-2 mx-1 mb-4 px-2 md:mb-8 md:px-8">
-              <p className="md:text-6xl xl:text-6xl text-2xl lg:text-7xl Bebas_Neue 2xl:text-7xl">186</p>
+              <p className="md:text-6xl xl:text-6xl text-2xl lg:text-7xl Bebas_Neue 2xl:text-7xl">186+</p>
               <p className="text-xs lg:text-lg xl:text-sm md:text-base">PROJECTS</p>
             </div>
             <div className="text-center md:mx-2 2xl:px-12 md:mb-8 mx-1 px-2 mb-4 md:px-8">
-              <p className="md:text-6xl xl:text-6xl lg:text-7xl text-2xl Bebas_Neue 2xl:text-7xl">324</p>
+              <p className="md:text-6xl xl:text-6xl lg:text-7xl text-2xl Bebas_Neue 2xl:text-7xl">324+</p>
               <p className="text-xs lg:text-lg xl:text-sm md:text-base">CAMPAIGNS</p>
             </div>
           </div>

@@ -69,7 +69,7 @@ const Portfolio = () => {
                       <h2 className="text-4xl  lg:absolute lg:-top-40 xl:text-7xl xl:-top-40 md:text-7xl lg:text-6xl  font-bold text-white lg:mt-0 mt-12 mb-6 md:mb-4">{Services.text}</h2>
                       <a href="#" className="text-white lg:absolute  lg:top-10 xl:top-20 text-lg hover:underline mb-2">See The Work &gt;</a>
                     </div>
-                    <div className="flex-1 flex mr-20 justify-center ">
+                    <div className="flex-1 flex m-10 md:mr-20 lg:m-0 justify-center ">
                       <Image src={Services.img} alt="Mobile app screenshot 1" className=" w-auto h-full 2xl:h-[500px] xl:h-[400px]" width={1000} height={50}/>
                       
                     </div>

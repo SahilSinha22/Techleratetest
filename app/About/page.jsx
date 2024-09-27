@@ -55,7 +55,7 @@ const Page = () => {
       <Bannerxcontact/>
       </div>
 <Award/>
-<Leader/>
+
 </div>
       <Testimonials/>
       <div className=" bg-black text-white  py-14 xl:pt-16 text-center">

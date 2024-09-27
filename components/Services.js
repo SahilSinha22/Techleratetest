@@ -9,8 +9,8 @@ const Services = () => {
     <div className="bg-[#18191f] text-foreground py-12 px-6 xl:px-40">
                   <div className="text-center mb-12">
                     <span className="text-[#7b61ff] text-xl xl:text-lg 2xl:text-2xl PORTFOLIO  ">SERVICES</span>
-                    <h2 className="text-6xl text-black pt-2 lg:pt-0 pb-4 Poppins font-bold">HOW WE</h2>
-                    <h2 className="text-5xl font-bold text-white">APPROACH CLIENTS</h2>
+                    <h2 className="text-5xl sm:text-6xl text-black pt-2 lg:pt-0 pb-4 Poppins font-bold">WHAT TECHNOLOGY</h2>
+                    <h2 className="text-5xl font-bold text-white">WE SERVES</h2>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2   xl:gap-10">
                     <div className="flex justify-center  grow space-y-4 space-x-8 lg:space-x-10">
@@ -20,13 +20,12 @@ const Services = () => {
                     <div className="flex flex-col pt-6 md:pt-20 justify-center">
                       <div className="mb-4 flex">
                         
-                        <h1 className=" space-x-2 text-gray-400 text-lg uppercase tracking-widest">UI/UX Design</h1>
+                        <h1 className=" space-x-2 text-gray-400 text-lg uppercase tracking-widest">APP Development</h1>
                       </div>
-                      <h2 className="text-4xl text-white xl:my-3 md:mb-4">Effective Mobile and Web</h2>
-                      <h2 className="text-4xl text-white xl:mb-6 md:mb-4">Design for Our Clients</h2>
+                      <h2 className="text-4xl text-white xl:my-3 md:mb-4">Flutter Development</h2>
+                     {/*<h2 className="text-4xl text-white xl:mb-6 md:mb-4">Design for Our Clients</h2> */}
                       <p className="text-gray-400 text-lg">
-                        As a Digital Agency, we not only provide attractive mobile and web designs, we also ensure that the mobile/website is also effective in supporting your business activities in the digital world as it is today. Starting from getting leads to growing conversions that can be an investment for your business in the future.
-                      </p>
+                      Our Flutter app development service leverages the power of Google&apos;s UI toolkit to build high-performance, cross-platform applications. With a single codebase, we create seamless mobile experiences for both iOS and Android, ensuring fast development and smooth user interaction.                      </p>
                       <div className="mt-8">
                         <button className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/80 transition-colors duration-300">More Details <span className="ml-2">→</span></button>
                       </div>

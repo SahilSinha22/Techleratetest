@@ -13,15 +13,14 @@ const Digital = () => {
       </div>
       <div  className="md:pt-20">
       <div className=" flex">
-        <h1 className="text-secondary w-auto text-lg font-semibold tracking-widest uppercase mb-2">Digital Marketing</h1>
+        <h1 className="text-secondary w-auto text-lg font-semibold tracking-widest uppercase mb-2">Full Stack Development</h1>
         </div>
-        <h2 className="text-4xl  text-white  xl:my-3 md:mb-4">Provide Digital Marketing</h2>
-        <h2 className="text-4xl  text-white  xl:mb-6 mb-4"> Strategy for Our Clients</h2>
+        <h2 className="text-4xl  text-white  xl:my-3 md:mb-4">MERN</h2>
+       {/*<h2 className="text-4xl  text-white  xl:mb-6 mb-4"> Strategy for Our Clients</h2>*/}
 
         <p className="text-muted-foreground mb-6">
-          As a Digital Agency, every service we provide will be prepared with a proven strategy and also in accordance with the rules to achieve the goals of your business. There are various kinds of marketing strategies, which can be applied to your business, ranging from Search Engine Optimization, Search Engine Marketing, Social Media Marketing such as Facebook and Instagram ads, and many more.
-        </p>
-        <a href="#" className="text-white font-semibold flex items-center">
+        Our MERN stack development services cover end-to-end web solutions, utilizing MongoDB, Express.js, React.js, and Node.js to create responsive, secure, and scalable web applications tailored to your business needs.
+        </p>        <a href="#" className="text-white font-semibold flex items-center">
           More Detail <span className="ml-2">→</span>
         </a>
       </div>

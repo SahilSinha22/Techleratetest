@@ -8,18 +8,17 @@ const Graphic = () => {
   return (
     <div className="bg-[#18191f] text-foreground px-4 md:p-8 xl:px-40 flex flex-col md:flex-row items-center">
                   <div className="md:w-1/2   p-4">
-                    <h1 className="text-lg text-gray-400 inline-block mb-2">GRAPHIC DESIGN</h1>
+                    <h1 className="text-lg text-gray-400 inline-block mb-2">APP Development</h1>
                     
 
                    
-                    <h2 className="text-4xl   text-white xl:my-3 md:mb-4">Creating beautiful design</h2>
+                    <h2 className="text-4xl   text-white xl:my-3 md:mb-4">React Native Development</h2>
 
-                    <h2 className="text-4xl   text-white xl:mb-6 mb-4">based Client Needs</h2>
+                  {/*  <h2 className="text-4xl   text-white xl:mb-6 mb-4">based Client Needs</h2>*/}
                    
                     <p className="text-gray-400 text-lg  mb-6">
-                      Design not only needs to be good, but also sells. Brand Strategy is applied in every process to provide maximum results in the business. We are ready to help you in this matter, every design made will take into account various factors that are expected to help develop your business. Professionally designed and done for you.
-                    </p>
-                    <a href="#" className="text-white hover:underline flex items-center">
+                    Our React Native app development focuses on building dynamic, native-like mobile applications for iOS and Android. Using Facebook&apos;s framework, we ensure efficiency, scalability, and rich user experiences while reducing time to market.</p>            
+                            <a href="#" className="text-white hover:underline flex items-center">
                       More Detail <span className="ml-2">→</span>
                     </a>
                   </div>
