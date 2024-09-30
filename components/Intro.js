@@ -116,7 +116,7 @@ const Intro = () => {
               </button>
             </div>
             <div
-              className={`w-full block flex-grow justify-between  text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block  " : "hidden"
+              className={`w-full block flex-grow justify-between   text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block bg-[#000000] bg-opacity-50 " : "hidden"
                 }`}
             >
               <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
