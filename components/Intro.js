@@ -122,20 +122,20 @@ const Intro = () => {
               <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
                 <Link
                   href="/About"
-                  className="nav-link block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+                  className="nav-link block text-white mt-4 hover:text-[#7B61FF] lg:inline-block lg:mt-0 text-white-200 mr-8"
                 >
                   About
                 </Link>
                 <Link
                   href="/Work"
-                  className="nav-link block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+                  className="nav-link block text-white  hover:text-[#7B61FF] mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                 >
                   Work
                 </Link>
                 <div className=" lg:inline-block  group">
                   <Link
                     href="#"
-                    className="nav-link block text-white mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
+                    className="nav-link block text-white hover:text-[#7B61FF] mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
                     aria-haspopup="true"
                     aria-expanded={isOpen ? true : false}
                   >
@@ -191,7 +191,7 @@ const Intro = () => {
                 <div className=" lg:inline-block  group">
                   <Link
                     href="#"
-                    className="block text-white nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+                    className="block text-white hover:text-[#7B61FF] nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                   >
                     Technology
                     <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
@@ -227,14 +227,14 @@ const Intro = () => {
                 </div>
                 <Link
                   href="/Career"
-                  className="block nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+                  className="block nav-link text-white hover:text-[#7B61FF] mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                 >
                   Career
                 </Link>
               </div>
               <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
                 <Link href="/contact" className="inline-flex">
-                  <button className="block nav-link text-white lg:inline-block text-white-200 mr-2 xl:mr-4">
+                  <button className="block nav-link text-white hover:text-[#7B61FF] lg:inline-block text-white-200 mr-2 xl:mr-4">
                     Contact Us
                   </button>
                   <Image src={Star} alt="" className="h-6 w-6" width={20} height={20} />

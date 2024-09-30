@@ -9,6 +9,7 @@ import Starx from "@/public/Starx.svg"
 import Arrow from "@/public/Arrow.png"
 import { useRouter } from 'next/navigation';
 import ServicesPic from "@/public/ServicesPic.png";
+
 const services = [
 
   { name: "On Demand", logo: "/OnDemand.svg" },
@@ -117,28 +118,29 @@ const Navbar = () => {
           <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
             <Link
               href="/About"
-              className="nav-link block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+              className={`nav-link block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${pathname== "/About"?"text-[#7B61FF]":"text-white hover:text-[#7B61FF]"}`}
             >
               About
             </Link>
             <Link
               href="/Work"
-              className="nav-link block text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+              className={`nav-link block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${pathname== "/Work"?"text-[#7B61FF]":"text-white hover:text-[#7B61FF]"}`}
             >
               Work
             </Link>
             <div className=" lg:inline-block  group">
               <Link
                 href="#"
-                className="nav-link block text-white mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
+                className={`nav-link block  mt-4 lg:inline-block group lg:mt-0 hover:text-[#7B61FF] mr-8 ${pathname== "/Services"?"text-white hover:text-[#7B61FF]":"text-white"}`}
                 aria-haspopup="true"
                 aria-expanded={isOpen ? true : false}
               >
                 Services
-                <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
+                <Image src={Arrow} alt="" className="inline-flex " width={32} height={32} />
               </Link>
               <div 
-                className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-auto h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'}`}
+                className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-auto h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300
+                   ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'}`}
               >
                 <section className="flex flex-col md:flex-row justify-between  rounded-3xl w-full  md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-16 lg:pt-4 pb-6 md:px-0 md:flex Poppinx">
                   <div className="p-6 xl:p-10">
@@ -156,13 +158,13 @@ const Navbar = () => {
 
                     </div>
                     <div className={`mt-5 text-left block  `}>
-                      <Image src={ServicesPic} className=" w-72 md:w-auto xl:w-full" alt="" width={400} height={400} />
+                      <Image src={ServicesPic} className=" w-72 lg:w-auto xl:w-full" alt="" width={400} height={400} />
                       <h2 className="mt-5 text-sm md:text-xs lg:text-lg  2xl:text-2xl leading-relaxed font-light">Read our developments that has helped <br />the industry boom in India </h2>
                     </div>
                   </div>
                   <ul className="py-1 text-xs  lg:text-base xl:text-lg Poppin grid grid-cols-3">
                     {services.map((service, index) => (
-                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[250px]  xl:max-w-7xl xl:w-[300px] hover:text-[#7b61ff] custom-filter `}>
+                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[200px]  xl:max-w-7xl xl:w-[280px] hover:text-[#7b61ff] custom-filter `}>
                         <Image
                           src={service.logo}
                           alt={`${service.name} logo`}
@@ -186,7 +188,7 @@ const Navbar = () => {
             <div className="lg:inline-block group">
       <Link
         href="#"
-        className={`block nav-link mt-4 lg:inline-block lg:mt-0 mr-8 ${
+        className={`block nav-link mt-4 lg:inline-block lg:mt-0 hover:text-[#7B61FF] mr-8 ${pathname== "/Technology/reactnative"?"text-[#7B61FF]":"text-white"} ${
         router.pathname ? 'text-[#7b61ff]' : 'text-white'
         }`}
       >
@@ -207,7 +209,7 @@ const Navbar = () => {
             {technology.map((service, index) => (
               <div
                 key={index}
-                className={` dropslash  inline-flex  items-center w-auto sm:w-[200px] md:w-[120px] lg:w-[200px] xl:w-[300px]  hover:text-[#7b61ff] `}
+                className={` dropslash  inline-flex  items-center w-auto sm:w-[200px] md:w-[120px] lg:w-[200px] xl:w-[265px]  hover:text-[#7b61ff] `}
               >
                 <div className="lg:h-8 lg:w-8 h-6 w-6 sm:h-6 sm:w-6 hover:bg-yellow-700 hover-dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
                   <Image src={service.logo} alt={`${service.name} logo`} width={100} height={100} />
@@ -223,14 +225,14 @@ const Navbar = () => {
     </div>
             <Link
               href="/Career"
-              className=" block nav-link text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
+              className=" block nav-link text-white mt-4 lg:inline-block hover:text-[#7B61FF] lg:mt-0 text-white-200 mr-8"
             >
               Career
             </Link>
           </div>
           <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
             < Link href="/contact" className="inline-flex">
-              <button className="block nav-link text-white lg:inline-block text-white-200 mr-2 xl:mr-4">
+              <button className="block nav-link text-white hover:text-[#7B61FF] lg:inline-block text-white-200 mr-2 xl:mr-4">
                 Contact Us
               </button>
               <Image src={Star} alt="" className="h-6 w-6" width={20} height={20} />

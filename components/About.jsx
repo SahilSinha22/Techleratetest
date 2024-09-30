@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Loc from "@/components/Loc"
 const About = () => {
     return (
         <div className='bg-[#18191F]' >
@@ -83,14 +84,7 @@ const About = () => {
 
                 </div>
             </div>
-            <div className='b-2  text-white text-center   py-8 lg:pt-12'>
-                <span className=' py-1 text-lg md:text-2xl lg:text-5xl  Poppins font-medium'> Location we are Catering</span>
-                <div className='place-content-center py-10 lg:py-16 items-center flex justify-center'>
-
-
-                    <Image src="/World.webp" alt="" width={1000} height={1000} />
-                </div>
-            </div>
+           <Loc/>
         </div>
     )
 }

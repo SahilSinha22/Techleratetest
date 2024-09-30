@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="193" height="45.091" viewBox="0 0 193 45.091">
-    <g data-name="Group 1">
-        <g data-name="Logo">
-            <path data-name="Rectangle 106" d="M134.545 46.545A14.546 14.546 0 0 0 120 32v30.545a14.545 14.545 0 0 0 14.545 14.545z" style="fill:#7b61ff" transform="translate(-120 -32)"/>
-            <path data-name="Rectangle 108" d="M140.363 49.454a7.272 7.272 0 0 1 7.273-7.272v17.454a7.272 7.272 0 0 1-7.273 7.273z" style="fill:#7b61ff" transform="translate(-120 -32)"/>
-            <path data-name="Rectangle 107" d="M168 32a14.545 14.545 0 0 0-14.546 14.545V77.09A14.545 14.545 0 0 0 168 62.545z" style="fill:#7b61ff" transform="translate(-120 -32)"/>
-        </g>
-        <text transform="translate(60 30.945)" style="fill:#fff;font-size:24px;font-family:Poppins-Bold,Poppins;font-weight:700"><tspan x="0" y="0">Techlerate</tspan></text>
+  <g id="Group_1" data-name="Group 1" transform="translate(-120 -32)">
+    <g id="Logo">
+      <g id="Logo-2" data-name="Logo">
+        <path id="Rectangle_106" data-name="Rectangle 106" d="M134.545,46.545A14.546,14.546,0,0,0,120,32h0V62.545A14.545,14.545,0,0,0,134.545,77.09h0Z" fill="#7b61ff"/>
+        <path id="Rectangle_108" data-name="Rectangle 108" d="M140.363,49.454a7.272,7.272,0,0,1,7.273-7.272h0V59.636a7.272,7.272,0,0,1-7.273,7.273h0Z" fill="#7b61ff"/>
+        <path id="Rectangle_107" data-name="Rectangle 107" d="M168,32h0a14.545,14.545,0,0,0-14.546,14.545V77.09h0A14.545,14.545,0,0,0,168,62.545Z" fill="#7b61ff"/>
+      </g>
+      <text id="Techlerate" transform="translate(180 62.945)" fill="#fff" font-size="24" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Techlerate</tspan></text>
     </g>
+  </g>
 </svg>
