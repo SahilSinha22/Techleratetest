@@ -32,11 +32,11 @@ const GlobeWithPins = () => {
         <Image
           src="/pin.svg"
           alt="Pin"
-          className="absolute h-6 w-4 md:h-10 md:w-10"
-          style={{ top: '60%', left: '28%' }} // Percentage-based positioning
+          className="absolute h-6 w-4 md:h-10 md:w-10 "
+          style={{ top: '60%', left: '38%' }} // Percentage-based positioning
           width={1000}
           height={1000}
-          onMouseEnter={() => handleMouseEnter('Africa', { x: '28%', y: '60%' })}
+          onMouseEnter={() => handleMouseEnter('Africa', { x: '38%', y: '60%' })}
           onMouseLeave={handleMouseLeave}
         />
 
@@ -45,10 +45,10 @@ const GlobeWithPins = () => {
           src="/pin.svg"
           alt="Pin"
           className="absolute h-6 w-4 md:h-10 md:w-10"
-          style={{ top: '20%', left: '35%' }} // Adjusted to stay fixed
+          style={{ top: '30%', left: '35%' }} // Adjusted to stay fixed
           width={1000}
           height={1000}
-          onMouseEnter={() => handleMouseEnter('Canada', { x: '35%', y: '20%' })}
+          onMouseEnter={() => handleMouseEnter('Canada', { x: '35%', y: '30%' })}
           onMouseLeave={handleMouseLeave}
         />
 
@@ -57,10 +57,10 @@ const GlobeWithPins = () => {
           src="/pin.svg"
           alt="Pin"
           className="absolute h-6 w-4 md:h-10 md:w-10"
-          style={{ top: '30%', left: '45%' }}
+          style={{ top: '40%', left: '50%' }}
           width={1000}
           height={1000}
-          onMouseEnter={() => handleMouseEnter('U.S.A', { x: '45%', y: '30%' })}
+          onMouseEnter={() => handleMouseEnter('U.S.A', { x: '50%', y: '40%' })}
           onMouseLeave={handleMouseLeave}
         />
 
@@ -69,10 +69,10 @@ const GlobeWithPins = () => {
           src="/pin.svg"
           alt="Pin"
           className="absolute h-6 w-4 md:h-10 md:w-10"
-          style={{ top: '10%', left: '70%' }}
+          style={{ top: '20%', left: '60%' }}
           width={1000}
           height={1000}
-          onMouseEnter={() => handleMouseEnter('Russia', { x: '70%', y: '10%' })}
+          onMouseEnter={() => handleMouseEnter('Russia', { x: '60%', y: '20%' })}
           onMouseLeave={handleMouseLeave}
         />
 
