@@ -12,6 +12,10 @@ const Form = () => {
   const [inputCaptcha, setInputCaptcha] = useState("");
   const [errors, setErrors] = useState({});
   const [successBanner, setSuccessBanner] = useState(false);
+  const [fileName, setFileName] = useState('Attach a file');
+  const [file, setFile] = useState(null);
+  const [Inquire, setInquire] = useState(null);
+  
   const [user, setUser] = useState({
     Name: "",
     Email: "",
@@ -91,21 +95,8 @@ const Form = () => {
     }
   };
 
-  const [isCaptchaValid, setIsCaptchaValid] = useState(null);
+  
 
-  useEffect(() => {
-    setCaptcha(generateArithmeticCaptcha());
-  }, []);
-
-  const handleCaptchaChange = (e) => {
-    const value = e.target.value;
-    setInputCaptcha(value);
-    setIsCaptchaValid(value === captcha.answer);
-  };
-
-
-  const [fileName, setFileName] = useState('Attach a file');
-  const [file, setFile] = useState(null);
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -392,10 +383,10 @@ const Form = () => {
                     className="rounds mt-4 text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="submit"
                     style={{
-                      backgroundColor: file ? "green" : "black",
+                      backgroundColor: Inquire ? "green" : "black",
                       color: "white",
                     }}
-                    disabled={file === null || !file}
+                    disabled={Inquire === null || !Inquire}
                   >
                     Inquire Now →
                   </button>
