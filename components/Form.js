@@ -385,38 +385,17 @@ const Form = () => {
       )}
     </div>
 
-                  <div>
-                    <label className="text-green-600 text-xl  font-bold">
-                      {captcha.question} ={" "}
-                    </label>
-                    <input
-                      type="text"
-                      className="xl:w-16  w-28 text-xl text-center  border-b-2 bg-black text-white"
-                      value={inputCaptcha}
-                      onChange={handleCaptchaChange}
-                      required
-                    />
-                    {isCaptchaValid === true && (
-                      <span className="mx-10 text-xl" style={{ color: "green" }}>
-                        ✔️
-                      </span>
-                    )}
-                    {isCaptchaValid === false && (
-                      <span className="mx-10 text-xl" style={{ color: "red" }}>
-                        ❌
-                      </span>
-                    )}
-                  </div>
+                 
 
                   <button
                     onClick={getdata}
                     className="rounds mt-4 text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="submit"
                     style={{
-                      backgroundColor: isCaptchaValid ? "green" : "black",
+                      backgroundColor: file ? "green" : "black",
                       color: "white",
                     }}
-                    disabled={isCaptchaValid === null || !isCaptchaValid}
+                    disabled={file === null || !file}
                   >
                     Inquire Now →
                   </button>
