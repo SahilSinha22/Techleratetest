@@ -24,7 +24,7 @@ export default function Home() {
   
    <DumyForm/>
    <Blog/>
-   <Started/>
+   
    </main>
   );
 }
