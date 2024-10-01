@@ -164,7 +164,7 @@ const Navbar = () => {
                   </div>
                   <ul className="py-1 text-xs  lg:text-base xl:text-lg Poppin grid grid-cols-3">
                     {services.map((service, index) => (
-                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[200px]  xl:max-w-7xl xl:w-[280px] hover:text-[#7b61ff] custom-filter `}>
+                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[200px]  xl:max-w-7xl xl:w-[250px] hover:text-[#7b61ff] custom-filter `}>
                         <Image
                           src={service.logo}
                           alt={`${service.name} logo`}

@@ -2,6 +2,7 @@ import { Inter, Bebas_Neue, Playfair_Display, Josefin_Sans, Open_Sans, Poppins  
 import "./globals.css";
 import Footer from "@/app/component/Footer"
 import Navbar from "@/app/component/Navbar"
+import Form from "@/components/Form";
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -55,6 +56,7 @@ export default function RootLayout({ children }) {
      
    
         {children}
+        <Form/>
         <Footer/>
         </div>
         </body>
