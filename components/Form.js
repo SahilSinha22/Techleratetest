@@ -15,13 +15,14 @@ const Form = () => {
   const [fileName, setFileName] = useState('Attach a file');
   const [file, setFile] = useState(null);
   const [Inquire, setInquire] = useState(null);
-  
+
   const [user, setUser] = useState({
     Name: "",
     Email: "",
     Number: "",
     message: "",
     Budget: "",
+    File: "",
   });
 
   const [isSelected, setIsSelected] = useState(false);
@@ -50,7 +51,8 @@ const Form = () => {
     else if (!/^\d{7,12}$/.test(user.Number))
       newErrors.Number = "Phone number must be between 7 to 12 digits";
     if (!user.message) newErrors.message = "Message is required";
-    if (!user.Budget) newErrors.File = "Budget is required";
+    if (!user.Budget) newErrors.Budget = "Budget is required";
+   
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -58,7 +60,7 @@ const Form = () => {
   const getdata = async (e) => {
     e.preventDefault();
     if (!validate()) return;
-    const { Name, Email, Number, message, Budget } = user;
+    const { Name, Email, Number, message, Budget,File } = user;
 
     const formData = new FormData();
     formData.append("Name", Name);
@@ -66,6 +68,7 @@ const Form = () => {
     formData.append("Number", Number);
     formData.append("message", message);
     formData.append("Budget", Budget);
+    formData.append("File", File);
 
     const options = {
       method: "POST",
@@ -78,6 +81,7 @@ const Form = () => {
         Number,
         message,
         Budget,
+        File,
       }),
     };
 
@@ -95,7 +99,7 @@ const Form = () => {
     }
   };
 
-  
+
 
 
   const handleFileChange = (e) => {
@@ -113,7 +117,7 @@ const Form = () => {
     setInquire("Done");
     // Create a reference to the file in Firebase storage
     const fileRef = ref(storage, `uploads/${file.name}`);
-    
+
     // Upload the file
     const uploadTask = uploadBytesResumable(fileRef, file);
 
@@ -135,7 +139,7 @@ const Form = () => {
       }
     );
   };
-  
+
 
 
 
@@ -155,7 +159,7 @@ const Form = () => {
 
       <div className="  w-full h-92 ">
         <div className="  flex flex-col  ">
-          <h2 className="  text-left mx-5  sm:ml-12 md:mx-20 mt-6 2xl:ml-48 2xl:mr-0  2xl:pr-60 lg:ml-28 lg:mr-20  xl:mr-60 xl:ml-48 sm:text-2xl 2xl:text-5xl items-center text-white text-lg lg:text-4xl  playfair_display">
+          <h2 className="  text-left sm:text-center lg:text-left mx-5  sm:ml-12 md:mx-20 mt-6 2xl:ml-48 2xl:mr-0  2xl:pr-60 lg:ml-28 lg:mr-20  xl:mr-60 xl:ml-48 text-3xl sm:text-4xl 2xl:text-5xl items-center text-white  lg:text-4xl  playfair_display">
             Collaborate with us
           </h2>
 
@@ -185,7 +189,7 @@ const Form = () => {
                 </div>
               </div>
 
-              <div className="mr-4 w-full px-4 lg:w-auto xl:mr-0 xl:w-[500px] mb-4  md:mx-2  ">
+              <div className="mr-4 w-full  lg:w-auto xl:mr-0 xl:w-[500px] mb-4 bg-[#18191f] p-6 rounded-3xl md:mx-2  ">
                 {successBanner && (
                   <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
                     <FaCheckCircle size={24} className="mr-2" />
@@ -203,7 +207,7 @@ const Form = () => {
                         type="text"
                         name="Name"
                         id="floating_first_name"
-                        className="block py-2.5 px-0 w-full text-sm 2xl:text-lg text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-full text-sm 2xl:text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=" "
                         value={user.Name}
                         autoComplete="off"
@@ -218,7 +222,7 @@ const Form = () => {
 
                       <label
                         htmlFor="Name"
-                        className="peer-focus:font-medium  absolute text-sm 2xl:text-lg text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium  absolute text-sm 2xl:text-base text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         Full Name
                       </label>
@@ -228,7 +232,7 @@ const Form = () => {
                         type="text"
                         name="Email"
                         id="floating_last_name"
-                        className="block py-2.5 px-0 w-full text-sm text-white bg-transparent  2xl:text-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-full text-sm text-white bg-transparent  2xl:text-base border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=" "
                         value={user.Email}
                         autoComplete="off"
@@ -243,15 +247,15 @@ const Form = () => {
 
                       <label
                         htmlFor="Email"
-                        className="peer-focus:font-medium absolute text-sm text-white 2xl:text-lg duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute text-sm text-white 2xl:text-base duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         Email*
                       </label>
                     </div>
                   </div>
                   <div className="grid md:grid-cols-2  gap-4 md:gap-6">
-                    <div class=" md:mt-1 2xl:mt-4">
-                      <div class="relative text-lg flex w-full bg-[#000000]">
+                    <div className=" md:mt-1 2xl:mt-3">
+                      <div className="relative text-lg flex w-full ">
                         <PhoneInput
                           country={'in'}
                           value={user.Number}
@@ -262,9 +266,9 @@ const Form = () => {
                             autoFocus: false
                           }}
                           autoComplete="off"
-                          className="border-b-2 w-full text-lg bg-[#000000] dark:border-gray-600 2xl:text-lg  border-gray-300 peer-placeholder-shown:text-blue-gray-500"
+                          className="border-b-2 w-full text-lg bg-[#000000] dark:border-gray-600 2xl:text-base  border-gray-300 peer-placeholder-shown:text-blue-gray-500"
                           containerStyle={{ width: '100%', background: 'black', fontSize: '1.125rem' }}
-                          inputStyle={{ width: '100%', border: 'none', color: 'white', background: 'black', fontSize: '1.125rem' }}
+                          inputStyle={{ width: '100%', border: 'none', color: 'white', background: '#18191f', fontSize: '1.125rem' }}
                           buttonStyle={{
                             border: 'none', background: 'transparent', color: 'black', fontSize: '1.125rem'
                           }}
@@ -274,35 +278,35 @@ const Form = () => {
                       {errors.Number && <p className="text-red-600 text-xs mt-1">{errors.Number}</p>}
                     </div>
                     <div className="relative z-0 w-full mb-5 md:mb-5 group">
-      <select
-        name="Budget"
-        id="floating_company"
-        className="block py-2.5 px-0 w-full text-sm 2xl:text-lg text-white bg-black bg-opacity-20 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-        value={user.Budget}
-        autoComplete="off"
-        required
-        onChange={handleSelectChange}
-      >
-        <option value="" disabled>Budget (select a range)</option>
-        <option value="2.66L">2.66L</option>
-        <option value="3.5L">3.5L</option>
-        <option value="4.5L">4.5L</option>
-      </select>
+                      <select
+                        name="Budget"
+                        id="floating_company"
+                        className="block py-2.5 px-0 w-full text-sm 2xl:text-base text-white bg-[#18191f]  border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        value={user.Budget}
+                        autoComplete="off"
+                        required
+                        onChange={handleSelectChange}
+                      >
+                        <option value="" disabled>Budget (select a range)</option>
+                        <option value="2.66L">2.66L</option>
+                        <option value="3.5L">3.5L</option>
+                        <option value="4.5L">4.5L</option>
+                      </select>
 
-      {/* Arrows */}
-      <div className="absolute right-2 top-3">
-        {isSelected ? <FaChevronUp className="text-white" /> : <FaChevronDown className="text-white" />}
-      </div>
+                      {/* Arrows */}
+                      <div className="absolute right-2 top-3">
+                        {isSelected ? <FaChevronUp className="text-white" /> : <FaChevronDown className="text-white" />}
+                      </div>
 
-      {errors.Budget && (
-        <p className="text-red-600 text-xs mt-1">
-          {errors.Budget}
-        </p>
-      )}
+                      {errors.Budget && (
+                        <p className="text-red-600 text-xs mt-1">
+                          {errors.Budget}
+                        </p>
+                      )}
 
 
-      
-    </div>
+
+                    </div>
 
                   </div>
                   <div className="relative z-0 w-full mb-5 group">
@@ -310,7 +314,7 @@ const Form = () => {
                       type="text"
                       name="message"
                       id="floating_email"
-                      className="block py-2.5 px-0 w-full text-sm text-white 2xl:text-lg bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-sm text-white 2xl:text-base bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=" "
                       value={user.message}
                       autoComplete="off"
@@ -325,58 +329,60 @@ const Form = () => {
 
                     <label
                       htmlFor="message"
-                      className="peer-focus:font-medium absolute text-sm 2xl:text-lg text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-sm 2xl:text-base text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       About your project
                     </label>
                   </div>
                   <div className="file-upload-container relative border border-gray-600 p-4 rounded-md">
-      <label
-        htmlFor="file-upload"
-        className="flex items-center space-x-2 text-gray-400 cursor-pointer"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 4v16m8-8H4"
-          />
-        </svg>
-        <span>{fileName}</span>
-      </label>
+                    <label
+                      htmlFor="file-upload"
+                      className="flex items-center space-x-2 text-gray-400 cursor-pointer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 4v16m8-8H4"
+                        />
+                      </svg>
+                      <span>{fileName}</span>
+                    </label>
 
-      <input
-        type="file"
-        id="file-upload"
-        className="hidden"
-        accept=".pdf, .docx, .doc, .odt, .ods, .ppt, .pptx, .xlsx, .xls, .rtf, .txt"
-        onChange={handleFileChange}
-      />
+                    <input
+                      type="file"
+                      id="file-upload"
+                      value={user.File}
+                      className="hidden"
+                      accept=".pdf, .docx, .doc, .odt, .ods, .ppt, .pptx, .xlsx, .xls, .rtf, .txt"
+                      onChange={handleFileChange}
+                    />
 
-      <p className="text-xs text-gray-500 mt-2">
-        Please upload a file with one of the following extensions:
-        <strong> .pdf, .docx, .doc, .odt, .ods, .ppt, .pptx, .xlsx, .xls, .rtf, .txt</strong>
-      </p>
+                    <p className="text-xs text-gray-500 mt-2">
+                      Please upload a file with one of the following extensions:
+                      <strong> .pdf, .docx, .doc, .odt, .ods, .ppt, .pptx, .xlsx, .xls, .rtf, .txt</strong>
+                    </p>
 
-      {file && (
-        <button
-          onClick={handleFileUpload}
-         
-          className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-md"
-        >
-          Upload File
-        </button>
-      )}
-    </div>
+                    {file && (
+                      <button
+                        onClick={handleFileUpload}
 
-                 
+                        className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-md"
+                      >
+                        Upload File
+                      </button>
+                    )}
+    
+                  </div>
+
+
 
                   <button
                     onClick={getdata}
