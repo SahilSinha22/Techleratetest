@@ -85,7 +85,7 @@ const Blog = () => {
               <span className="bg-gray-700 text-[#627af1] text-base py-1 px-4 rounded-full">{blog.category}</span>
               <span className="text-[#9a9898] text-base">{blog.date}</span>
             </div>
-            <h2 className="text-2xl sm:w-[400px] md:w-full text-center md:text-left text-white">{blog.title}</h2>
+            <h2 className="text-2xl sm:w-[400px] md:w-full text-left sm:text-center md:text-left text-white">{blog.title}</h2>
           </div>
         ))}
       </div>
