@@ -110,7 +110,7 @@ const Form = () => {
       alert('No file selected');
       return;
     }
-
+    setInquire("Done");
     // Create a reference to the file in Firebase storage
     const fileRef = ref(storage, `uploads/${file.name}`);
     
