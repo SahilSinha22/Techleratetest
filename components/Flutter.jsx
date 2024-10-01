@@ -158,7 +158,7 @@ const Flutter = () => {
                 {Services.map((Services, index) => (
                     <div key={index} className="flex flex-row p-2  gap-4 lg:h-[450px] bg-[#fd5d5d] lg:flex-row items-center  justify-around bg-primary md:p-8 ">
                         <div className="flex-1 lg:relative  mb-4 md:mb-0 mt-10 md:mt-14 lg:mt-24">
-                            <h2 className="text-4xl  lg:absolute lg:-top-40 xl:text-7xl xl:-top-40 md:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-white lg:mt-0  mb-6 md:mb-4">OKOMO360 <br />IS A UNIQUE <br />PLATFORM</h2>
+                            <h2 className="text-2xl sm:text-4xl  lg:absolute lg:-top-40 xl:text-7xl xl:-top-40 md:text-5xl lg:text-6xl 2xl:text-7xl font-bold text-white lg:mt-0  mb-6 md:mb-4">OKOMO360 <br />IS A UNIQUE <br />PLATFORM</h2>
                             <a href="#" className="text-white lg:absolute  lg:top-10 xl:top-20 text-lg hover:underline mb-2">See The Work &gt;</a>
                         </div>
                         <div className="flex-1 flex  xl:mr-20 justify-center relative ">

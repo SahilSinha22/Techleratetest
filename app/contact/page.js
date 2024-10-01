@@ -365,7 +365,7 @@ const Page = () => {
 
             <div className='flex flex-col md:flex-row  -top-60 md:-top-16   absolute z-10 lg:-top-20 h-auto justify-self-start 2xl:-top-52  md:justify-between px-4 md:pl-20 md:pr-10 2xl:p-20 2xl:pr-40'>
               <div className="pr-6 lg:pr-16 w-auto ">
-                <h2 className=' text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl leading-relaxed Poppinx font-medium'>
+                <h2 className=' text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl leading-relaxed Poppinx font-medium'>
                   Unlock Your Business <br /> Potential Today!
                 </h2>
                 <p className='py-10 text-base xl:text-base 2xl:text-lg  w-[300px] lg:w-[400px] xl:w-[600px] 2xl:w-full'>

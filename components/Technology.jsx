@@ -94,7 +94,9 @@ const Technology = () => {
       </div>
       <section className="md:mx-20 xl:mb-10 lg:mx-28 2xl:mx-52 p-6 bg-background open_sans_display  ">
         <h2 className="text-3xl  2xl:text-4xl  mb-4">Our React Native App Development Services</h2>
-        <p className="mb-6 xl:text-lg 2xl:text-2xl xl:pr-48 xl:mr-40 2xl:pr-60 2xl:mr-96">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
+        <p className="mb-6 xl:text-lg 2xl:text-2xl xl:pr-48 xl:mr-40 2xl:pr-60 2xl:mr-96">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+
+        </p>
 
         <div className="space-y-8 2xl:pl-10 xl:w-[900px] 2xl:w-[1000px]">
           <div className="p-6   shadow-lg shadow-[#E9A0FF4D]   rounded-lg bg-muted">
@@ -135,7 +137,8 @@ const Technology = () => {
       </div>
       <section className="md:mx-20 xl:mb-10 lg:mx-28 2xl:mx-52 p-6 bg-background open_sans_display ">
         <h2 className="text-3xl  2xl:text-4xl   mb-4">Our Offerings</h2>
-        <p className="mb-16 md:text-lg 2xl:text-2xl xl:text-lg xl:pr-60 xl:mr-24 2xl:pr-60 2xl:mr-96">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
+        <p className="mb-16 md:text-lg 2xl:text-2xl xl:text-lg xl:pr-60 xl:mr-24 2xl:pr-60 2xl:mr-96">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+          </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:pr-60 w-full">
           <div className="p-4  w-auto 2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
@@ -155,7 +158,8 @@ const Technology = () => {
           <div className="p-4  2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground"> Enterprise-oriented Solutions</h3>
             <p className="xl:text-base  2xl:pr-6">
-            Our specialized react native app development services are tailored for corporate environments.We inherently build enterprise-oriented solutions using the versatility of React Native to create robust, scalable, and secure applications.            </p>
+            Our specialized react native app development services are tailored for corporate environments.We inherently build enterprise-oriented solutions using the versatility of React Native to create robust, scalable, and secure applications.    
+            </p>
           </div>
 
           <div className="p-4 2xl:w-[400px]  bg-[#F8F8F8] xl:pt-6 2xl:p-8 hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
@@ -167,7 +171,9 @@ const Technology = () => {
 
           <div className="p-4  2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">React Native Support & Maintenance</h3>
-            <p className="xl:text-base  2xl:pr-6">Longevity is the cornerstone of any business product. Our Support and Maintenance services tick this box to deliver optimal performance to your users.</p>
+            <p className="xl:text-base  2xl:pr-6">Longevity is the cornerstone of any business product. Our Support and Maintenance services tick this box to deliver optimal performance to your users.
+              
+            </p>
           </div>
          
         </div>

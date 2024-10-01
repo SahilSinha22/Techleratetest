@@ -389,7 +389,7 @@ const Page = () => {
         <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ContactForm onClose={closeModal} />
       </Modal>
-        <Form />
+       
       </div>
       </>
     

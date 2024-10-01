@@ -13,7 +13,7 @@ const page = () => {
       <Indus/>
       </div>
      
-      <Form/>
+     
     </div>
   )
 }
