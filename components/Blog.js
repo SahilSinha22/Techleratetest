@@ -71,21 +71,21 @@ const Blog = () => {
           LATEST <span className="text-white py-10 lg:py-0">ARTICLES</span>
         </h2>
       </div>
-      <div className="flex flex-col justify-center items-center md:grid md:grid-cols-3 lg:gap-8">
+      <div className="flex flex-col justify-center text-left  md:grid md:grid-cols-3 lg:gap-8">
         {blogs.slice(0, visibleBlogs).map((blog, index) => (
-          <div key={index} className="bg-card items-center justify-center p-4 rounded-lg">
+          <div key={index} className="bg-card flex flex-col text-left md:flex-none items-center md:items-start justify-center md:justify-normal p-4 rounded-lg">
             <Image
-              className="h-[500px] w-[400px] object-cover mb-4"
+              className="h-[500px] w-[400px]  2xl:w-full object-cover mb-4"
               src={blog.image}
               alt={blog.title}
-              width={500}
-              height={8}
+              width={1000}
+              height={1000}
             />
-            <div className="flex items-center space-x-2 mb-2">
+            <div className=" text-left space-x-2 mb-2">
               <span className="bg-gray-700 text-[#627af1] text-base py-1 px-4 rounded-full">{blog.category}</span>
               <span className="text-[#9a9898] text-base">{blog.date}</span>
             </div>
-            <h2 className="text-2xl sm:w-[340px] md:w-full text-white">{blog.title}</h2>
+            <h2 className="text-2xl sm:w-[400px] md:w-full text-center md:text-left text-white">{blog.title}</h2>
           </div>
         ))}
       </div>
