@@ -252,9 +252,9 @@ const Page = () => {
                     <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
                   </Link>
                   <div 
-                className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-auto h-auto md:h-auto    bg-white rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-[#000000]'}`}
+                className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-full h-auto md:h-auto    bg-white rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-[#000000]'}`}
               >
-                <section className="flex flex-col md:flex-row justify-between   rounded-3xl w-full  md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-16 lg:pt-4 pb-6 md:px-0 md:flex Poppinx">
+                <section className="flex flex-col md:flex-row justify-between   rounded-3xl w-full  md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10  lg:pt-4  md:px-0 md:flex Poppinx">
                   <div className="p-6 xl:p-10">
 
 
