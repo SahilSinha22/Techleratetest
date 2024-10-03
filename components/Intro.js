@@ -198,20 +198,20 @@ const Intro = () => {
 
                   </Link>
                   <div
-        className={`absolute w-full lg:left-4 m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
+        className={`absolute w-full   lg:left-4 m-auto  justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
          pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear" ? 'text-[#000000]' : 'text-white'
         }`}
       >
         <div className="flex flex-col md:flex-row justify-center  lg:justify-between  rounded-3xl w-full  md:gap-6 lg:gap-6 xl:gap-8 2xl:gap-10 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">
           <div className="w-auto mt-6 lg:mt-0">
             <h2 className="text-xl lg:text-3xl  xl:text-4xl text-left font-medium pl-6 Poppind">Technologies</h2>
-            <Image src="/Technology/Technologyimg.png" className="w-72 m-4  md:w-72 xl:w-[400px]  2xl:max-w-7xl " alt="" width={1000} height={1000} />
+            <Image src="/Technology/Technologyimg.png" className="w-72 m-4  md:w-72 xl:w-[400px] " alt="" width={400} height={400} />
           </div>
           <div className="py-1  text-xs sm:text-xs lg:text-base xl:text-lg gap-6  w-auto Poppin grid grid-cols-2 sm:grid-cols-3">
             {technology.map((service, index) => (
               <div
                 key={index}
-                className={` dropslash  inline-flex  items-center w-auto sm:w-[200px] md:w-[120px] lg:w-[200px] xl:w-[260px] 2xl:w-[300px] hover:text-[#7b61ff] `}
+                className={` dropslash  inline-flex  items-center w-auto sm:w-[200px] md:w-[120px] lg:w-[240px] xl:w-[260px] 2xl:w-[300px]  hover:text-[#7b61ff] `}
               >
                 <div className="lg:h-8 lg:w-8 h-6 w-6 sm:h-6 sm:w-6 hover:bg-yellow-700 hover-dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
                   <Image src={service.logo} alt={`${service.name} logo`} width={100} height={100} />
