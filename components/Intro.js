@@ -167,7 +167,7 @@ const Intro = () => {
                   </div>
                   <ul className="py-1 text-xs  lg:text-base xl:text-lg Poppin grid grid-cols-3">
                     {services.map((service, index) => (
-                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-2 xl:mr-10   w-auto sm:w-[220px] md:w-full lg:w-[250px]  xl:max-w-7xl xl:w-[300px] hover:text-[#7b61ff] custom-filter `}>
+                      <li key={index} className={`flex items-center mr-2 dropslash lg:mr-0   w-auto sm:w-[220px] md:w-full lg:w-[240px]  xl:max-w-7xl xl:w-[300px] hover:text-[#7b61ff] custom-filter `}>
                         <Image
                           src={service.logo}
                           alt={`${service.name} logo`}
@@ -198,7 +198,7 @@ const Intro = () => {
 
                   </Link>
                   <div
-        className={`absolute w-auto  left-4 sm:left-4 lg:w-auto m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
+        className={`absolute w-auto  lg:left-4 m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
          pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear" ? 'text-[#000000]' : 'text-white'
         }`}
       >

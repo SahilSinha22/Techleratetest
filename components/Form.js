@@ -165,7 +165,7 @@ const Form = () => {
 
           <div className="sm:mx-10 mx-4 lg:mx-20 xl:mx-40 ">
             <div className="border-b flex  2xl:mt-6 flex-col lg:flex-row items-center m-auto 2xl:h-auto  md:justify-between ">
-              <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
+              <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-[#18191f]   pl-2  text-white my-8  ">
                 <div className="m-4 md:m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
                   <h2 className="md:text-2xl text-2xl 2xl:text-3xl font-semibold">
                     Hello now !
@@ -189,7 +189,7 @@ const Form = () => {
                 </div>
               </div>
 
-              <div className="mr-4 w-full  lg:w-auto xl:mr-0 xl:w-[500px] mb-4 bg-[#18191f] p-6 rounded-3xl md:mx-2  ">
+              <div className="mr-4 w-full  lg:w-auto xl:mr-0 xl:w-[500px] mb-4  p-6 rounded-3xl md:mx-2  ">
                 {successBanner && (
                   <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
                     <FaCheckCircle size={24} className="mr-2" />
@@ -266,9 +266,9 @@ const Form = () => {
                             autoFocus: false
                           }}
                           autoComplete="off"
-                          className="border-b-2 w-full text-lg bg-[#000000] dark:border-gray-600 2xl:text-base  border-gray-300 peer-placeholder-shown:text-blue-gray-500"
+                          className="border-b-2 w-full text-lg  dark:border-gray-600 2xl:text-base  border-gray-300 peer-placeholder-shown:text-blue-gray-500"
                           containerStyle={{ width: '100%', background: 'black', fontSize: '1.125rem' }}
-                          inputStyle={{ width: '100%', border: 'none', color: 'white', background: '#18191f', fontSize: '1.125rem' }}
+                          inputStyle={{ width: '100%', border: 'none', color: 'white', background: 'black', fontSize: '1.125rem' }}
                           buttonStyle={{
                             border: 'none', background: 'transparent', color: 'black', fontSize: '1.125rem'
                           }}
@@ -281,7 +281,7 @@ const Form = () => {
                       <select
                         name="Budget"
                         id="floating_company"
-                        className="block py-2.5 px-0 w-full text-sm 2xl:text-base text-white bg-[#18191f]  border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-full text-sm 2xl:text-base text-white  bg-black  border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         value={user.Budget}
                         autoComplete="off"
                         required
