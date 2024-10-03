@@ -307,7 +307,7 @@ const Page = () => {
 
                   </Link>
                   <div
-        className={`absolute w-auto lg:left-4 m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
+        className={`absolute w-full lg:left-4 m-auto xl:left-8 justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
          pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear" ? 'text-[#000000]' : 'text-white'
         }`}
       >
