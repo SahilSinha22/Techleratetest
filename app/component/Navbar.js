@@ -209,7 +209,7 @@ const Navbar = () => {
             {technology.map((service, index) => (
               <div
                 key={index}
-                className={` dropslash  inline-flex  items-center w-auto sm:w-[200px] md:w-[120px] lg:w-[240px] xl:w-[260px] 2xl:w-[300px]  hover:text-[#7b61ff] `}
+                className={` dropslash  inline-flex  items-center w-auto sm:w-[200px] md:w-[120px] lg:w-[200px] xl:w-[260px] 2xl:w-[300px]  hover:text-[#7b61ff] `}
               >
                 <div className="lg:h-8 lg:w-8 h-6 w-6 sm:h-6 sm:w-6 hover:bg-yellow-700 hover-dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-8 2xl:h-8">
                   <Image src={service.logo} alt={`${service.name} logo`} width={100} height={100} />
