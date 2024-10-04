@@ -166,9 +166,10 @@ const Page = () => {
                 issues in the bathroom. Installing a water softener specifically
                 for the bathroom helps alleviate these effects.
               </p>
-
-              <div className="grid md:mx-5 xl:mx-20 px-auto py-10  text-center my-10 gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div className=" w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8 xl:pr-4 h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
+</div>
+</div>
+              <div className="grid md:mx-5  xl:mx-28 px-auto py-10  text-center my-10 gap-2 Liqui p-4 md:gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div className="  md:w-52 pr-2 2xl:w-72 2xl:pr-8 xl:pr-4 max-w-2xl h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
                   <Image
                     alt="water-quality"
                     src={Feature1}
@@ -185,7 +186,7 @@ const Page = () => {
                     contaminants from it.
                   </p>
                 </div>
-                <div className=" w-40 md:w-52 2xl:w-72 2xl:pr-8 pr-2 rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
+                <div className="  md:w-52 2xl:w-72 2xl:pr-8 pr-2 rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="soft-skin-hair"
@@ -201,7 +202,7 @@ const Page = () => {
                     Nourishes your skin & hair.
                   </p>
                 </div>
-                <div className="  w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
+                <div className="   md:w-52 pr-2 2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="minimizes-scaling"
@@ -217,7 +218,7 @@ const Page = () => {
                     Reduces scaling on tiles.
                   </p>
                 </div>
-                <div className="w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
+                <div className=" md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="helps-choked-pipes"
@@ -233,7 +234,7 @@ const Page = () => {
                     Reduces mineral deposit, leading to choke-free pipes.
                   </p>
                 </div>
-                <div className="w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
+                <div className=" md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="24-hour-operation"
@@ -249,7 +250,7 @@ const Page = () => {
                     Operates smoothly 24x7 for 365 days without stopping.
                   </p>
                 </div>
-                <div className="w-40 md:w-52 pr-2   2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
+                <div className=" md:w-52 pr-2   2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="increases-appliance-life"
@@ -266,7 +267,7 @@ const Page = () => {
                     geysers rust-free.
                   </p>
                 </div>
-                <div className="w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
+                <div className=" md:w-52 pr-2 2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="saves-water"
@@ -282,7 +283,7 @@ const Page = () => {
                     Saves more water than other conventional Water Softeners.
                   </p>
                 </div>
-                <div className="w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2   border-t-2  p-4   shadow-zinc-400  shadow-xl">
+                <div className=" md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2   border-t-2  p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="multi-port-valve"
@@ -300,8 +301,8 @@ const Page = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+          
+         
         </div>
 
         <div className="flex flex-col items-center  w-auto m-auto xl:mx-40 mx-4 md:mx-10">

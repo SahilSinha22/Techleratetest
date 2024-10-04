@@ -111,7 +111,7 @@ const Sucess = () => {
               <Image src={card.image} alt={card.title} className="card rounded-lg mb-2" width={1000} height={1000} />
               <div className="mt-6 2xl:mt-10">
                 <h3 className="2xl:text-5xl sm:text-2xl lg:text-3xl font-medium text-foreground">{card.title}</h3>
-                <div className="flex space-x-1 sm:space-x-2 Poppin-row 2xl:space-x-4 mt-4">
+                <div className="grid grid-cols-2 gap-2 sm:flex space-x-1 sm:space-x-2 Poppin-row 2xl:space-x-4 mt-4">
                   <button className="bg-[#7b61ff] text-white px-2 sm:px-3 py-1 2xl:text-lg text-xs sm:text-lg rounded-3xl">Design</button>
                   <button className="bg-[#7b61ff] text-white px-2 sm:px-3 py-1 2xl:text-lg text-xs sm:text-lg rounded-3xl">Mobile</button>
                   <button className="bg-[#7b61ff] text-white px-2 sm:px-3 py-1 2xl:text-lg text-xs sm:text-lg rounded-3xl">Web</button>
@@ -145,7 +145,7 @@ const Sucess = () => {
               <Image src={card.image} alt={card.title} className="card rounded-lg mb-2" width={1000} height={1000} />
               <div className="mt-6 2xl:mt-10">
                 <h3 className="2xl:text-5xl sm:text-2xl lg:text-3xl font-medium text-foreground">{card.title}</h3>
-                <div className="flex space-x-1 sm:space-x-2 Poppin-row 2xl:space-x-4 mt-4">
+                <div className="grid grid-cols-2 gap-2 sm:flex space-x-1 sm:space-x-2 Poppin-row 2xl:space-x-4 mt-4">
                   <button className="bg-[#7b61ff] text-white px-2 sm:px-3 py-1 2xl:text-lg text-xs sm:text-lg rounded-3xl">Design</button>
                   <button className="bg-[#7b61ff] text-white px-2 sm:px-3 py-1 2xl:text-lg text-xs sm:text-lg rounded-3xl">Mobile</button>
                   <button className="bg-[#7b61ff] text-white px-2 sm:px-3 py-1 2xl:text-lg text-xs sm:text-lg rounded-3xl">Web</button>

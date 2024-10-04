@@ -1,21 +1,23 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Mobi from "@/public/1form.png";
+
 import { FaCheckCircle } from "react-icons/fa";
-import { generateArithmeticCaptcha } from "@/app/utils/generateCaptcha";
+
 import PhoneInput from 'react-phone-input-2';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import Script from "next/script";
+
+import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
+import { storage } from './firebase'; // Import storage from your firebase.js
 const Form = () => {
-  const [captcha, setCaptcha] = useState("");
-  const [inputCaptcha, setInputCaptcha] = useState("");
+  
   const [errors, setErrors] = useState({});
   const [successBanner, setSuccessBanner] = useState(false);
   const [fileName, setFileName] = useState('Attach a file');
   const [file, setFile] = useState(null);
   const [Inquire, setInquire] = useState(null);
-
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const [bannerMessage, setBannerMessage] = useState("");
   const [user, setUser] = useState({
     Name: "",
     Email: "",
@@ -27,9 +29,9 @@ const Form = () => {
 
   const [isSelected, setIsSelected] = useState(false);
 
+ 
   const handleSelectChange = (e) => {
-    data(e);  // Call the passed onChange handler
-    setIsSelected(!!e.target.value);  // Update state to show the arrow based on value selection
+    setUser({ ...user, [e.target.name]: e.target.value });
   };
 
   let name, value;
@@ -90,7 +92,20 @@ const Form = () => {
       options
     );
     if (res) {
+      setUser({
+        Name: "",
+        Email: "",
+        Number: "",
+        message: "",
+        Budget: "",
+        File: "",
+      });
       setSuccessBanner(true);
+      setFile(null); // Clear the file
+      setFileName('Attach a file'); // Clear the file name display
+      setUploadProgress(0);
+      setInquire(null)
+      setBannerMessage("");
       setTimeout(() => {
         setSuccessBanner(false);
       }, 3000);
@@ -105,53 +120,66 @@ const Form = () => {
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
+      if (selectedFile.size > 5 * 1024 * 1024) { // Limit file size to 5MB
+        alert('File size should be less than 5MB');
+        return;
+      }
       setFileName(selectedFile.name);
       setFile(selectedFile);
+      setUser({ ...user, File: selectedFile.name });
+      setBannerMessage(''); // Clear any previous messages
     }
   };
+  
   const handleFileUpload = () => {
     if (!file) {
       alert('No file selected');
       return;
     }
-    setInquire("Done");
-    // Create a reference to the file in Firebase storage
-    const fileRef = ref(storage, `uploads/${file.name}`);
 
-    // Upload the file
+    
+    setBannerMessage('Uploading...'); // Indicate file is uploading
+    const fileRef =  ref(storage, `Techlerate/${file.name}`);
+
+    // Start file upload
     const uploadTask = uploadBytesResumable(fileRef, file);
 
-    // Track the progress of the upload
+    // Monitor file upload process
     uploadTask.on(
       'state_changed',
       (snapshot) => {
         const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        console.log(`Upload is ${progress}% done`);
+        setUploadProgress(progress); // Update progress
+        console.log(`Upload is ${progress.toFixed(2)}% done`);
       },
       (error) => {
         console.error('Error uploading file:', error);
+        setBannerMessage('Error uploading file');
       },
       () => {
-        // Handle successful uploads on complete
+        // Get the download URL once upload is completed
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
           console.log('File available at:', downloadURL);
+          setBannerMessage('File uploaded successfully!');
+          setInquire("Inquire done");
+        }).catch((error) => {
+          console.error('Error getting file URL:', error);
+          setBannerMessage('Error retrieving file URL');
         });
       }
     );
   };
 
 
-
+ 
 
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputCaptcha !== captcha.answer) {
-      return;
-    }
+    
     // Handle form submission
-    alert("Form submitted successfully!");
+    
   };
 
   return (
@@ -184,14 +212,14 @@ const Form = () => {
 
                     <span className="w-[300px] 2xl:w-[450px] leading-7">Office : Platina Heights, C24, C Block,
                       Phase 2, Industrial Area, Sector 62,
-                      Noida, Uttar Pradesh 201309, </span>
+                      Noida, Uttar Pradesh 201309 </span>
                   </div>
                 </div>
               </div>
 
               <div className="mr-4 w-full  lg:w-auto xl:mr-0 xl:w-[500px] mb-4  p-6 rounded-3xl md:mx-2  ">
-                {successBanner && (
-                  <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
+                {successBanner  && (
+                  <div className="  absolute  z-10  text-lg sm:text-xl flex w-auto xl:w-[500px] right-0 bg-green-500 text-white p-4 rounded-lg">
                     <FaCheckCircle size={24} className="mr-2" />
                     <span>Query Submitted Successfully!</span>
                   </div>
@@ -359,7 +387,7 @@ const Form = () => {
                     <input
                       type="file"
                       id="file-upload"
-                      value={user.File}
+                     
                       className="hidden"
                       accept=".pdf, .docx, .doc, .odt, .ods, .ppt, .pptx, .xlsx, .xls, .rtf, .txt"
                       onChange={handleFileChange}
@@ -369,25 +397,38 @@ const Form = () => {
                       Please upload a file with one of the following extensions:
                       <strong> .pdf, .docx, .doc, .odt, .ods, .ppt, .pptx, .xlsx, .xls, .rtf, .txt</strong>
                     </p>
-
                     {file && (
-                      <button
-                        onClick={handleFileUpload}
+        <button
+          onClick={handleFileUpload}
+          className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-md"
+        >
+          Upload File
+        </button>
+      )}
 
-                        className="mt-3 bg-blue-500 text-white px-4 py-2 rounded-md"
-                      >
-                        Upload File
-                      </button>
-                    )}
+      {/* Show banner when file upload is done */}
+      {bannerMessage && (
+        <div className="mt-4 bg-green-500 text-white p-3 rounded-md">
+          {bannerMessage}
+        </div>
+      )}
+
+      {/* Optionally, show upload progress */}
+      {uploadProgress > 0 && uploadProgress < 100 && (
+        <div className="mt-2">
+          <p>Upload progress: {Math.round(uploadProgress)}%</p>
+        </div>
+      )}
     
                   </div>
 
 
 
                   <button
-                    onClick={getdata}
+                   
                     className="rounds mt-4 text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="submit"
+                    onClick={getdata}
                     style={{
                       backgroundColor: Inquire ? "green" : "black",
                       color: "white",
