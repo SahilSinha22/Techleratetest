@@ -373,9 +373,9 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto  rounded-2xl bannerxx">
+        <div className="xl:mx-40 mx-4 md:mx-10 mb-20 w-auto h-auto  rounded-2xl bannerxx">
           <div className=" text-white mt-10 mb-2 mx-5 xl:mt-5 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
-            <h2 className="text-lg mt-4 xl:mt-12  xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
+            <h2 className="text-2xl mt-4 xl:mt-12  xl:mx-0 lg:text-5xl sm:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
               Our Robust Mobile & Web App <br /> Development Solutions Stands
               Your
               <br />
