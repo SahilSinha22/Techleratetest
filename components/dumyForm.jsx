@@ -117,7 +117,7 @@ const DumyForm = () => {
     if (!visible) return null;
     return (
         <div className='w-full'>
-        <div className="sm:justify-center px-4 sm:px-0 Glassy   items-center flex m-auto w-full    overflow-y-auto fixed inset-0 z-50 e">
+        <div className="sm:justify-center px-4 sm:px-0 Glassy place-content-center  items-center sm:flex m-auto w-full    overflow-y-auto fixed inset-0 z-50 e">
             <div className='relative  -top-4  lg:left-0   lg:top-0'>
             <div className="  flex w-auto md:w-[600px] lg:w-[800px]  lg:top-10 xl:top-0 xl:w-auto my-6  md:justify-center place-content-center xl:max-w-4xl 2xl:max-w-7xl">
                 <div className='h-auto hidden rounded-3xl sm:block'>
@@ -157,10 +157,10 @@ const DumyForm = () => {
 
 
 
-                <div className="w-full flex sm:w-[300px] md:w-[500px]  2xl:w-[650px] h-auto  items-center  ">
+                <div className="w-full sm:flex sm:w-[300px] md:w-[500px]  2xl:w-[650px] h-auto  items-center  ">
 
                     {successBanner && (
-                        <div className=" translate-x-2 absolute  z-10 top-10  xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500  text-white p-4 rounded-lg">
+                        <div className=" flex sm:text-lg absolute  z-10 top-10  xl:w-[500px] right-0 xl:-right-12 2xl:right-24 bg-green-500  text-white p-4 rounded-lg">
                             <FaCheckCircle size={24} className="mr-2" />
                             <span>Query Submitted Successfully!</span>
                         </div>
