@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="bg-black text-card-foreground py-8 md:p-12">
     <div className=" border-t  border-[#535353] ">
       <div className="flex-1 md:flex  px-10 pt-20   pb-12 justify-between">
-        <div className="w-full md:w-2/4 mb-6 Poppins md:mb-0 ">
+        <div className="w-full md:w-2/4 mb-6 Poppins md:mb-0 pr-2 lg:pr-0 ">
           <div className="flex w-full items-center mb-2">
             <Link href="/">
             <Image src={Logo} alt="Techlerate Logo" className="" width={220} height={20}/>
@@ -22,7 +22,7 @@ const Footer = () => {
           <p className="text-[#7b61ff]  ">Connect with us:</p>
           <p className="text-[#9a9898] ">Call: +91 88 820 76 755</p>
           <p className="text-[#9a9898] ">Email: contact@techlerate.com</p>
-          <p className="text-[#9a9898]">Office: Platina Heights, C24, C Block, Phase 2,<br/> Industrial Area, Sector 62, Noida, Uttar Pradesh 201309</p>
+          <p className="text-[#9a9898] w-auto lg:w-96">Office: Platina Heights, C24, C Block, Phase 2,Industrial Area, Sector 62, Noida, Uttar Pradesh 201309</p>
           <div className="flex mt-6 space-x-4 ">
             <Link href="#" onClick={(e) => e.preventDefault()}  aria-label="Instagram">
               <Image src={Insta} alt="Instagram Icon" className='rounded-full' width={40} height={2}/>

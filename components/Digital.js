@@ -13,7 +13,7 @@ const Digital = () => {
       </div>
       <div  className="md:pt-20">
       <div className=" flex">
-        <h1 className="text-secondary w-auto text-lg font-semibold tracking-widest uppercase mb-2">Full Stack Development</h1>
+        <h1 className="text-secondary w-auto text-base sm:text-lg font-semibold tracking-widest uppercase mb-2">Full Stack Development</h1>
         </div>
         <h2 className="text-4xl  text-white  xl:my-3 md:mb-4">MERN</h2>
        {/*<h2 className="text-4xl  text-white  xl:mb-6 mb-4"> Strategy for Our Clients</h2>*/}

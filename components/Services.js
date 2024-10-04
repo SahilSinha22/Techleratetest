@@ -9,7 +9,7 @@ const Services = () => {
     <div className="bg-[#18191f] text-foreground py-12 px-6 xl:px-40">
                   <div className="text-center mb-12">
                     <span className="text-[#7b61ff] text-xl xl:text-lg 2xl:text-2xl PORTFOLIO  ">SERVICES</span>
-                    <h2 className="text-5xl sm:text-6xl text-black pt-2 lg:pt-0 pb-4 Poppins font-bold">WHAT TECHNOLOGY</h2>
+                    <h2 className="text-4xl sm:text-6xl text-black pt-2 lg:pt-0 pb-4 Poppins font-bold">WHAT TECHNOLOGY</h2>
                     <h2 className="text-5xl font-bold text-white">WE SERVES</h2>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2   xl:gap-10">
