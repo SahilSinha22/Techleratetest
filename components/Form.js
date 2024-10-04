@@ -381,7 +381,9 @@ const Form = () => {
                           d="M12 4v16m8-8H4"
                         />
                       </svg>
-                      <span>{fileName}</span>
+                      <span>{fileName
+                        .slice(0, 20)         
+                          }</span>
                     </label>
 
                     <input

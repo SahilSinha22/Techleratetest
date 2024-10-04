@@ -6,6 +6,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 import { generateArithmeticCaptcha } from "@/app/utils/generateCaptcha";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import Link from 'next/link';
 
 
 const DumyForm = () => {
