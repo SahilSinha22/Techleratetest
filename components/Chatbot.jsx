@@ -54,7 +54,7 @@ function Chatbot() {
                 </p>
             </div>
             <div className=" max-w-7xl mx-auto my-10 xl:my-20 open_Sans px-4 sm:px-10 xl:px-20 ">
-                <h2 className="text-3xl md:text-4xl  text-primary mb-4">Why Chatbot Integration?</h2>
+                <h2 className="text-3xl md:text-4xl xl:text-5xl  text-primary mb-4">Why Chatbot Integration?</h2>
                 <p className=" text-lg md:text-xl leading-relaxed  mb-1">
                     Why would any business need a dedicated team to listen to customer queries 24/7 when chatbot development can deliver the same experience?
                 </p>
@@ -162,7 +162,7 @@ function Chatbot() {
 
 
             <div className=" max-w-7xl mx-auto my-10 mt-20 open_Sans px-4 sm:px-10 xl:px-20 ">
-                <h2 className="text-3xl md:text-4xl  text-primary mb-4">Do you want to Hop on Board?</h2>
+                <h2 className="text-3xl md:text-4xl xl:text-5xl  text-primary mb-4">Do you want to Hop on Board?</h2>
                 <h2 className=" py-2 text-xl md:text-xl  xl:text-2xl leading-relaxed  mb-1">
                     Then you need us!
                 </h2>
