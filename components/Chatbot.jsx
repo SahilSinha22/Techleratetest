@@ -30,11 +30,11 @@ function Chatbot() {
                 </div>
             </div>
 
-            <div className=''>
-                    <div className=" bg-[#0062FF] bani  transform -translate-x-1/2">
+            <div className='w-full'>
+                    <div className=" w-screen bg-[#0062FF] bani  transform -translate-x-1/2">
                         <Image
                             src="/bannerxlogo.webp"
-                            className="w-[1290px]  p-4 rotate-2 mx-auto"
+                            className="xl:w-[1270px]  p-4 rotate-2 mx-auto"
                             alt=""
                             width={1000}
                             height={1000}
