@@ -26,7 +26,7 @@ function Chatbot() {
                 <div className='m-auto w-auto  my-10 flex justify-center'>
 
                 
-                <Image src="/Chatbot/Bot.png" alt=' ' width={1000} height={1000} />
+                <Image src="/Chatbot/Bot.webp" alt=' ' width={1000} height={1000} />
                 </div>
             </div>
 
@@ -60,25 +60,25 @@ function Chatbot() {
                 </p>
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-10 open_Sans text-base md:text-xl my-10  '>
                     <div className=' p-2 md:p-6 flex flex-col text-center justify-center items-center bg-[#EDFFF5]'>
-                        <Image src="/Chatbot/Chatbot1.png" alt="" width={60} height={60} />
+                        <Image src="/Chatbot/Chatbot1.webp" alt="" width={60} height={60} />
                         <p className='mt-4'>
                             It bridges the gap between a business and its audience
                         </p>
                     </div>
                     <div className='p-2 md:p-6 flex flex-col text-center justify-center items-center bg-[#EDFFF5]'>
-                    <Image src="/Chatbot/Chatbot2.png" alt="" width={60} height={60} />
+                    <Image src="/Chatbot/Chatbot2.webp" alt="" width={60} height={60} />
                     <p className='mt-4'>
                             Performs efficiently 24/7
                         </p>
                     </div>
                     <div className='p-2 md:p-6 flex flex-col text-center justify-center items-center bg-[#EDFFF5]'>
-                    <Image src="/Chatbot/Chatbot3.png" alt="" width={60} height={60} />
+                    <Image src="/Chatbot/Chatbot3.webp" alt="" width={60} height={60} />
                     <p className='mt-4'>
                             Enables collecting Valuable data
                         </p>
                     </div>
                     <div className='p-2 md:p-6 flex flex-col text-center justify-center items-center bg-[#EDFFF5]'>
-                    <Image src="/Chatbot/Chatbot4.png" alt="" width={60} height={60} />
+                    <Image src="/Chatbot/Chatbot4.webp" alt="" width={60} height={60} />
                     <p className='mt-4'>
                             Saves time, money and other resources
                         </p>
@@ -88,7 +88,7 @@ function Chatbot() {
             </div>
             <div className='bannerx py-10  '>
                 <div className='max-w-7xl flex flex-col justify-start m-auto my-10 h-auto text-white '>
-                    <div className='mx-4 lg:mx-10'>
+                    <div className='mx-4 lg:mx-10 xl:px-10'>
                         <h2 className='text-2xl md:text-4xl xl:text-4xl playfair_display  '>
                             How can Space to Tech help <br /> you achieve the Desired Results?       </h2>
                         <p className='my-4 text-base md:text-lg xl:text-xl Open_Sans font-thin md:w-[640px] lg:w-[850px] xl:w-[1050px]'>
@@ -161,7 +161,7 @@ function Chatbot() {
             </div>
 
 
-            <div className=" max-w-7xl mx-auto my-10 mt-20 open_Sans px-4 sm:px-10 xl:px-10 ">
+            <div className=" max-w-7xl mx-auto my-10 mt-20 open_Sans px-4 sm:px-10 xl:px-20 ">
                 <h2 className="text-3xl md:text-4xl  text-primary mb-4">Do you want to Hop on Board?</h2>
                 <h2 className=" py-2 text-xl md:text-xl  xl:text-2xl leading-relaxed  mb-1">
                     Then you need us!
@@ -194,7 +194,7 @@ function Chatbot() {
 
                 <div className='  m-auto  mt-10 flex justify-around py-10 max-w-7xl gap-4 lg:gap-20 mx-auto'>
                     <div>
-                        <Image src="/Chatbot/Chats.png" className='w-40 sm:w-60 lg:w-[600px] h-full' alt="" width={1000} height={1000} />
+                        <Image src="/Chatbot/Chats.webp" className='w-40 sm:w-60 lg:w-[600px] h-full' alt="" width={1000} height={1000} />
                     </div>
                     <div className='place-content-center w-auto'>
                         <h2 className='text-xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-snug lg:leading-normal xl:leading-relaxed open_sans_displays font-light text-white '> Request custom <br />Chatbot Development </h2>
@@ -204,7 +204,7 @@ function Chatbot() {
                 </div>
 
             </div>
-            <div className=" max-w-7xl mx-auto my-10 md:mt-40 open_sans_display px-4 sm:px-10 xl:px-10 ">
+            <div className=" max-w-7xl mx-auto my-10 md:mt-40 open_sans_display px-4 sm:px-10 xl:px-20 ">
             <div className='flex pt-5 gap-6 md:gap-10'>
                         <div>
                             <video

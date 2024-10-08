@@ -81,9 +81,9 @@ const FAQ = () => {
       }, []);
   return (
     <div className='bg-black'>
-         <div className="max-w-7xl m-auto h-auto pt-2 mt-5 sm:px-10 xl:px-10">
+         <div className="max-w-7xl m-auto h-auto pt-2 mt-5 sm:px-10 xl:px-20 2xl:px-10">
                     <div className=" text-white open_sans_displays pt-6  max-w-7xl mx-auto text-foreground p-6">
-                        <Image src="/Chatbot/FAQ.png" className='w-14 h-14 xl:w-20 xl:h-20' alt='FAQ' width={100} height={100}/>
+                        <Image src="/Chatbot/FAQ.webp" className='w-14 h-14 xl:w-20 xl:h-20' alt='FAQ' width={100} height={100}/>
                         <div className="space-y-4 my-7 xl:my-10">
                             {faqContent.map((item, index) => (
                                 <div key={index} className='xl:py-4'>
