@@ -21,7 +21,7 @@ const Digital = () => {
         <p className="text-muted-foreground mb-6">
         Our MERN stack development services cover end-to-end web solutions, utilizing MongoDB, Express.js, React.js, and Node.js to create responsive, secure, and scalable web applications tailored to your business needs.
         </p>        <a href="#" className="text-white font-semibold flex items-center">
-          More Detail <span className="ml-2">→</span>
+          More Details <span className="ml-2">→</span>
         </a>
       </div>
     </div>
