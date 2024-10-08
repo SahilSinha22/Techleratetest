@@ -67,7 +67,7 @@ const Portfolio = () => {
 
       
 
-        <div  className="flex flex-col   bg-[#fd5d5d] lg:flex-row items-center lg:space-x-4 justify-around bg-primary md:p-8 ">
+        <div  className="flex flex-col   bg-[#fd5d5d] lg:flex-row items-center lg:space-x-4 justify-around bg-primary p-4 md:p-8 ">
           <div className="flex-1 lg:relative  mb-4 md:mb-0">
             <h2 className="text-4xl  lg:absolute lg:-top-40 xl:text-7xl xl:-top-40 md:text-7xl lg:text-6xl  font-bold text-white lg:mt-0 mt-12 mb-6 md:mb-4">{Services.text}</h2>
             <a href="#" className="text-white lg:absolute  lg:top-10 xl:top-20 text-lg hover:underline mb-2">See The Work &gt;</a>

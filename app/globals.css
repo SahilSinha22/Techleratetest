@@ -27,7 +27,14 @@
         color:  black; 
         -webkit-text-stroke: 1px white; 
       }
-      
+      .bani {
+  width: auto;
+        transform: matrix(1, -0.03, 0.01, 1, 0, 0);
+       
+        
+        opacity: 1;
+        }
+
       .text-black::after {
         content: attr(data-shadow-text);
         position: absolute;
@@ -82,6 +89,7 @@ left:40px;
 
 
       }
+      
 
 
 

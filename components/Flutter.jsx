@@ -6,6 +6,7 @@ import Modal from '@/components/Modal'; // Assuming Modal is in the same directo
 import ContactForm from '@/components/Popups';
 
 import { useRouter } from 'next/navigation';
+import FAQ from './FAQ';
 
 const Services = [
     {
