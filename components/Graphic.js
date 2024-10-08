@@ -18,7 +18,7 @@ const Graphic = () => {
                    
                     <p className="text-gray-400 text-lg  mb-6">
                     Our React Native app development focuses on building dynamic, native-like mobile applications for iOS and Android. Using Facebook&apos;s framework, we ensure efficiency, scalability, and rich user experiences while reducing time to market.</p>            
-                            <a href="#" className="text-white hover:underline flex items-center">
+                            <a href="#" className="text-white  flex items-center">
                       More Detail <span className="ml-2">→</span>
                     </a>
                   </div>
