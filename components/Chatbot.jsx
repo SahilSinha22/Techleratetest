@@ -89,7 +89,7 @@ function Chatbot() {
             <div className='bannerx py-10  '>
                 <div className='max-w-7xl flex flex-col justify-start m-auto my-10 h-auto text-white '>
                     <div className='mx-4 lg:mx-10 xl:px-10'>
-                        <h2 className='text-2xl md:text-4xl xl:text-4xl playfair_display  '>
+                        <h2 className='text-2xl md:text-4xl xl:text-5xl playfair_display  '>
                             How can Space to Tech help <br /> you achieve the Desired Results?       </h2>
                         <p className='my-4 text-base md:text-lg xl:text-xl Open_Sans font-thin md:w-[640px] lg:w-[850px] xl:w-[1050px]'>
                             Techugo, the best chatbot development company in USA, Canada, UK, and UAE, comprises a brood of experts dedicated to delivering efficient chatbot apps.
@@ -192,11 +192,11 @@ function Chatbot() {
             <div className='bg-[#20A9B1] Poppind mt-10 '>
 
 
-                <div className='  m-auto  mt-10 flex justify-around py-10 max-w-7xl gap-4 lg:gap-20 mx-auto'>
+                <div className='  m-auto  mt-10 flex justify-around py-10 max-w-7xl gap-4 lg:gap-20  mx-auto'>
                     <div>
                         <Image src="/Chatbot/Chats.webp" className='w-40 sm:w-60 lg:w-[600px] h-full' alt="" width={1000} height={1000} />
                     </div>
-                    <div className='place-content-center w-auto'>
+                    <div className='place-content-center w-auto '>
                         <h2 className='text-xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-snug lg:leading-normal xl:leading-relaxed open_sans_displays font-light text-white '> Request custom <br />Chatbot Development </h2>
                         <button className="text-[#000000] font-bold mt-4 md:mt-10 open_Sans  max-w-xl text-xs md:text-sm lg:text-base xl:text-lg bg-[#ffffff] px-3  md:px-6 py-2 rounded-3xl">Let&apos;s Talk</button>
 
