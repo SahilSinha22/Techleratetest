@@ -12,10 +12,10 @@ function Chatbot() {
             <div className="  ">
                 <div className=" pt-10 sm:pt-20  lg:pt-28 xl:pt-20 ">
                     <div className=" Open_Sans mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
-                        <h2 className="text-xl xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
+                        <h2 className="text-xl xl:mx-0 lg:text-5xl sm:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
                             Chatbot Services : A Floodgate of <br />Opportunities for Business
                         </h2>
-                        <p className=" Open_Sans lg:w-[750px] xl:w-[1250px] 2xl:w-[1400px] text-base Open_Sans  px-8 sm:px-24 md:px-32 lg:px-1 xl:px-64 xl:text-xl 2xl:text-2xl lg:text-xl md:text-lg mb-8 ">
+                        <p className=" Open_Sans w-[300px] sm:w-[450px] lg:w-[650px]  2xl:w-[850px] text-base Open_Sans   xl:text-xl 2xl:text-2xl lg:text-xl md:text-lg mb-8 ">
                             Have you ever wondered if a computer program could impersonate human interaction?
                         </p>
                         <button className="border-2 z-20 text-sm  border-solid rounded-full text-white  py-4 px-6  bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
@@ -95,7 +95,7 @@ function Chatbot() {
                             Techugo, the best chatbot development company in USA, Canada, UK, and UAE, comprises a brood of experts dedicated to delivering efficient chatbot apps.
                         </p>
 
-                        <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 text-[#000000] h-auto mt-8 gap-6 lg:gap-10 justify-around  '>
+                        <div className='flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 text-[#000000] h-auto mt-8 gap-6 lg:gap-10 justify-around  '>
                             <div className='flex flex-col bg-[#E3E3E3] rounded-xl p-4 md:p-6'>
                                 <div >
                                     <div className='py-3 px-5 bg-black Bebas_Neue  inline-flex rounded-full'>
