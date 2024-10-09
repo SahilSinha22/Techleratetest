@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Serv1 from "@/public/Service1.png";
 import Serv2 from "@/public/Service2.png";
+import Link from 'next/link';
 
 
 const Services = () => {
@@ -27,7 +28,8 @@ const Services = () => {
                       <p className="text-gray-400 text-lg">
                       Our Flutter app development service leverages the power of Google&apos;s UI toolkit to build high-performance, cross-platform applications. With a single codebase, we create seamless mobile experiences for both iOS and Android, ensuring fast development and smooth user interaction.                      </p>
                       <div className="mt-8">
-                        <a href="#" className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/80 transition-colors duration-300">More Details <span className="ml-2">→</span></a>
+                        <Link href="#"  className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/80 transition-colors duration-300">More Details
+                         <span className="ml-2">→</span></Link>
                       </div>
                     </div>
 

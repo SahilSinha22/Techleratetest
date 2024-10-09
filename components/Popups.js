@@ -14,7 +14,7 @@ const DumyForm = ({ onClose }) => {
 
     const [visible, setVisible] = useState(true);
     const [errors, setErrors] = useState({});
-    const [successBanner, setSuccessBanner] = useState(true);
+    const [successBanner, setSuccessBanner] = useState(false);
 
     const [user, setUser] = useState({
         Name: '', Email: '', Number: '', message: '', File: null
