@@ -42,7 +42,7 @@ function Chatbot() {
             <div className="  ">
                 <div className=" pt-10 sm:pt-20  lg:pt-28 xl:pt-20 ">
                     <div className="  mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
-                        <h2 className="text-lg xl:mx-0 lg:text-5xl sm:text-4xl 2xl:text-6xl font-medium mb-4 Poppins">
+                        <h2 className="text-lg xl:mx-0 lg:text-5xl leading-loose sm:text-4xl 2xl:text-6xl font-medium mb-4 Poppins">
                             Chatbot Services : A Floodgate of <br />Opportunities for Business
                         </h2>
                         <p className=" Poppind font-bold w-[300px] sm:w-[450px] lg:w-[650px]  2xl:w-[850px] text-base   xl:text-xl 2xl:text-2xl lg:text-xl md:text-lg mb-8 ">
