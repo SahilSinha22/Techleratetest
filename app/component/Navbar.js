@@ -77,7 +77,7 @@ const Navbar = () => {
   const isContactPage = router.pathname === '/contact';
 
   return (
-    <nav className={` ${isContactPage ? 'bg-white' : 'bg-black'} items-center px-4 p-4   lg:p-6 2xl:px-40 `}>
+    <nav className={`  ${pathname == "/Chatbot" ? 'bg-[#18191F]':'bg-black'} items-center px-4 p-4   lg:p-6 2xl:px-40 `}>
       <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white">
        <Link href="/"> <Image
@@ -140,7 +140,7 @@ const Navbar = () => {
               </Link>
               <div 
                 className={`absolute w-full left-0 p-2 md:p-6 mt-12 lg:mt-10   h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300
-                   ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear" || pathname=== "/Chatbot"   ? 'text-[#000000]' : 'text-white'}`}
+                   ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'}`}
               >
                 <section className="flex flex-col md:flex-row justify-between  rounded-3xl w-full  md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10  pt-14 md:pt-16 lg:pt-4 pb-6 md:px-0 md:flex Poppinx">
                   <div className="p-6 xl:p-10">
@@ -197,7 +197,7 @@ const Navbar = () => {
       </Link>
       <div
         className={`absolute w-full  lg:left-4  m-auto  justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
-         pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear" || pathname=== "/Chatbot" ? 'text-[#000000]' : 'text-white'
+         pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'
         }`}
       >
         <div className="flex flex-col md:flex-row justify-center  lg:justify-between  rounded-3xl w-full  md:gap-6 lg:gap-6 xl:gap-8 2xl:gap-10 pt-14 md:pt-10 lg:pt-16 pb-6 md:px-0 md:flex Poppinx">

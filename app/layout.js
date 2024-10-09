@@ -37,6 +37,11 @@ const Open_Sans_init=Open_Sans({
   weight: '500' ,
   variable: '--font-Open_Sans',
 });
+const Open_Sans_inits=Open_Sans({
+  subsets: ['latin'],
+  weight: '300' ,
+  variable: '--font-Open_Sanss',
+});
 const Josefin_Sans_init=Josefin_Sans({
   subsets: ['latin'],
   weight: '700' ,
@@ -51,7 +56,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${Open_Sans_init.variable} ${Bebas_Neue_init.variable} ${Playfair_Display_init.variable} ${Poppins_init.variable} ${Poppins_inits.variable} ${Poppins_initd.variable} ${Josefin_Sans_init.variable}`}>
+      <body className={`${inter.className} ${Open_Sans_init.variable} ${Open_Sans_inits.variable} ${Bebas_Neue_init.variable} ${Playfair_Display_init.variable} ${Poppins_init.variable} ${Poppins_inits.variable} ${Poppins_initd.variable} ${Josefin_Sans_init.variable}`}>
     <div className=""> 
      
    
