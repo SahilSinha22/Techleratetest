@@ -135,9 +135,9 @@ function Chatbot() {
                 <div className='max-w-7xl flex flex-col justify-start m-auto my-10 h-auto text-white '>
                     <div className='mx-4 lg:mx-10 xl:px-10'>
                         <h2 className='text-2xl md:text-4xl xl:text-3xl Poppins font-medium '>
-                            How can Space to Tech help you achieve the Desired Results?       </h2>
+                            How can Techlerate help you achieve the Desired Results?       </h2>
                         <p className='my-4 text-base md:text-lg xl:text-xl  Poppind md:w-[640px] lg:w-[850px] xl:w-[1050px]'>
-                            Techugo, the best chatbot development company in USA, Canada, UK, and UAE, comprises a brood of experts dedicated to delivering efficient chatbot apps.
+                            Teclerate, the best chatbot development company in USA, Canada, UK, and UAE, comprises a brood of experts dedicated to delivering efficient chatbot apps.
                         </p>
 
                         <div className='flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 text-[#ffffff] h-auto mt-8 gap-6 lg:gap-10 Poppin   text-lg md:text-xl justify-around  '>

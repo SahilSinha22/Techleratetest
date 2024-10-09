@@ -245,8 +245,8 @@ const DumyForm = ({ onClose }) => {
                                             autoFocus: false
                                         }}
                                         className="border-b-2 w-full text-lg dark:border-gray-600 border-gray-300 peer-placeholder-shown:text-blue-gray-500"
-                                        containerStyle={{ width: '100%' }}
-                                        inputStyle={{ width: '100%', border: 'none' }}
+                                        containerStyle={{ width: '100%',color: 'black' }}
+                                        inputStyle={{ width: '100%', border: 'none',color: ' #6b7280' }}
                                         buttonStyle={{ border: 'none', background: 'transparent' }}
                                     />
 

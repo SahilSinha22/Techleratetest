@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import React from 'react'
-
+import React, {useState} from 'react'
+import Modal from '@/components/Modal'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/Popups';
 const Opening = [
 
     { image:"/Career/opening1.png", name: "Sr. Android Developer", exp: "Experience : 3-4 yrs" },
@@ -15,6 +16,16 @@ const Opening = [
   
   ];
 const Carrercurr = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    
+  };
   return (
     <div id="carrercurr" className='text-[#FFFFFF] max-w-7xl 2xl:max-w-[1580px] w-full m-auto px-4 md:px-10 xl:px-0'>
       <h2 className='text-2xl md:text-3xl 2xl:text-4xl Poppin font-medium'>Current Openings</h2>
@@ -29,13 +40,16 @@ const Carrercurr = () => {
             <h2 className='Poppoins text-sm xl:text-sm'>{open.exp}</h2>
             </div>
             <div className=' text-right md:mt-4 lg:mt-0'>
-<button className='text-[#FFFFFF] rounded-full text-sm xl:text-base px-3 py-1 bg-[#18191F]'>
+<button onClick={handleButtonClick} className='text-[#FFFFFF] rounded-full text-sm xl:text-base px-3 py-1 bg-[#18191F]'>
     Apply →
 </button>
                 </div>
         </div>
       ))}
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm onClose={closeModal} />
+      </Modal>
     </div>
   )
 }
