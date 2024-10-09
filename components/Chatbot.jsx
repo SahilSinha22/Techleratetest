@@ -1,6 +1,5 @@
 "use client"
-import React, { useState, useEffect, useRef } from 'react';
-import Navbar from '@/app/component/Navbar'
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image'
 
 import { useRouter } from 'next/navigation';
@@ -39,7 +38,7 @@ function Chatbot() {
     return (
         <>
         <div className='bg-[#18191F] text-[#FFFFFF]'>
-            <Navbar />
+          
             <div className="  ">
                 <div className=" pt-10 sm:pt-20  lg:pt-28 xl:pt-20 ">
                     <div className="  mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
@@ -55,7 +54,7 @@ function Chatbot() {
                 <div className='m-auto w-auto  my-10 flex justify-center'>
 
                 
-                <Image src="/Chatbot/Bot.png" alt=' ' width={1000} height={1000} />
+                <Image src="/Chatbot/Bot.webp" alt=' ' width={1000} height={1000} />
                 </div>
             </div>
 
@@ -65,7 +64,7 @@ function Chatbot() {
 
                 <div className="flex flex-col gap-6 lg:gap-10  p-2 md:p-6 max-w-6xl 2xl:max-w-7xl md:flex-row items-center  m-auto ">
                 <div className="flex h-full  ">
-                    <Image src="/Chatbot/Chaty.png" alt='' className='w-auto h-auto sm:w-[250px] lg:w-[350px]' width={1000} height={1000} />
+                    <Image src="/Chatbot/Chaty.webp" alt='' className='w-auto h-auto sm:w-[250px] lg:w-[350px]' width={1000} height={1000} />
                 </div>
                 <div className="flex-1 xl:text-lg pt-8 sm:pt-0 sm:p-6 lg:p-0">
                     <h2 className="text-2xl xl:text-4xl font-medium Poppin pb-4 text-foreground">Why do you need the Chatbot Integration?</h2>
@@ -210,7 +209,7 @@ function Chatbot() {
 
 <div className='  m-auto  mt-10 flex justify-around py-10 max-w-7xl gap-4 lg:gap-20  2xl:gap-10 mx-auto'>
     <div>
-        <Image src="/Chatbot/Chats.png" className='w-40 sm:w-60 lg:w-[500px] xl:w-[600px] h-full' alt="" width={1000} height={1000} />
+        <Image src="/Chatbot/Chats.webp" className='w-40 sm:w-60 lg:w-[500px] xl:w-[600px] h-full' alt="" width={1000} height={1000} />
     </div>
     <div className='place-content-center w-auto '>
         <div className='flex flex-col gap-1 md:gap-4'>

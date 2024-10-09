@@ -48,7 +48,7 @@ const technology = [
 
   { name: "React Native", logo: "/Technology/reactNative.svg", link:"/Technology/reactnative" },
   { name: "AI Development", logo: "/Technology/Ai.svg", link:"#" },
-  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link:"/Chatbot" },
+  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link:"/Technology/Chatbot" },
   { name: "IOT", logo: "/Technology/IOT.svg", link:"#" },
   { name: "Augmented Reality", logo: "/Technology/AR.svg", link:"#" },
   { name: "Ionic", logo: "/Technology/Ionic.svg", link:"#" },
@@ -77,7 +77,7 @@ const Navbar = () => {
   const isContactPage = router.pathname === '/contact';
 
   return (
-    <nav className={`  ${pathname == "/Chatbot" ? 'bg-[#18191F]':'bg-black'} items-center px-4 p-4   lg:p-6 2xl:px-40 `}>
+    <nav className={`  ${pathname == "/Technology/Chatbot" ? 'bg-[#18191F]':'bg-black'} items-center px-4 p-4   lg:p-6 2xl:px-40 `}>
       <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white">
        <Link href="/"> <Image
