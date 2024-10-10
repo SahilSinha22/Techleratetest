@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useState, useRef } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import Image from 'next/image';
@@ -33,6 +33,8 @@ const testimonials = [
     img: "/Testinomial1.png",
   },
 ];
+
+// Duplicate the array for infinite scrolling
 const infinityScroll = [...testimonials, ...testimonials];
 
 const StarRating = ({ rating }) => {
@@ -40,9 +42,7 @@ const StarRating = ({ rating }) => {
   return (
     <div className="space-x-1 text-2xl">
       {Array.from({ length: totalStars }, (_, index) => (
-        <span key={index} className={index < rating ? 'text-[#ffab2e]' : 'text-[#70727c]'}>
-          ★
-        </span>
+        <span key={index} className={index < rating ? 'text-[#ffab2e]' : 'text-[#70727c]'}>★</span>
       ))}
     </div>
   );
@@ -51,6 +51,7 @@ const StarRating = ({ rating }) => {
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const carouselRef = useRef(null);
 
   useEffect(() => {
@@ -70,12 +71,20 @@ const Testimonials = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Move to the previous testimonial
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setCurrentIndex((prevIndex) => prevIndex - 1);
+    }
   };
 
+  // Move to the next testimonial
   const handleNextClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1 === testimonials.length ? 0 : prevIndex + 1));
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setCurrentIndex((prevIndex) =>(prevIndex + 1 ));
+    }
   };
 
   const swipeHandlers = useSwipeable({
@@ -83,6 +92,29 @@ const Testimonials = () => {
     onSwipedRight: handlePrevClick,
   });
 
+  // Handle the infinite loop logic
+  useEffect(() => {
+    if (isTransitioning) {
+      const transitionEndHandler = () => {
+        setIsTransitioning(false);
+        if (currentIndex === -1) {
+          // If we've gone before the first, reset to the last
+          setCurrentIndex(testimonials.length -1);
+        } else if (currentIndex === infinityScroll.length - visibleCount) {
+          // If we've gone past the last, reset to the first
+          setCurrentIndex(1 );
+        }
+      };
+
+      const carouselElement = carouselRef.current;
+      if (carouselElement) {
+        carouselElement.addEventListener('transitionend', transitionEndHandler);
+        return () => {
+          carouselElement.removeEventListener('transitionend', transitionEndHandler);
+        };
+      }
+    }
+  }, );
 
   return (
     <div className="bg-[#252730] py-12 md:py-20 lg:py-24">
@@ -93,12 +125,18 @@ const Testimonials = () => {
       </div>
       <div className="flex flex-col lg:mx-20 lg:space-x-8 items-center space-y-6" {...swipeHandlers}>
         <div ref={carouselRef} className="relative w-full overflow-hidden">
-          <div className="flex transition-transform mx-4 md:mx-5 lg:mx-10 duration-500 ease-in-out" style={{ transform: `translateX(-${(100 / visibleCount) * currentIndex}%)`, width: `${(testimonials.length / visibleCount) * 100}%` }}>
+          <div
+            className={`flex transition-transform duration-500 ease-in-out ${isTransitioning ? '' : 'transition-none'}`}
+            style={{
+              transform: `translateX(-${(100 / visibleCount) * currentIndex}%)`,
+              width: `${(testimonials.length / visibleCount) * 100}%`,
+            }}
+          >
             {infinityScroll.map((testimonial, index) => (
-               <div key={index} className={`  h-full text-primary-foreground p-4  lg:ml-4  rounded-lg w-1/2 md:w-1/2 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 xl:font-semibold  xl:h-[280px] h-1/2 bg-[#7b61ff]' : 'border-slate-700 border text-xl'} transition-transform duration-500`}>
-               <div className="flex items-center mb-4">
-                <StarRating rating={testimonial.rating} />
-              </div>
+              <div key={index} className={`h-full text-primary-foreground p-4 lg:ml-4 rounded-lg w-1/2 md:w-1/2 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 xl:font-semibold  xl:h-[280px] h-1/2 bg-[#7b61ff]' : ' border-slate-700 border text-xl transition-transform duration-500'}`}>
+                <div className="flex items-center mb-4">
+                  <StarRating rating={testimonial.rating} />
+                </div>
                 <p className="mb-4 text-lg text-white">{testimonial.text}</p>
                 <div className="flex pt-8 items-center">
                   <Image src={testimonial.img} className="w-10 h-10 rounded-full mr-4" alt={`${testimonial.name} avatar`} width={50} height={50} />
@@ -110,24 +148,21 @@ const Testimonials = () => {
               </div>
             ))}
           </div>
-          <div className="flex px-4 md:px-5 lg:px-12 xl:px-14 justify-between mt-10  w-full">
-          <div  className="flex  justify-between overflow-hidden space-x-2  mt-4" >
-            {testimonials.map((_, index) => (
-              <span key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
-            ))}
+          <div className="flex px-4 md:px-5 lg:px-12 xl:px-14 justify-between mt-10 w-full">
+            <div className="flex justify-between overflow-hidden space-x-2 mt-4">
+              {testimonials.map((_, index) => (
+                <span key={index} className={`w-3 h-3 rounded-full ${currentIndex % testimonials.length === index ? 'bg-[#7b61ff]' : 'bg-[#535353]'}`}></span>
+              ))}
             </div>
-            <div className="flex  space-x-4">
-            <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
-              &lt;
-            </button>
-            <button onClick={handleNextClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
-              &gt;
-            </button>
-          
+            <div className="flex space-x-4">
+              <button onClick={handlePrevClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
+                &lt;
+              </button>
+              <button onClick={handleNextClick} className="bg-transparent border text-2xl border-[#7b61ff] text-[#7b61ff] rounded-full py-2 px-4 hover:bg-blue-600 hover:text-white transition-all">
+                &gt;
+              </button>
+            </div>
           </div>
-          
-        </div>
-        
         </div>
       </div>
     </div>
