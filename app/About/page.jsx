@@ -10,6 +10,7 @@ import Bannerxcontact from '@/components/bannerxcontact';
 import About from '@/components/About';
 import Aboutproc from '@/components/Aboutprocess';
 import { useRouter } from 'next/navigation';
+import Form from '@/components/Form';
 const Page = () => {
   const textRef = useRef(null);
   const router = useRouter(); 
@@ -66,7 +67,7 @@ const Page = () => {
             </span>
           </div>
         </div>
-     
+     <Form/>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ContactForm onClose={closeModal} />
       </Modal>

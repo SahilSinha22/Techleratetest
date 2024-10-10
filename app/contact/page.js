@@ -20,6 +20,7 @@ import Arrow from "@/public/Arrow.png"
 import Star from "@/public/Star.svg"
 import Starx from "@/public/Starx.svg"
 import ServicesPic from "@/public/ServicesPic.png";
+import Form from "@/components/Form";
 const services = [
 
   { name: "On Demand", logo: "/OnDemand.svg" },
@@ -632,6 +633,7 @@ const Page = () => {
 
 
       </div>
+      <Form/>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ContactForm />
       </Modal>

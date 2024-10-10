@@ -186,13 +186,13 @@ const Form = () => {
     <div className=" bg-black ">
 
       <div className="  w-full h-92 ">
-        <div className="  flex flex-col  ">
-          <h2 className="  text-left sm:text-center lg:text-left mx-5  sm:ml-12 md:mx-20 mt-6 2xl:ml-48 2xl:mr-0  2xl:pr-60 lg:ml-28 lg:mr-20  xl:mr-60 xl:ml-48 text-3xl sm:text-4xl 2xl:text-5xl items-center text-white  lg:text-4xl  playfair_display">
+        <div className="  flex flex-col  justify-center py-10 ">
+          <h2 className="  text-left sm:text-center lg:text-left mx-5  sm:ml-12 md:mx-20  2xl:ml-48 2xl:mr-0  2xl:pr-60 lg:ml-28 lg:mr-20  xl:mr-60 xl:ml-48 text-3xl sm:text-4xl 2xl:text-5xl items-center text-white  lg:text-4xl  playfair_display">
             Collaborate with us
           </h2>
 
           <div className="sm:mx-10 mx-4 lg:mx-20 xl:mx-40 ">
-            <div className="border-b flex  2xl:mt-6 flex-col lg:flex-row items-center m-auto 2xl:h-auto  md:justify-between ">
+            <div className=" flex  2xl:mt-6 flex-col lg:flex-row items-center m-auto 2xl:h-auto  md:justify-between ">
               <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-[#18191f]   pl-2  text-white my-8  ">
                 <div className="m-4 md:m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
                   <h2 className="md:text-2xl text-2xl 2xl:text-3xl font-semibold">

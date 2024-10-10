@@ -11,6 +11,7 @@ import Arrow from "@/public/Arrow.png"
 import Star from "@/public/Star.svg"
 import Starx from "@/public/Starx.svg"
 import ServicesPic from "@/public/ServicesPic.png";
+import Form from "./Form";
 const services = [
 
   { name: "On Demand", logo: "/OnDemand.svg" },
@@ -71,7 +72,7 @@ const Intro = () => {
   return (
     <>
 
-      <div className="banner   md:h-[700px] lg:h-screen  overflow-hidden w-full text-white">
+      <div className="banner   md:h-[700px] lg:h-screen   w-full text-white">
         <video
           autoPlay
           muted

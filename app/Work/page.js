@@ -8,6 +8,7 @@ import Navbar from '../component/Navbar';
 import Modal from '@/components/Modal'; // Assuming Modal is in the same directory
 import ContactForm from '@/components/Popups';
 import { useRouter } from 'next/navigation';
+import Form from '@/components/Form';
 
 const Page = () => {
   const textRef = useRef(null);
@@ -76,6 +77,7 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <Form/>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ContactForm onClose={closeModal} />
       </Modal>

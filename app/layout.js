@@ -1,8 +1,10 @@
+
 import { Inter, Bebas_Neue, Playfair_Display, Josefin_Sans, Open_Sans, Poppins  } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/component/Footer"
 import Navbar from "@/app/component/Navbar"
 import Form from "@/components/Form";
+
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -54,6 +56,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+ 
   return (
     <html lang="en">
       <body className={`${inter.className} ${Open_Sans_init.variable} ${Open_Sans_inits.variable} ${Bebas_Neue_init.variable} ${Playfair_Display_init.variable} ${Poppins_init.variable} ${Poppins_inits.variable} ${Poppins_initd.variable} ${Josefin_Sans_init.variable}`}>
@@ -61,7 +64,7 @@ export default function RootLayout({ children }) {
      
    
         {children}
-        <Form/>
+        
         <Footer/>
         </div>
         </body>

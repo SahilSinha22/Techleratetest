@@ -8,6 +8,7 @@ import Testimonial from "@/components/Testimonial";
 import Blog from "@/components/Blog";
 import Started from "@/components/Started";
 import DumyForm from "@/components/dumyForm"
+import Form from "@/components/Form"
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
   
    <DumyForm/>
    <Blog/>
-   
+   <Form/>
    </main>
   );
 }

@@ -387,6 +387,7 @@ const Page = () => {
             </button>
           </div>
         </div>
+        <Form/>
         <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ContactForm onClose={closeModal} />
       </Modal>
