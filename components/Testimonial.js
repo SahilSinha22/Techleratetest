@@ -33,7 +33,7 @@ const testimonials = [
     img: "/Testinomial1.png",
   },
 ];
-const infinityScrolll = [...testimonials, ...testimonials];
+const infinityScroll = [...testimonials, ...testimonials];
 
 const StarRating = ({ rating }) => {
   const totalStars = 5;
@@ -94,7 +94,7 @@ const Testimonials = () => {
       <div className="flex flex-col lg:mx-20 lg:space-x-8 items-center space-y-6" {...swipeHandlers}>
         <div ref={carouselRef} className="relative w-full overflow-hidden">
           <div className="flex transition-transform mx-4 md:mx-5 lg:mx-10 duration-500 ease-in-out" style={{ transform: `translateX(-${(100 / visibleCount) * currentIndex}%)`, width: `${(testimonials.length / visibleCount) * 100}%` }}>
-            {infinityScrolll.map((testimonial, index) => (
+            {infinityScroll.map((testimonial, index) => (
                <div key={index} className={`  h-full text-primary-foreground p-4  lg:ml-4  rounded-lg w-1/2 md:w-1/2 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 xl:font-semibold  xl:h-[280px] h-1/2 bg-[#7b61ff]' : 'border-slate-700 border text-xl'} transition-transform duration-500`}>
                <div className="flex items-center mb-4">
                 <StarRating rating={testimonial.rating} />
