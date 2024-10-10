@@ -72,7 +72,7 @@ const Intro = () => {
   return (
     <>
 
-      <div className="banner   md:h-[700px] lg:h-screen   w-full text-white">
+      <div className="banner   md:h-[700px] lg:h-screen  overflow-hidden w-full text-white">
         <video
           autoPlay
           muted

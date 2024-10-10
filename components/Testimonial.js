@@ -102,7 +102,7 @@ const Testimonials = () => {
           setCurrentIndex(testimonials.length -1);
         } else if (currentIndex === infinityScroll.length - visibleCount) {
           // If we've gone past the last, reset to the first
-          setCurrentIndex(1 );
+          setCurrentIndex(testimonials.length-3);
         }
       };
 
