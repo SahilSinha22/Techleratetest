@@ -247,7 +247,7 @@ Integrate the latest technologies and trends.
       </div>
       <section className="md:mx-20 xl:mb-10 lg:mx-28 2xl:mx-52 p-6 bg-background open_sans_display ">
         <h2 className="text-3xl  2xl:text-4xl   mb-4">React Native Going Forward</h2>
-        <p className="mb-16 md:text-lg 2xl:text-2xl xl:text-lg xl:pr-60 xl:mr-24 2xl:pr-60 2xl:mr-96">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+        <p className="mb-16 md:text-lg 2xl:text-2xl xl:text-lg xl:pr-60 xl:mr-24 2xl:pr-60 2xl:mr-96">
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:pr-60 w-full">
