@@ -130,7 +130,7 @@ Integrate the latest technologies and trends.
         </div>
       </div>
       <div>
-        <div className="bg-black xl:mb-10  text-white  w-full  p-2 sm:p-8 flex flex-row md:flex-row items-center open_sans_displays font-extralight">
+        <div className="bg-black xl:mb-10  text-white  w-full  p-2 sm:p-8 flex flex-row md:flex-row justify-center items-center open_sans_displays font-extralight">
 
           <div className=" p-0  lg:ml-28 2xl:ml-48 mt-10 md:space-y-8 w-1/2">
             <div className=" font-extralight md:space-y-4 flex flex-col">
