@@ -132,7 +132,7 @@ const Flutter = () => {
                 </div>
 
                 <div className='max-w-full m-auto  py-20 flex justify-center'>
-                    <Image src="/Logoicons.png" className=' w-96 sm:max-w-6xl xl:max-w-7xl px-2 md:px-10 xl:px-0 sm:w-full 2xl:mx-40 ' alt='' width={1000} height={1000} />
+                    <Image src="/Logoicons.png" className=' w-auto sm:max-w-6xl xl:max-w-7xl px-2 md:px-10 xl:px-0 sm:w-full 2xl:mx-40 ' alt='' width={1000} height={1000} />
                 </div>
             </div>
             <div className="flex flex-col  lg:gap-10 p-2 md:p-6 max-w-7xl md:flex-row items-center  m-auto ">
@@ -220,7 +220,7 @@ const Flutter = () => {
             <div className='bg-[#0F256E] Poppind mt-10 xl:px-20'>
 
 
-                <div className=' sm:px-10 mt-10 flex  py-10 max-w-7xl gap-4 md:gap-20 mx-auto'>
+                <div className=' sm:px-10 mt-10 flex justify-center py-10  gap-4 md:gap-20 mx-auto'>
                     <div>
                         <Image src="/phoni.png" className='w-40 sm:w-60 lg:w-[400px] h-full' alt="" width={1000} height={1000} />
                     </div>
