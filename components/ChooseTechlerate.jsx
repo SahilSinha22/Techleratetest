@@ -21,11 +21,11 @@ advancements in React Native.
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-accent-foreground">Agile Methodology for Flexibility</h3>
             <p className="xl:text-base xl:pr-2  2xl:pr-20">
-            Iterative Development: We divide difficult projects into doable iterations to guarantee expected 
-results. 
-Constant Integration: Our team helps streamline your development process through automated 
-testing and deployment. 
-Frequent Comments: We encourage open feedback and communication to guarantee congruence 
+            <b> Iterative Development:</b>  We divide difficult projects into doable iterations to guarantee expected 
+results. <br/>
+<b> Constant Integration:</b>  Our team helps streamline your development process through automated 
+testing and deployment. <br/>
+<b> Frequent Comments:</b>  We encourage open feedback and communication to guarantee congruence 
 with your vision..             </p>
           </div>
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">

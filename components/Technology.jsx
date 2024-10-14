@@ -46,66 +46,66 @@ const Technology = () => {
           <div className="p-4 c xl:pt-8 bg-[#F8F8F8] 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">Cross-platform compatibility</h3>
             <p className="xl:text-base xl:pr-2 2xl:pr-20">
-            Single Codebase: Run everywhere once you write. Share codes between Apple and Android systems. 
-Reduced Development Time: Create concurrently for both platforms, hence lowering the time-to--
-market. 
-Economical: Reduce the expenses related to several native development teams.
+            <b>Single Codebase:</b> Run everywhere once you write. Share codes between Apple and Android systems. <br/>
+<b>Reduced Development Time:</b> Create concurrently for both platforms, hence lowering the time-to--
+market. <br/>
+<b>Economical:</b> Reduce the expenses related to several native development teams.
             </p>
           </div>
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-accent-foreground"> Faster Development</h3>
             <p className="xl:text-base xl:pr-2  2xl:pr-20">
-            JavaScript and React: Make use of a large library ecosystem and known technologies, JavaScript and 
-            React .Hot Reloading: See updates right away without app rebuild. 
-            Effective Iterations: Test and polish your app fast.             </p>
+            <b> JavaScript and React:</b> Make use of a large library ecosystem and known technologies, JavaScript and React .<br/>
+            <b> Hot Reloading:</b> See updates right away without app rebuild. <br/>
+            <b> Effective Iterations:</b> Test and polish your app fast.             </p>
           </div>
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-foreground">Economic Efficiency</h3>
             <p className="xl:text-base xl:pr-0 2xl:pr-20">
-            Shared Codebase: Update and keep a single codebase to reduce maintenance costs. 
-            Minimised Training: Developers can work on both systems.              </p>
+           <b> Shared Codebase:</b> Update and keep a single codebase to reduce maintenance costs. <br/>
+            <b> Training: </b>Developers can work on both systems.              </p>
           </div>
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-foreground">Native Modular Access</h3>
             <p className="xl:text-base  2xl:pr-20">
-            Native Performance: For best performance access native APIs and modules. 
-Platform-Specific Characteristics: Seamlessly integrate unique features from iOS and Android 
-platforms, enhancing your app&apos;s functionality and user experience. 
-Perfect Integration: Combine React Native and native elements.              </p>
+            <b>  Native Performance: </b> For best performance access native APIs and modules. <br/>
+            <b> Platform-Specific Characteristics:</b>  Seamlessly integrate unique features from iOS and Android 
+platforms, enhancing your app&apos;s functionality and user experience.<br/> 
+<b> Perfect Integration: </b> Combine React Native and native elements.              </p>
           </div>
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl text-foreground"> Broad Community Support </h3>
             <p className="xl:text-base 2xl:pr-20">
-            Active Forums: Engage in energetic communities (Stack Overflow, Reddit). 
-Comprehensive Libraries: Grow by leaps and bounds with a vast collection of reusable libraries and 
-frameworks. 
-Frequent Updates: Regular updates, security patches, and feature enhancements keep React Native 
+            <b>  Active Forums:</b>  Engage in energetic communities (Stack Overflow, Reddit). <br/>
+            <b> Comprehensive Libraries:</b>  Grow by leaps and bounds with a vast collection of reusable libraries and 
+frameworks. <br/>
+<b> Frequent Updates: </b> Regular updates, security patches, and feature enhancements keep React Native 
 up and running.              </p>
           </div>
 
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-foreground">Easy Integration</h3>
             <p className="xl:text-base 2xl:pr-20">
-            Third-Party APIs: Easily consolidate external services (social networking, payment gateways) to 
-provide a holistic experience to your users. 
-Backend Integration: Trouble free linking to either custom or existing backend systems. 
-Cloud Services: Painlessly blend AWS and Firebase, among other cloud systems.
+            <b>  Third-Party APIs:</b>  Easily consolidate external services (social networking, payment gateways) to 
+provide a holistic experience to your users. <br/>
+<b> Backend Integration:</b>  Trouble free linking to either custom or existing backend systems. <br/>
+<b> Cloud Services:</b>  Painlessly blend AWS and Firebase, among other cloud systems.
               </p>
           </div>
 
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-foreground">Safety</h3>
             <p className="xl:text-base 2xl:pr-20">
-            Secure Data Storage: Access to encrypted storage options for user protection. 
-Regular Security Updates: Frequent updates for security. 
-Secure Authentication: Robust identification systems for unmatched identity verification              </p>
+           <b>Secure Data Storage:</b>  Access to encrypted storage options for user protection. <br/>
+           <b> Regular Security Updates:</b>  Frequent updates for security. <br/>
+           <b> Secure Authentication:</b>  Robust identification systems for unmatched identity verification              </p>
           </div>
 
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-foreground"> Scalable</h3>
             <p className="xl:text-base 2xl:pr-20">
-            Easy addition or deletion of elements in modular architecture. 
-Make changes according to your business needs with its flexible design. 
+            Easy addition or deletion of elements in modular architecture. <br/>
+Make changes according to your business needs with its flexible design. <br/>
 Manage your rising traffic with comfort.
               </p>
           </div>
@@ -113,16 +113,16 @@ Manage your rising traffic with comfort.
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-foreground">User Experience</h3>
             <p className="xl:text-base 2xl:pr-20">
-            Flawless and responsive experiences lead to a Native-like performance. 
-Create distinctive, user-friendly layouts using its customizable UI. 
+            Flawless and responsive experiences lead to a Native-like performance. <br/>
+Create distinctive, user-friendly layouts using its customizable UI. <br/>
 Promote user engagement with fluid animations.               </p>
           </div>
 
           <div className="p-4  xl:pt-6 bg-[#F8F8F8]  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 className="font-semibold text-lg lg:text-xl  text-foreground"> Future-Proof </h3>
             <p className="xl:text-base 2xl:pr-20">
-            Stay updated with React Native&apos;s newest capabilities. 
-Long-term upkeep and customer support. 
+            Stay updated with React Native&apos;s newest capabilities. <br/>
+Long-term upkeep and customer support. <br/>
 Integrate the latest technologies and trends.
               </p>
           </div>
@@ -163,11 +163,11 @@ Integrate the latest technologies and trends.
             <h3 className="text-xl font-semibold mb-2"> Mobile App Development</h3>
             <p className="text-muted-foreground ">
               Create customised mobile apps from scratch, matching your company objectives and needs, thereby
-              harmonising with your ambitions.
+              harmonising with your ambitions.<br/>
               The latest React Native features are always at your fingertips to refresh and revamp existing
-              applications.
+              applications.<br/>
               Also, combine online and native technologies to produce seamless, cross-platform experiences in
-              hybrid app development.
+              hybrid app development.<br/>
               React Native allows you to quickly, and dependably come up with interesting web apps.
             </p>
           </div>
@@ -175,67 +175,67 @@ Integrate the latest technologies and trends.
           <div className="p-6 shadow-lg shadow-[#FFD7A04D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
             <p className="text-muted-foreground  2xl:pr-10">
-              User Research: We analyze users to guide design decisions.
-              Wireframing and Prototyping: Our team creates interactive prototypes that let you visualize and
-              fine-tune your app’s design before it goes live.
-              User Interface Design: Our designers craft beautiful, intuitive, and consistent interfaces that are easy
-              to navigate across your app.
-              User Experience (UX) Strategy: We plan and study user interaction with your app to make sure it’s
-              simple, smooth, and enjoyable from start to finish.
+            <b> User Research:</b> We analyze users to guide design decisions.<br/>
+            <b> Wireframing and Prototyping: </b> Our team creates interactive prototypes that let you visualize and
+              fine-tune your app&apos;s design before it goes live.<br/>
+              <b> User Interface Design:</b>  Our designers craft beautiful, intuitive, and consistent interfaces that are easy
+              to navigate across your app.<br/>
+              <b>  User Experience (UX) Strategy:</b>  We plan and study user interaction with your app to make sure it&apos;s
+              simple, smooth, and enjoyable from start to finish.<br/>
             </p>
           </div>
 
           <div className="p-6 shadow-lg shadow-[#A0C5FF4D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2">App Integration</h3>
             <p className="text-muted-foreground xl:pr-24 2xl:pr-36">
-              Third-party API integration: Seamlessly integrate outside APIs for services including maps, social
-              media, and payment gateways.
-              Backend Integration: Link your app to either custom or current backend infrastructure.
-              Hardware Integration: Take full advantage of your device’s features, like GPS, Bluetooth, and the
-              camera.
-              Cloud Integration: Need to scale? We can connect your app to cloud services like Firebase, AWS, or
+            <b>  Third-party API integration:</b>  Seamlessly integrate outside APIs for services including maps, social
+              media, and payment gateways.<br/>
+              <b> Backend Integration:</b>  Link your app to either custom or current backend infrastructure.<br/>
+              <b>  Hardware Integration: </b> Take full advantage of your device&apos;s features, like GPS, Bluetooth, and the
+              camera.<br/>
+              <b> Cloud Integration:</b>  Need to scale? We can connect your app to cloud services like Firebase, AWS, or
               Azure to keep things running smoothly.            </p>
           </div>
 
           <div className="p-6 shadow-lg shadow-[#A0FFDE4D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2">Thorough Testing and Debugging</h3>
             <p className="text-muted-foreground xl:pr-20 2xl:pr-28">
-              Unit Testing: Leaving no loose ends, we carefully test each part of your app to make sure it functions
-              as expected.
-              Integration Testing: For seamless performance, we verify that all the different components of your
-              app work well together.
-              UI Testing: We carefully test the user interface to ensure it&apos;s simple to navigate and functions
-              seamlessly.
-              Performance Optimization: We refine your app to ensure it runs efficiently, boosting speed, reducing
+            <b>   Unit Testing: </b> Leaving no loose ends, we carefully test each part of your app to make sure it functions
+              as expected.<br/>
+              <b> Integration Testing:</b>  For seamless performance, we verify that all the different components of your
+              app work well together.<br/>
+              <b> UI Testing: </b> We carefully test the user interface to ensure it&apos;s simple to navigate and functions
+              seamlessly.<br/>
+              <b>  Performance Optimization:</b>  We refine your app to ensure it runs efficiently, boosting speed, reducing
               memory usage, and extending battery life.            </p>
           </div>
 
           <div className="p-6 shadow-lg shadow-[#A0FFDE4D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2">Maintenance and Support</h3>
             <p className="text-muted-foreground xl:pr-20 2xl:pr-28">
-              Regular Updates: Keep your app current with the latest React Native features and security updates.
-              Bug Fixing: Smoothly address issues to ensure the smooth functioning of your app.
-              Performance Monitoring: Make improvements where needed by continuously tracking and
-              analyzing performance.
-              Security Audits: Perform regular checks to safeguard user data and maintain trust.           </p>
+            <b>   Regular Updates:</b>  Keep your app current with the latest React Native features and security updates.<br/>
+            <b>  Bug Fixing:</b>  Smoothly address issues to ensure the smooth functioning of your app.<br/>
+            <b>  Performance Monitoring:</b>  Make improvements where needed by continuously tracking and
+              analyzing performance.<br/>
+              <b>   Security Audits: </b> Perform regular checks to safeguard user data and maintain trust.           </p>
           </div>
 
         
           <div className="p-6 shadow-lg shadow-[#A0FFDE4D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2"> Strategy Consulting</h3>
             <p className="text-muted-foreground xl:pr-20 2xl:pr-28">
-              Mobile Strategy: Align your mobile strategy with business goals.
-              Technical Consulting: Provide expert guidance on React Native architecture, scalability, and best
-              practices.
-              Code Review: Conduct thorough code reviews to ensure quality and maintainability.</p>
+            <b> Mobile Strategy:</b>  Align your mobile strategy with business goals.<br/>
+              <b> Technical Consulting:</b>  Provide expert guidance on React Native architecture, scalability, and best
+              practices.<br/>
+              <b>  Code Review:</b>  Conduct thorough code reviews to ensure quality and maintainability.</p>
 
           </div>
 
           <div className="p-6 shadow-lg shadow-[#A0FFDE4D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2"> Knowledge Transfer and Training</h3>
             <p className="text-muted-foreground xl:pr-20 2xl:pr-28">
-            Developer Training: Provide your internal development team training sessions. 
-            Knowledge Transfer: Continuous knowledge transfer for maintenance and support.</p>
+            <b>  Developer Training:</b>  Provide your internal development team training sessions. <br/>
+            <b>  Knowledge Transfer:</b>  Continuous knowledge transfer for maintenance and support.</p>
 
           </div>
           </div>
@@ -278,19 +278,19 @@ Progressive Web Apps.            </p>
           <div className="p-4 2xl:w-[400px]  bg-[#F8F8F8] xl:pt-6 2xl:p-8 hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">Enhancements and Features</h3>
             <p className="xl:text-base  2xl:pr-6">
-            Improved Performance: Consistent optimisations help in faster rendering and better memory 
-management. 
-Enhanced Security: Advanced security features and encryption for data protection. 
-Better Debugging Tools: Improved debugging and testing experiences for foolproof results. 
-More Native Modules: Expanded library of native modules for enhanced functionality.            </p>
+            <b>  Improved Performance:</b>  Consistent optimisations help in faster rendering and better memory 
+management. <br/>
+<b> Enhanced Security:</b>  Advanced security features and encryption for data protection. <br/>
+<b> Better Debugging Tools:</b>  Improved debugging and testing experiences for foolproof results. <br/>
+<b> More Native Modules:</b>  Expanded library of native modules for enhanced functionality.            </p>
           </div>
 
           <div className="p-4  2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground"> Community-Driven Development</h3>
             <p className="xl:text-base  2xl:pr-6">
-            Open-Source Contributions: Active community involvement in code development 
-Plugin Architecture: Simplified plugin development and sharing 
-Community-Driven Features: Prioritization of community-requested features
+            <b> Open-Source Contributions:</b>  Active community involvement in code development .<br/>
+            <b> Plugin Architecture: </b> Simplified plugin development and sharing .<br/>
+            <b> Community-Driven Features:</b>  Prioritization of community-requested features
             </p>
           </div>
 

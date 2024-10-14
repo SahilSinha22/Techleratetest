@@ -309,16 +309,19 @@ const Form = () => {
                       <select
                         name="Budget"
                         id="floating_company"
-                        className="block py-2.5 px-0 w-full text-sm 2xl:text-base text-white  bg-black  border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-full   text-sm 2xl:text-base text-white  bg-black  border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         value={user.Budget}
                         autoComplete="off"
                         required
                         onChange={handleSelectChange}
                       >
-                        <option value="" disabled>Budget (select a range)</option>
+
+                  
+                        <option  className="text-sm  2xl:text-base " value="" disabled>Budget (select a range)</option>
                         <option value="2.66L">2.66L</option>
                         <option value="3.5L">3.5L</option>
                         <option value="4.5L">4.5L</option>
+                      
                       </select>
 
                       {/* Arrows */}
