@@ -49,7 +49,7 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <div className='bg-black Poppins lg:p-8'>
+      <div className='bg-[#18191F] Poppins lg:p-8'>
 
         <div className="justify-center  flex flex-col text-center py-20  p-2 2xl:py-32 2xl:p-24">
           <div>
@@ -68,7 +68,7 @@ const Page = () => {
 
         <Cop />
         <Sucess />
-        <div className=" bg-black text-white  py-14 xl:pt-10 text-center">
+        <div className=" bg-[#18191F] text-white  py-14 xl:pt-10 text-center">
           <div ref={textRef} className='text flex flex-col gap-4 justify-center text-white' >
             <span className="  text-lg text-white md:text-3xl  xl:text-4xl Poppins">READY FOR YOUR NEXT PROJECT?</span>
             <span onClick={handleButtonClick} className="cursor-pointer text-white text-4xl md:text-6xl xl:text-8xl font-extrabold hover:italic hover:text-[#7b61ff] text-accent">

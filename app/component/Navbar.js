@@ -79,8 +79,8 @@ const Navbar = () => {
   const isContactPage = router.pathname === '/contact';
 
   return (
-    <div className={`${pathname == "/Technology/Chatbot" ? 'bg-[#18191F]':'bg-black'}`}>
-    <nav className={`  ${pathname == "/Technology/Chatbot" ? 'bg-[#18191F]':'bg-black'} items-center  p-4 px-4   2xl:px-20  lg:p-6  `}>
+    <div className={`${pathname == "/Technology/Chatbot" || "/Technology/flutter" ? 'bg-[#18191F]':'bg-black'} `}>
+    <nav className={`  ${pathname == "/Technology/Chatbot" || "/Technology/flutter" ? 'bg-[#18191F]':'bg-black'} items-center  p-4 px-4   2xl:px-20  lg:p-6  `}>
       <div className=" relative xl:px-10  flex items-center justify-between lg:justify-around flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white">
        <Link href="/"> <Image
