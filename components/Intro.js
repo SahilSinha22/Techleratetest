@@ -4,7 +4,7 @@ import React from "react";
 import Logo from "@/public/logo.svg";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
-
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 import { useState, useEffect } from "react";
 
 import Arrow from "@/public/Arrow.png"
@@ -68,6 +68,9 @@ const technology = [
 ];
 const Intro = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isOpenMenuT, setIsOpenMenuT] = useState(false);
+
   const pathname = usePathname()
   return (
     <>
@@ -117,7 +120,7 @@ const Intro = () => {
               </button>
             </div>
             <div
-              className={`w-full block flex-grow justify-between   text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block bg-[#000000] bg-opacity-50 " : "hidden"
+              className={`w-full block flex-grow justify-center  text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block bg-[#000000] bg-opacity-50 " : "hidden"
                 }`}
             >
               <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
@@ -133,7 +136,9 @@ const Intro = () => {
                 >
                   Work
                 </Link>
-                <div className=" lg:inline-block  group">
+                <div className=" lg:inline-block  group"
+                onMouseEnter={() => setIsOpenMenu(true)}
+                onMouseLeave={() => setIsOpenMenu(false)}>
                   <Link
                     href="#"
                     className="nav-link block text-white hover:text-[#7B61FF] mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
@@ -141,7 +146,11 @@ const Intro = () => {
                     aria-expanded={isOpen ? true : false}
                   >
                     Services
-                    <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
+                    {isOpenMenu ? (
+                  <FaChevronUp className="inline-flex ml-2" size={14} />
+                ) : (
+                  <FaChevronDown className="inline-flex ml-2" size={14} />
+                )}
                   </Link>
                   <div 
                 className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-full h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'}`}
@@ -189,14 +198,19 @@ const Intro = () => {
                 </section>
               </div>
                 </div>
-                <div className=" lg:inline-block  group">
+                <div className=" lg:inline-block  group"
+                onMouseEnter={() => setIsOpenMenuT(true)}
+                onMouseLeave={() => setIsOpenMenuT(false)}>
                   <Link
                     href="#"
                     className="block text-white hover:text-[#7B61FF] nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                   >
                     Technology
-                    <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
-
+                    {isOpenMenuT ? (
+                  <FaChevronUp className="inline-flex ml-2" size={14} />
+                ) : (
+                  <FaChevronDown className="inline-flex ml-2" size={14} />
+                )}
                   </Link>
                   <div
         className={`absolute w-full   lg:left-4 m-auto  justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
@@ -233,15 +247,17 @@ const Intro = () => {
                   Career
                 </Link>
               </div>
-              <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
+             
+            </div>
+            <div className={` text-lg 2xl:text-xl  w-auto m-auto items-center lg:flex justify-center  lg:justify-normal  text-center ${isOpen ? "block" : "hidden"
+                }`}>
                 <Link href="/contact" className="inline-flex">
-                  <button className="block nav-link text-white hover:text-[#7B61FF] lg:inline-block text-white-200 mr-2 xl:mr-4">
+                  <button className="block nav-link text-white mt-4  lg:mt-0 hover:text-[#7B61FF] lg:inline-block text-white-200 mr-2 xl:mr-4">
                     Contact Us
                   </button>
-                  <Image src={Star} alt="" className="h-6 w-6" width={20} height={20} />
+                  <Image src={Star} alt="" className="h-6 w-6 mt-4  lg:mt-0" width={20} height={20} />
                 </Link>
               </div>
-            </div>
           </div>
         </nav>
         <div className="relative z-10 flex flex-col items-center justify-center md:h-full xl:space-y-8">

@@ -9,6 +9,7 @@ import Starx from "@/public/Starx.svg"
 import Arrow from "@/public/Arrow.png"
 import { useRouter } from 'next/navigation';
 import ServicesPic from "@/public/ServicesPic.png";
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 
 const services = [
 
@@ -71,14 +72,16 @@ const Navbar = () => {
   console.log(router.pathname);
   const pathname = usePathname()
  
-  
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isOpenMenuT, setIsOpenMenuT] = useState(false);
 
   
   const isContactPage = router.pathname === '/contact';
 
   return (
-    <nav className={`  ${pathname == "/Technology/Chatbot" ? 'bg-[#18191F]':'bg-black'} items-center px-4 p-4   lg:p-6 2xl:px-40 `}>
-      <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
+    <div className={`${pathname == "/Technology/Chatbot" ? 'bg-[#18191F]':'bg-black'}`}>
+    <nav className={`  ${pathname == "/Technology/Chatbot" ? 'bg-[#18191F]':'bg-black'} items-center  p-4 px-4   2xl:px-20  lg:p-6  `}>
+      <div className=" relative xl:px-10  flex items-center justify-between lg:justify-around flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white">
        <Link href="/"> <Image
             src={Logo}
@@ -112,7 +115,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`w-full block flex-grow justify-between text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
+          className={`w-full block flex-grow justify-center text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
             }`}
         >
           <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
@@ -128,7 +131,9 @@ const Navbar = () => {
             >
               Work
             </Link>
-            <div className=" lg:inline-block  group">
+            <div className=" lg:inline-block  group"
+               onMouseEnter={() => setIsOpenMenu(true)}
+               onMouseLeave={() => setIsOpenMenu(false)}>
               <Link
                 href="#"
                 className={`nav-link block  mt-4 lg:inline-block group lg:mt-0 hover:text-[#7B61FF] mr-8 ${pathname== "/Services"?"text-white hover:text-[#7B61FF]":"text-white"}`}
@@ -136,8 +141,11 @@ const Navbar = () => {
                 aria-expanded={isOpen ? true : false}
               >
                 Services
-                <Image src={Arrow} alt="" className="inline-flex " width={32} height={32} />
-              </Link>
+                {isOpenMenu ? (
+                  <FaChevronUp className="inline-flex ml-2" size={14} />
+                ) : (
+                  <FaChevronDown className="inline-flex ml-2" size={14} />
+                )}              </Link>
               <div 
                 className={`absolute w-full left-0 p-2 md:p-6 mt-12 lg:mt-10   h-auto md:h-auto    Glassy rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300
                    ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'}`}
@@ -185,7 +193,9 @@ const Navbar = () => {
                 </section>
               </div>
             </div>
-            <div className="lg:inline-block group">
+            <div className="lg:inline-block group"
+               onMouseEnter={() => setIsOpenMenuT(true)}
+               onMouseLeave={() => setIsOpenMenuT(false)}>
       <Link
         href="#"
         className={`block nav-link mt-4 lg:inline-block lg:mt-0 hover:text-[#7B61FF] mr-8 ${pathname== "/Technology/reactnative"?"text-[#7B61FF]":"text-white"} ${
@@ -193,8 +203,11 @@ const Navbar = () => {
         }`}
       >
         Technology
-        <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
-      </Link>
+        {isOpenMenuT ? (
+                  <FaChevronUp className="inline-flex ml-2" size={14} />
+                ) : (
+                  <FaChevronDown className="inline-flex ml-2" size={14} />
+                )}      </Link>
       <div
         className={`absolute w-full  lg:left-4  m-auto  justify-center mt-10 h-auto md:h-auto Glassy z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
          pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-white'
@@ -230,17 +243,20 @@ const Navbar = () => {
               Career
             </Link>
           </div>
-          <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
+         
+        </div>
+        <div className={` text-lg 2xl:text-xl  w-auto m-auto items-center lg:flex justify-center  lg:justify-normal  text-center ${isOpen ? "block" : "hidden"
+                }`}>
             < Link href="/contact" className="inline-flex">
-              <button className="block nav-link text-white hover:text-[#7B61FF] lg:inline-block text-white-200 mr-2 xl:mr-4">
+              <button className="block nav-link text-white hover:text-[#7B61FF] mt-4  lg:mt-0 lg:inline-block text-white-200 mr-2 xl:mr-4">
                 Contact Us
               </button>
-              <Image src={Star} alt="" className="h-6 w-6" width={20} height={20} />
+              <Image src={Star} alt="" className="h-6 w-6 mt-4  lg:mt-0" width={20} height={20} />
             </Link>
           </div>
-        </div>
       </div>
     </nav>
+    </div>
   );
 };
 

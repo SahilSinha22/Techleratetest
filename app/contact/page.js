@@ -11,6 +11,7 @@ import ContactForm from '@/components/dumyForm';
 import Link from "next/link";
 import Bannerxcontact from "@/components/bannerxcontact";
 import { usePathname } from 'next/navigation'
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 
 import Logo from "@/public/logo.svg";
 
@@ -86,7 +87,8 @@ const Page = () => {
   const [successBanner, setSuccessBanner] = useState(false);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isOpenMenuT, setIsOpenMenuT] = useState(false);
 
 
   const handleButtonClick = () => {
@@ -191,8 +193,8 @@ const Page = () => {
   return (
     <div>
       <div className='w-full  navbar '>
-        <nav className=" absolute left-0 right-0 top-0 items-center z-50 px-4 p-4  lg:p-8 2xl:px-40">
-          <div className=" relative xl:px-10 flex items-center justify-between lg:justify-around flex-wrap">
+        <nav className=" absolute left-0 right-0 top-0 items-center z-50  2xl:px-20  p-4 px-4 lg:p-8 ">
+          <div className=" relative xl:px-10  flex items-center justify-between lg:justify-around flex-wrap">
             <div className="flex items-center flex-shrink-0 text-white">
               <Link href="/" > <Image
                 src={Logo}
@@ -226,7 +228,7 @@ const Page = () => {
               </button>
             </div>
             <div
-              className={`w-full block flex-grow justify-between text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
+              className={`w-full block flex-grow justify-center text-center lg:flex text-lg lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"
                 }`}
             >
               <div className="text-lg 2xl:text-xl justify-around text-center lg:flex-grow">
@@ -242,7 +244,9 @@ const Page = () => {
                 >
                   Work
                 </Link>
-                <div className=" lg:inline-block  group">
+                <div className=" lg:inline-block  group"
+                  onMouseEnter={() => setIsOpenMenu(true)}
+                  onMouseLeave={() => setIsOpenMenu(false)}>
                   <Link
                     href="#"
                     className="nav-link block text-white hover:text-[#7b61ff] mt-4 lg:inline-block group lg:mt-0 text-white-200 mr-8"
@@ -250,8 +254,11 @@ const Page = () => {
                     aria-expanded={isOpen ? true : false}
                   >
                     Services
-                    <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
-                  </Link>
+                    {isOpenMenu ? (
+                  <FaChevronUp className="inline-flex ml-2" size={14} />
+                ) : (
+                  <FaChevronDown className="inline-flex ml-2" size={14} />
+                )}                   </Link>
                   <div 
                 className={`absolute left-0 p-2 md:p-6 mt-12 lg:mt-10  w-full h-auto md:h-auto    bg-white rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${pathname ==="/Technology/reactnative" || pathname === "/Work/LiquiClear"  ? 'text-[#000000]' : 'text-[#000000]'}`}
               >
@@ -298,14 +305,19 @@ const Page = () => {
                 </section>
               </div>
                 </div>
-                <div className=" lg:inline-block  group">
+                <div className=" lg:inline-block  group"
+                  onMouseEnter={() => setIsOpenMenuT(true)}
+                  onMouseLeave={() => setIsOpenMenuT(false)}>
                   <Link
                     href="#"
                     className="block text-white hover:text-[#7b61ff] nav-link mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
                   >
                     Technology
-                    <Image src={Arrow} alt="" className="inline-flex" width={32} height={32} />
-
+                    {isOpenMenuT ? (
+                  <FaChevronUp className="inline-flex ml-2" size={14} />
+                ) : (
+                  <FaChevronDown className="inline-flex ml-2" size={14} />
+                )} 
                   </Link>
                   <div
         className={`absolute w-full  lg:left-4 m-auto  justify-center mt-10 h-auto md:h-auto bg-white  rounded-3xl z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 ${
@@ -342,15 +354,17 @@ const Page = () => {
                   Career
                 </Link>
               </div>
-              <div className="flex text-lg 2xl:text-xl justify-center items-center mt-4 lg:mt-0 text-center">
+              
+            </div>
+            <div className={` text-lg 2xl:text-xl  w-auto m-auto items-center lg:flex justify-center  lg:justify-normal  text-center ${isOpen ? "block" : "hidden"
+                }`}>
                 <Link href="/contact" className="inline-flex">
-                  <button className="block nav-link text-[#7b61ff] hover:text-[#7b61ff] lg:inline-block text-white-200 mr-2 xl:mr-4">
+                  <button className="block nav-link text-[#7b61ff] hover:text-[#7b61ff] mt-4  lg:mt-0  lg:inline-block text-white-200 mr-2 xl:mr-4">
                     Contact Us
                   </button>
-                  <Image src={Star} alt="" className="h-6 w-6 " width={20} height={20} />
+                  <Image src={Star} alt="" className="h-6 w-6 mt-4  lg:mt-0" width={20} height={20} />
                 </Link>
               </div>
-            </div>
           </div>
         </nav>
 

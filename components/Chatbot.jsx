@@ -59,7 +59,7 @@ function Chatbot() {
             </div>
 
             <div className='max-w-6xl 2xl:max-w-full m-auto  py-20 flex justify-center'>
-                    <Image src="/Logoicons.png" className=' w-96 sm:max-w-6xl xl:max-w-7xl px-2 md:px-10 xl:px-0 sm:w-full 2xl:mx-40 ' alt='' width={1000} height={1000} />
+                    <Image src="/Logoicons.png" className=' w-auto sm:max-w-6xl xl:max-w-7xl px-2 md:px-10 xl:px-0 sm:w-full 2xl:mx-40 ' alt='' width={1000} height={1000} />
                 </div>
 
                 <div className="flex flex-col gap-6 lg:gap-10  p-2 md:p-6 max-w-6xl 2xl:max-w-7xl md:flex-row items-center  m-auto ">
