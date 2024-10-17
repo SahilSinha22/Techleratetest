@@ -56,6 +56,8 @@ const Testimonials = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const carouselRef = useRef(null);
 
+  const [allTestimonials, setAllTestimonials] = useState([...testimonials]);
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
@@ -66,13 +68,23 @@ const Testimonials = () => {
         setVisibleCount(3);
       }
     };
+    
 
     window.addEventListener('resize', handleResize);
     handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setAllTestimonials((prevTestimonials) => [
+        ...prevTestimonials,
+        ...testimonials,
+      ]);
+    }, 1000); // Every 1 second
 
+    return () => clearInterval(intervalId); // Cleanup interval on unmount
+  }, []);
   // Move to the previous testimonial
   const handlePrevClick = () => {
     if (!isTransitioning) {
@@ -99,13 +111,28 @@ const Testimonials = () => {
     if (isTransitioning) {
       const transitionEndHandler = () => {
         setIsTransitioning(false);
-        if (currentIndex === -1) {
-          // If we've gone before the first, reset to the last
-          setCurrentIndex(testimonials.length -1);
-        } else if (currentIndex === infinityScroll.length - visibleCount) {
-          // If we've gone past the last, reset to the first
-          setCurrentIndex(testimonials.length-3);
+
+         if (window.innerWidth < 1024) {
+          setVisibleCount(2);
+          if (currentIndex === -1) {
+            // If we've gone before the first, reset to the last
+            setCurrentIndex(allTestimonials.length -1);
+          } else if (currentIndex === testimonials.length-visibleCount) {
+            // If we've gone past the last, reset to the first
+            setCurrentIndex(testimonials.length-2);
+          }
+        } else {
+          setVisibleCount(3);
+          if (currentIndex === -1) {
+            // If we've gone before the first, reset to the last
+            setCurrentIndex(allTestimonials.length -1);
+          } else if (currentIndex === testimonials.length-visibleCount) {
+            // If we've gone past the last, reset to the first
+            setCurrentIndex(testimonials.length-3);
+          }
         }
+        
+        
       };
 
       const carouselElement = carouselRef.current;
@@ -134,7 +161,7 @@ const Testimonials = () => {
               width: `${(testimonials.length / visibleCount) * 100}%`,
             }}
           >
-            {infinityScroll.concat(testimonials).map((testimonial, index) => (
+            {allTestimonials.map((testimonial, index) => (
               <div key={index} className={`h-full text-primary-foreground p-4 lg:ml-4 rounded-lg w-1/2 md:w-1/2 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 xl:font-semibold  xl:h-[280px] h-1/2 bg-[#7b61ff]' : ' border-slate-700 border text-xl transition-transform duration-500'}`}>
                 <div className="flex items-center mb-4">
                   <StarRating rating={testimonial.rating} />
