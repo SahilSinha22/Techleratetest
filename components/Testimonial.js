@@ -32,6 +32,8 @@ const testimonials = [
     role: "Entrepreneur",
     img: "/Testinomial1.png",
   },
+
+  
 ];
 
 // Duplicate the array for infinite scrolling
@@ -132,7 +134,7 @@ const Testimonials = () => {
               width: `${(testimonials.length / visibleCount) * 100}%`,
             }}
           >
-            {infinityScroll.map((testimonial, index) => (
+            {infinityScroll.concat(testimonials).map((testimonial, index) => (
               <div key={index} className={`h-full text-primary-foreground p-4 lg:ml-4 rounded-lg w-1/2 md:w-1/2 lg:w-1/3 flex-shrink-0 ${index === currentIndex ? 'text-2xl scale-100 xl:font-semibold  xl:h-[280px] h-1/2 bg-[#7b61ff]' : ' border-slate-700 border text-xl transition-transform duration-500'}`}>
                 <div className="flex items-center mb-4">
                   <StarRating rating={testimonial.rating} />

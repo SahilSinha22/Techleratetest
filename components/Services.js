@@ -18,7 +18,7 @@ const Services = () => {
                       <Image src={Serv1} alt="Person sketching UI design on paper" className="mb-10 md:mb-20 w-40 h-60 2xl:w-[400px] md:h-[600px] lg:w-52 md:w-40 lg:h-[500px] xl:w-[200px] xl:h-[600px]" width={400} height={10}/>
                       <Image src={Serv2} alt="Person presenting UI design on whiteboard" className="pt-10 md:pt-20  w-40 h-72 md:h-[650px] md:w-40 lg:h-[550px] lg:w-56 2xl:w-[400px] xl:w-[240px] xl:h-[650px]" width={400} height={10}/>
                     </div>
-                    <div className="flex flex-col pt-6 md:pt-20 justify-center">
+                    <div className="flex flex-col pt-6 md:pt-20 pl-4 xl:pl-0 justify-center">
                       <div className="mb-4 flex">
                         
                         <h1 className=" space-x-2 text-gray-400 text-lg uppercase tracking-widest">APP Development</h1>
