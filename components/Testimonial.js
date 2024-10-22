@@ -36,8 +36,8 @@ const testimonials = [
   
 ];
 
-// Duplicate the array for infinite scrolling
-const infinityScroll = [...testimonials, ...testimonials];
+
+
 
 const StarRating = ({ rating }) => {
   const totalStars = 5;
@@ -199,3 +199,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
