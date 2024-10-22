@@ -15,13 +15,13 @@ export default function Home() {
     <main>
   
    <Intro/>
-<Started/>
+
    <Banner/>
    <Portfolio/>
    <Services/>
    <Graphic/>
    <Digital/>
-  
+  <Testimonial/>
   
    <DumyForm/>
    <Blog/>
